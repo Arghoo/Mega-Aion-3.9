@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="guide.xsd">
+	<!-- Asmodians -->
+	<guide title="adventurers_guide2_asmo" level="2" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			This is a VERY special gift to help you along your journey.
+			<Br><Br><Br><Br>
+			From your friends here at...
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy your journey!</select>
+		<survey itemId="169630003" count="3"/>
+	</guide>
+	<guide title="adventurers_guide3_asmo" level="3" race="ASMODIANS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings. You may not know me, but you will soon
+			enough. Perhaps I can offer some advice? Take or
+			leave it as you will, but either way, I suggest you listen.
+			You may already know that you can rest to regain lost
+			health, but there are also healing items that can restore
+			additional health as time passes. That gets you back in
+			the hunt much quicker! Try one sometime, and see for
+			yourself. In the meantime, try speaking to Kaindal at
+			Aldelle Village--he might have some work for you.
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~A friend
+			<br><br>]]>
+		</message>
+		<select>A friend, eh...?</select>
+		<survey itemId="162002002" count="100"/>
+		<survey itemId="164002011" count="100"/>
+	</guide>
+	<guide title="adventurers_guide4_asmo" level="4" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			So try as they might, the shackles of your past cannot
+			hold you any longer. Know that the Asmodians know
+			your name. Know that you are one of us. Know that we
+			are one with you. We are kin.
+			<br><br><br><br>
+			Walk strong. Let blood boil within your veins, and use
+			the steel of our spirit to strengthen your conviction.
+			The cowards will fall before you like Elyos flowers
+			under Asmodian rain.
+			<br><br><br><br>
+			Blood for blood!
+			<br><br><br><br>
+			A friend.
+			<br><br>]]>
+		</message>
+		<reward_info>Please select one item.</reward_info>
+		<select>Blood for blood!</select>
+		<survey itemId="100200985" count="1"/>
+		<survey itemId="100001117" count="1"/>
+		<survey itemId="100600926" count="1"/>
+		<survey itemId="100100856" count="1"/>
+	</guide>
+	<guide title="adventurers_guide5_asmo" level="5" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			So try as they might, the shackles of your past cannot
+			hold you any longer. Know that the Asmodians know
+			your name. Know that you are one of us. Know that we
+			are one with you. We are kin.
+			<br><br><br><br>
+			Walk strong. Let blood boil within your veins, and use
+			the steel of our spirit to strengthen your conviction.
+			The cowards will fall before you like Elyos flowers
+			under Asmodian rain.
+			<br><br><br><br>
+			Blood for blood!
+			<br><br><br><br>
+			A friend.
+			<br><br>]]>
+		</message>
+		<reward_info>Please select one item.</reward_info>
+		<select>Blood for blood!</select>
+		<survey itemId="114301188" count="1"/>
+		<survey itemId="114101182" count="1"/>
+		<survey itemId="114501142" count="1"/>
+	</guide>
+	<guide title="adventurers_guide8_asmo" level="8" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Here's another gift from us to you.
+			<br><br><br><br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="190020106" count="1"/>
+	</guide>
+	<guide title="adventurers_guide10_asmo" level="10" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			I should hope you've figured out who I am by now. But
+			if not... well, as I said, manipulating time can be
+			confusing. Congratulations on becoming a Daeva! Keep
+			your wits about you, and don't give in to the
+			addlepated politics of Pandaemonium! Now that you
+			have earned your wings, I suggest you look into the
+			world of crafting; many rewards will become available!
+			<Br><Br><Br><Br>
+			A vast road is now available to you. I look forward to
+			seeing how you travel it.
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~A friend (aka Munin)
+			<br><br>]]>
+		</message>
+		<reward_info>Please select one item.</reward_info>
+		<select>A strange man, Munin....</select>
+		<survey itemId="100200605" count="1"/>
+		<survey itemId="100900488" count="1"/>
+		<survey itemId="100600532" count="1"/>
+		<survey itemId="100500500" count="1"/>
+		<survey itemId="101700515" count="1"/>
+		<survey itemId="101300479" count="1"/>
+		<survey itemId="101500498" count="1"/>
+		<survey itemId="100000640" count="1"/>
+		<survey itemId="100100495" count="1"/>
+	</guide>
+	<guide title="adventurers_guide11_asmo" level="11" race="ASMODIANS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			So try as they might, the shackles of your past cannot
+			hold you any longer. Know that the Asmodians know
+			your name. Know that you are one of us. Know that we
+			are one with you. We are kin.
+			<br><br><br><br>
+			Walk strong. Let blood boil within your veins, and use
+			the steel of our spirit to strengthen your conviction.
+			The cowards will fall before you like Elyos flowers
+			under Asmodian rain.
+			<br><br><br><br>
+			Blood for blood!
+			<br><br><br><br>
+			~Munin.
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="162000026" count="10"/>
+		<survey itemId="164002008" count="5"/>
+	</guide>
+	<guide title="adventurers_guide12_asmo" level="12" race="ASMODIANS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			In case you were wondering, I'm writing to you from a
+			state outside time and space. I can't say how or why I
+			got here, but you should be grateful that I did; it
+			enables me to send you these goodies. I hear Aurtri at
+			Calderon Hill could use some assistance. Perhaps you
+			should heed the call These should help. Maybe next
+			time I'll explain more about how I'm contacting you!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Munin
+			<br><br>]]>
+		</message>
+		<reward_info>Hold the Ctrl key to select multiple items.</reward_info>
+		<select>Outside time and space'? I'm not asking.</select>
+		<survey itemId="113301156" count="1"/>
+		<survey itemId="110301187" count="1"/>
+		<survey itemId="110101260" count="1"/>
+		<survey itemId="113101154" count="1"/>
+		<survey itemId="113601095" count="1"/>
+		<survey itemId="110601135" count="1"/>
+		<survey itemId="113501138" count="1"/>
+		<survey itemId="110501162" count="1"/>
+	</guide>
+	<guide title="adventurers_guide16_asmo" level="16" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Use these to buy iron coin gear.
+			<br><br><br><br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="186000006" count="13"/>
+	</guide>
+	<guide title="adventurers_guide17_asmo" level="17" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="164002057" count="50"/>
+		<survey itemId="164002010" count="50"/>
+	</guide>
+	<guide title="adventurers_guide22_asmo" level="22" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="169620015" count="1"/>
+	</guide>
+	<guide title="adventurers_guide24_asmo" level="24" race="ASMODIANS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<reward_info>Hold the Ctrl key to select multiple items.</reward_info>
+		<select>Blood for blood!</select>
+		<survey itemId="164000073" count="100"/>
+		<survey itemId="164000134" count="100"/>
+		<survey itemId="164000076" count="100"/>
+	</guide>
+	<guide title="adventurers_guide26_asmo" level="26" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="164000079" count="100"/>
+	</guide>
+	<guide title="adventurers_guide26.1_asmo" level="26" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Use these to buy bronze coin gear.
+			<br><br><br><br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="186000007" count="82"/>
+	</guide>
+	<guide title="adventurers_guide29_asmo" level="29" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<reward_info>Please select reward.</reward_info>
+		<select>Blood for blood!</select>
+		<survey itemId="121000588" count="1"/>
+		<survey itemId="121000589" count="1"/>
+	</guide>
+	<guide title="adventurers_guide30_asmo" level="30" race="ASMODIANS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="190100039" count="1"/>
+		<survey itemId="152000553" count="1"/>
+	</guide>
+	<guide title="adventurers_guide33_asmo" level="33" race="ASMODIANS" rewardCount="3">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="164000073" count="100"/>
+		<survey itemId="164000076" count="100"/>
+		<survey itemId="164000134" count="100"/>
+	</guide>
+	<guide title="adventurers_guide34_asmo" level="34" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<reward_info>Please select reward.</reward_info>
+		<select>Blood for blood!</select>
+		<survey itemId="122000708" count="1"/>
+		<survey itemId="122000707" count="1"/>
+	</guide>
+	<guide title="adventurers_guide35_asmo" level="35" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			You will need these for a quest for the 
+			100-slot cube quest series.
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="152000312" count="5"/>
+	</guide>
+	<guide title="adventurers_guide36_asmo" level="36" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			So try as they might, the shackles of your past cannot hold
+			you any longer. Know that the Asmodians know your name.
+			Know that you are one of us. Know that we are one with
+			you. We are kin.
+			<br><br><br><br>
+			Walk strong. Let blood boil within your veins, and use the
+			steel of our spirit to strengthen your conviction. The
+			cowards will fall before you like Elyos flowers under
+			Asmodian rain.
+			<br><br><br><br>
+			Blood for blood!
+			<br><br><br><br>
+			A friend.
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="162002002" count="50"/>
+	</guide>
+	<guide title="adventurers_guide36.1_asmo" level="36" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="110101205" count="1"/>
+		<survey itemId="110301140" count="1"/>
+		<survey itemId="110501110" count="1"/>
+		<survey itemId="110601092" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.2_asmo" level="36" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="113101109" count="1"/>
+		<survey itemId="113301112" count="1"/>
+		<survey itemId="113501088" count="1"/>
+		<survey itemId="113601053" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.3_asmo" level="36" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="112101054" count="1"/>
+		<survey itemId="112301040" count="1"/>
+		<survey itemId="112501029" count="1"/>
+		<survey itemId="112601043" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.4_asmo" level="36" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="111101095" count="1"/>
+		<survey itemId="111301094" count="1"/>
+		<survey itemId="111501079" count="1"/>
+		<survey itemId="111601069" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.5_asmo" level="36" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="114101136" count="1"/>
+		<survey itemId="114301146" count="1"/>
+		<survey itemId="114501095" count="1"/>
+		<survey itemId="114601049" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.6_asmo" level="36" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="100500819" count="1"/>
+		<survey itemId="100600874" count="1"/>
+		<survey itemId="100200934" count="1"/>
+		<survey itemId="100001054" count="1"/>
+		<survey itemId="100100799" count="1"/>
+		<survey itemId="115001132" count="1"/>
+		<survey itemId="115001088" count="1"/>
+		<survey itemId="100900796" count="1"/>
+		<survey itemId="101300768" count="1"/>
+		<survey itemId="101500824" count="1"/>
+		<survey itemId="101700841" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.7_asmo" level="36" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<survey itemId="100500819" count="1"/>
+		<survey itemId="100600874" count="1"/>
+		<survey itemId="100200934" count="1"/>
+		<survey itemId="100001054" count="1"/>
+		<survey itemId="100100799" count="1"/>
+		<survey itemId="115001132" count="1"/>
+		<survey itemId="115001088" count="1"/>
+		<survey itemId="100900796" count="1"/>
+		<survey itemId="101300768" count="1"/>
+		<survey itemId="101500824" count="1"/>
+		<survey itemId="101700841" count="1"/>
+	</guide>
+	<guide title="adventurers_guide41_asmo" level="41" race="ASMODIANS" rewardCount="3">
+		<message>
+			<![CDATA[<BR><BR>
+			So try as they might, the shackles of your past cannot hold
+			you any longer. Know that the Asmodians know your name.
+			Know that you are one of us. Know that we are one with
+			you. We are kin.
+			<br><br><br><br>
+			Walk strong. Let blood boil within your veins, and use the
+			steel of our spirit to strengthen your conviction. The
+			cowards will fall before you like Elyos flowers under
+			Asmodian rain.
+			<br><br><br><br>
+			Blood for blood!
+			<br><br><br><br>
+			~Munin.
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="164000076" count="100"/>
+		<survey itemId="164000073" count="100"/>
+		<survey itemId="164000134" count="100"/>
+	</guide>
+	<guide title="adventurers_guide44_asmo" level="44" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			You will need these for a quest.
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="152000857" count="3"/>
+	</guide>
+	<guide title="adventurers_guide45.1_asmo" level="45" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Savor these moments, friend. This is the calm before
+			the storm, an opportunity for you to gather your
+			thoughts and your strength before destiny's grasp
+			again finds you. Soon the halls of Kromede's Trial will
+			be open for you to explore; soon you will walk in the
+			shoes of the poor woman you so brutally butchered in
+			the Fire Temple, and realize how she came to be
+			known as Morheim's most corrupt judge. Soon, but not
+			now.
+			<Br><Br><Br><Br>
+			I also see the potential for you to unlock further Divine
+			Point skills! As you no doubt know, these are some of
+			the most powerful skills in your arsenal.
+			<Br><Br><Br><Br>
+			I will contact you again soon. Be prepared.
+			<Br><Br><Br><Br>
+			~Munin
+			<br><br>]]>
+		</message>
+		<reward_info>Please select one item.</reward_info>
+		<select>I will do as you ask.</select>
+		<survey itemId="140000245" count="1"/>
+		<survey itemId="140000222" count="1"/>
+		<survey itemId="140000258" count="1"/>
+		<survey itemId="140000235" count="1"/>
+		<survey itemId="140000282" count="1"/>
+		<survey itemId="140000302" count="1"/>
+		<survey itemId="140000293" count="1"/>
+		<survey itemId="140000269" count="1"/>
+	</guide>
+	<guide title="adventurers_guide45.2_asmo" level="45" race="ASMODIANS" rewardCount="3">
+		<message>
+			<![CDATA[<BR><BR>
+			So try as they might, the shackles of your past cannot
+			hold you any longer. Know that the Asmodians know
+			your name. Know that you are one of us. Know that we
+			are one with you. We are kin.
+			<br><br><br><br>
+			Walk strong. Let blood boil within your veins, and use
+			the steel of our spirit to strengthen your conviction. The
+			cowards will fall before you like Elyos flowers under
+			Asmodian rain.
+			<br><br><br><br>
+			Blood for blood!
+			<br><br><br><br>
+			~Munin.
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="164000134" count="100"/>
+		<survey itemId="164000073" count="100"/>
+		<survey itemId="164000076" count="100"/>
+	</guide>
+	<guide title="adventurers_guide46_asmo" level="46" race="ASMODIANS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			You will need these for a quest.
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="152000466" count="1"/>
+		<survey itemId="152000902" count="1"/>
+	</guide>
+	<guide title="adventurers_guide47_asmo" level="47" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			These will help you along the way.
+			<br><br><br><br>
+			Blood for blood!
+			<br><br><br><br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="141000001" count="3000"/>
+	</guide>
+	<guide title="adventurers_guide51.1_asmo" level="51" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="110101103" count="1"/>
+		<survey itemId="110301052" count="1"/>
+		<survey itemId="110501020" count="1"/>
+		<survey itemId="110601000" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.2_asmo" level="51" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="113101015" count="1"/>
+		<survey itemId="113301028" count="1"/>
+		<survey itemId="113500998" count="1"/>
+		<survey itemId="113600969" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.3_asmo" level="51" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="112100959" count="1"/>
+		<survey itemId="112300957" count="1"/>
+		<survey itemId="112500944" count="1"/>
+		<survey itemId="112600959" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.4_asmo" level="51" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="111101003" count="1"/>
+		<survey itemId="111301008" count="1"/>
+		<survey itemId="111500995" count="1"/>
+		<survey itemId="111600986" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.5_asmo" level="51" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="114101044" count="1"/>
+		<survey itemId="114301064" count="1"/>
+		<survey itemId="114501007" count="1"/>
+		<survey itemId="114600966" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.6_asmo" level="51" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="100500729" count="1"/>
+		<survey itemId="100600786" count="1"/>
+		<survey itemId="100200838" count="1"/>
+		<survey itemId="100000938" count="1"/>
+		<survey itemId="100100710" count="1"/>
+		<survey itemId="115001030" count="1"/>
+		<survey itemId="115001002" count="1"/>
+		<survey itemId="100900715" count="1"/>
+		<survey itemId="101300685" count="1"/>
+		<survey itemId="101500730" count="1"/>
+		<survey itemId="101700753" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.7_asmo" level="51" race="ASMODIANS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="100500729" count="1"/>
+		<survey itemId="100600786" count="1"/>
+		<survey itemId="100200838" count="1"/>
+		<survey itemId="100000938" count="1"/>
+		<survey itemId="100100710" count="1"/>
+		<survey itemId="115001030" count="1"/>
+		<survey itemId="115001002" count="1"/>
+		<survey itemId="100900715" count="1"/>
+		<survey itemId="101300685" count="1"/>
+		<survey itemId="101500730" count="1"/>
+		<survey itemId="101700753" count="1"/>
+	</guide>
+	<guide title="adventurers_guide55_asmo" level="55" race="ASMODIANS" rewardCount="13">
+		<message>
+			<![CDATA[<BR><BR>
+			Pinnacle is a strange word to me. Others use it with
+			reckless abandon; "This staff is the pinnacle of my work",
+			for example. I don't believe in pinnacles; I believe in
+			progress. Do not think your work is done, because there is
+			still much to do. Beshmundir Temple awaits you, while
+			Gelkmaros and Inggison hold two of the most powerful
+			creatures known to us: Padmarashka and Sematariux, the
+			twin terrors. You may well find them, but defeating them
+			will require your very best efforts, and your very best allies.
+			You'll see.
+			<BR><BR><BR><BR>
+			At this point you should also look to unlock the last of your
+			Stigma slots. Only at that point will you  be able to reach
+			your true potential.
+			<BR><BR><BR><BR>
+			Good luck. You will need it.
+			<BR><BR><BR><BR>
+			IMPORTANT!!! Be sure to have plenty of inventory space BEFORE
+			accepting this survey!!
+			<br><br>]]>
+		</message>
+		<select>Thank you for everything.</select>
+		<survey itemId="186000096" count="10"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+	</guide>
+	<!-- Elyos -->
+	<guide title="adventurers_guide2_ely" level="2" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			This is a VERY special gift to help you along your journey.
+			<Br><Br><Br><Br>
+			From your friends here at...
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy your journey!</select>
+		<survey itemId="169630003" count="3"/>
+	</guide>
+	<guide title="adventurers_guide3_ely" level="3" race="ELYOS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings, child. You may not realize this yet, but you
+			are very important to me& and to all Elysea. So I will do
+			my best to help you as you travel these lands. Make
+			your way to Akarios Village. You will find a Bind Point
+			there. And take this with you& it is a gift of sorts for
+			your journey. May Ariel's light protect you...and
+			illuminate your past.
+			<br><br>]]>
+		</message>
+		<select>A disembodied voice?!</select>
+		<survey itemId="162002002" count="100"/>
+		<survey itemId="164002011" count="100"/>
+	</guide>
+	<guide title="adventurers_guide4_ely" level="4" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Another lesson learned, another table turned. You have
+			done well, my friend. The Seraphim Lords view you as
+			a beacon of hope for the Elyos people, and watch your
+			every step with an ever-increasing sense of pride.
+			<br><br>
+			Be well, child. Enjoy the gifts you have been blessed
+			with.
+			<br><br>
+			A friend.
+			<br><br>]]>
+		</message>
+		<reward_info>Please select one item.</reward_info>
+		<select>Faith and arms!</select>
+		<survey itemId="100200985" count="1"/>
+		<survey itemId="100001117" count="1"/>
+		<survey itemId="100600926" count="1"/>
+		<survey itemId="100100856" count="1"/>
+	</guide>
+	<guide title="adventurers_guide5_ely" level="5" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Young one, you can link yourself to a new Bind Point at
+			Melponeh's Campsite& not too far from here. It is a
+			perilous journey there, so take this with you. It will help
+			you along your journey.
+			<Br><Br><Br><Br>
+			Be well, child.
+			<br><br>]]>
+		</message>
+		<reward_info>Please select one item.</reward_info>
+		<select>Thank you for your guidance.</select>
+		<survey itemId="114301188" count="1"/>
+		<survey itemId="114101182" count="1"/>
+		<survey itemId="114501142" count="1"/>
+	</guide>
+	<guide title="adventurers_guide8_ely" level="8" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Here's another gift from us to you.
+			<br><br><br><br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="190020106" count="1"/>
+	</guide>
+	<guide title="adventurers_guide10_ely" level="10" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			As you have no doubt guessed by now, I am Pernos. It
+			has been my privilege to help you along the path to
+			your ultimate truth.
+			<Br><Br><Br><Br>
+			I must commend you on your ascension to Daeva,
+			child. You have faced many more perilous quests than
+			most Elyos. But now it is time for you to learn the
+			ancient art of crafting in the Protector's Hall of Sanctum.
+			Those skills will serve you well in your journey.
+			<Br><Br><Br><Br>
+			In honor of your ascension, I bestow upon you this gift.
+			<Br><Br><Br><Br>
+			~Pernos
+			<br><br>]]>
+		</message>
+		<reward_info>Please select one item.</reward_info>
+		<select>Thank you, wise one.</select>
+		<survey itemId="100200614" count="1"/>
+		<survey itemId="100900494" count="1"/>
+		<survey itemId="100600545" count="1"/>
+		<survey itemId="100500508" count="1"/>
+		<survey itemId="101700525" count="1"/>
+		<survey itemId="101500506" count="1"/>
+		<survey itemId="101300485" count="1"/>
+		<survey itemId="100000652" count="1"/>
+		<survey itemId="100100506" count="1"/>
+	</guide>
+	<guide title="adventurers_guide11_ely" level="11" race="ELYOS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="162000026" count="10"/>
+		<survey itemId="164002007" count="5"/>
+	</guide>
+	<guide title="adventurers_guide12_ely" level="12" race="ELYOS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			In case you were wondering, I'm writing to you from a
+			state outside time and space. I can't say how or why I
+			got here, but you should be grateful that I did; it
+			enables me to send you these goodies. 
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Pernos
+			<br><br>]]>
+		</message>
+		<reward_info>Hold the Ctrl key to select multiple items.</reward_info>
+		<select>Outside time and space'? I'm not asking.</select>
+		<survey itemId="113301156" count="1"/>
+		<survey itemId="110301187" count="1"/>
+		<survey itemId="110101260" count="1"/>
+		<survey itemId="113101154" count="1"/>
+		<survey itemId="113601095" count="1"/>
+		<survey itemId="110601135" count="1"/>
+		<survey itemId="113501138" count="1"/>
+		<survey itemId="110501162" count="1"/>
+	</guide>
+	<guide title="adventurers_guide16_ely" level="16" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Use these to buy iron coin gear.
+			<br><br><br><br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="186000001" count="13"/>
+	</guide>
+	<guide title="adventurers_guide17_ely" level="17" race="ELYOS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="164002057" count="50"/>
+		<survey itemId="164002010" count="50"/>
+	</guide>
+	<guide title="adventurers_guide22_ely" level="22" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="169620015" count="1"/>
+	</guide>
+	<guide title="adventurers_guide24_ely" level="24" race="ELYOS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<reward_info>Hold the Ctrl key to select multiple items.</reward_info>
+		<select>Faith and arms!</select>
+		<survey itemId="164000073" count="100"/>
+		<survey itemId="164000134" count="100"/>
+		<survey itemId="164000076" count="100"/>
+	</guide>
+	<guide title="adventurers_guide26_ely" level="26" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="164000079" count="100"/>
+	</guide>
+	<guide title="adventurers_guide26.1_ely" level="26" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Use these to buy bronze coin gear.
+			<br><br><br><br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="186000002" count="82"/>
+	</guide>
+	<guide title="adventurers_guide29_ely" level="29" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<reward_info>Please select reward.</reward_info>
+		<select>Faith and arms!</select>
+		<survey itemId="121000588" count="1"/>
+		<survey itemId="121000589" count="1"/>
+	</guide>
+	<guide title="adventurers_guide30_ely" level="30" race="ELYOS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="190100039" count="1"/>
+		<survey itemId="152000309" count="1"/>
+	</guide>
+	<guide title="adventurers_guide33_ely" level="33" race="ELYOS" rewardCount="3">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="164000073" count="100"/>
+		<survey itemId="164000076" count="100"/>
+		<survey itemId="164000134" count="100"/>
+	</guide>
+	<guide title="adventurers_guide34_ely" level="34" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<reward_info>Please select reward.</reward_info>
+		<select>Faith and arms!</select>
+		<survey itemId="122000696" count="1"/>
+		<survey itemId="122000695" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36_ely" level="36" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="162002002" count="50"/>
+	</guide>
+	<guide title="adventurers_guide36.1_ely" level="36" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="110101189" count="1"/>
+		<survey itemId="110301124" count="1"/>
+		<survey itemId="110501094" count="1"/>
+		<survey itemId="110601076" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.2_ely" level="36" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="113101093" count="1"/>
+		<survey itemId="113301096" count="1"/>
+		<survey itemId="113501072" count="1"/>
+		<survey itemId="113601037" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.3_ely" level="36" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="112101038" count="1"/>
+		<survey itemId="112301024" count="1"/>
+		<survey itemId="112501013" count="1"/>
+		<survey itemId="112601027" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.4_ely" level="36" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="111101079" count="1"/>
+		<survey itemId="111301078" count="1"/>
+		<survey itemId="111501063" count="1"/>
+		<survey itemId="111601053" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.5_ely" level="36" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="114101120" count="1"/>
+		<survey itemId="114301130" count="1"/>
+		<survey itemId="114501079" count="1"/>
+		<survey itemId="114601033" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.6_ely" level="36" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="100500803" count="1"/>
+		<survey itemId="100600858" count="1"/>
+		<survey itemId="100200918" count="1"/>
+		<survey itemId="100001038" count="1"/>
+		<survey itemId="100100783" count="1"/>
+		<survey itemId="115001116" count="1"/>
+		<survey itemId="115001072" count="1"/>
+		<survey itemId="100900780" count="1"/>
+		<survey itemId="101300752" count="1"/>
+		<survey itemId="101500808" count="1"/>
+		<survey itemId="101700825" count="1"/>
+	</guide>
+	<guide title="adventurers_guide36.7_ely" level="36" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="100500803" count="1"/>
+		<survey itemId="100600858" count="1"/>
+		<survey itemId="100200918" count="1"/>
+		<survey itemId="100001038" count="1"/>
+		<survey itemId="100100783" count="1"/>
+		<survey itemId="115001116" count="1"/>
+		<survey itemId="115001072" count="1"/>
+		<survey itemId="100900780" count="1"/>
+		<survey itemId="101300752" count="1"/>
+		<survey itemId="101500808" count="1"/>
+		<survey itemId="101700825" count="1"/>
+	</guide>
+	<guide title="adventurers_guide37_ely" level="37" race="ELYOS" rewardCount="2">
+		<message>
+			<![CDATA[<BR><BR>
+			You will need these for a quest.
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="152000309" count="1"/>
+		<survey itemId="167000323" count="1"/>
+	</guide>
+	<guide title="adventurers_guide41_ely" level="41" race="ELYOS" rewardCount="3">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="164000076" count="100"/>
+		<survey itemId="164000073" count="100"/>
+		<survey itemId="164000134" count="100"/>
+	</guide>
+	<guide title="adventurers_guide45.1_ely" level="45" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Savor these moments, friend. This is the calm before
+			the storm, an opportunity for you to gather your
+			thoughts and your strength before destiny's grasp
+			again finds you.
+			<Br><Br><Br><Br>
+			I also see the potential for you to unlock further Divine
+			Point skills! As you no doubt know, these are some of
+			the most powerful skills in your arsenal.
+			<Br><Br><Br><Br>
+			I will contact you again soon. Be prepared.
+			<Br><Br><Br><Br>
+			~Pernos
+			<br><br>]]>
+		</message>
+		<reward_info>Please select one item.</reward_info>
+		<select>I will do as you ask.</select>
+		<survey itemId="140000245" count="1"/>
+		<survey itemId="140000222" count="1"/>
+		<survey itemId="140000258" count="1"/>
+		<survey itemId="140000235" count="1"/>
+		<survey itemId="140000282" count="1"/>
+		<survey itemId="140000302" count="1"/>
+		<survey itemId="140000293" count="1"/>
+		<survey itemId="140000269" count="1"/>
+	</guide>
+	<guide title="adventurers_guide45.2_ely" level="45" race="ELYOS" rewardCount="3">
+		<message>
+			<![CDATA[<BR><BR>
+			Congratulations!
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="164000134" count="100"/>
+		<survey itemId="164000073" count="100"/>
+		<survey itemId="164000076" count="100"/>
+	</guide>
+	<guide title="adventurers_guide47_ely" level="47" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			These will help you along the way.
+			<br><br><br><br>
+			Blood for blood!
+			<br><br><br><br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Blood for blood!</select>
+		<survey itemId="141000001" count="3000"/>
+	</guide>
+	<guide title="adventurers_guide51.1_ely" level="51" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="110101102" count="1"/>
+		<survey itemId="110301051" count="1"/>
+		<survey itemId="110501019" count="1"/>
+		<survey itemId="110600999" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.2_ely" level="51" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="113101014" count="1"/>
+		<survey itemId="113301027" count="1"/>
+		<survey itemId="113500997" count="1"/>
+		<survey itemId="113600968" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.3_ely" level="51" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="112100958" count="1"/>
+		<survey itemId="112300956" count="1"/>
+		<survey itemId="112500943" count="1"/>
+		<survey itemId="112600958" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.4_ely" level="51" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="111101002" count="1"/>
+		<survey itemId="111301007" count="1"/>
+		<survey itemId="111500994" count="1"/>
+		<survey itemId="111600985" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.5_ely" level="51" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="114101043" count="1"/>
+		<survey itemId="114301063" count="1"/>
+		<survey itemId="114501006" count="1"/>
+		<survey itemId="114600965" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.6_ely" level="51" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="100500728" count="1"/>
+		<survey itemId="100600785" count="1"/>
+		<survey itemId="100200837" count="1"/>
+		<survey itemId="100000937" count="1"/>
+		<survey itemId="100100709" count="1"/>
+		<survey itemId="115001029" count="1"/>
+		<survey itemId="115001001" count="1"/>
+		<survey itemId="100900714" count="1"/>
+		<survey itemId="101300684" count="1"/>
+		<survey itemId="101500729" count="1"/>
+		<survey itemId="101700752" count="1"/>
+	</guide>
+	<guide title="adventurers_guide51.7_ely" level="51" race="ELYOS" rewardCount="1">
+		<message>
+			<![CDATA[<BR><BR>
+			Greetings.
+			<Br><Br><Br><Br>
+			Congratulations on making it this far!!
+			<Br><Br><Br><Br>
+			Until next time,
+			<Br><Br><Br><Br>
+			~Mega Aion Team
+			<br><br>]]>
+		</message>
+		<select>Enjoy this reward!</select>
+		<survey itemId="100500728" count="1"/>
+		<survey itemId="100600785" count="1"/>
+		<survey itemId="100200837" count="1"/>
+		<survey itemId="100000937" count="1"/>
+		<survey itemId="100100709" count="1"/>
+		<survey itemId="115001029" count="1"/>
+		<survey itemId="115001001" count="1"/>
+		<survey itemId="100900714" count="1"/>
+		<survey itemId="101300684" count="1"/>
+		<survey itemId="101500729" count="1"/>
+		<survey itemId="101700752" count="1"/>
+	</guide>
+	<guide title="adventurers_guide55_ely" level="55" race="ELYOS" rewardCount="13">
+		<message>
+			<![CDATA[<BR><BR>
+			The summit has been reached! My sincerest
+			congratulations, my child. You have blossomed from a
+			mere seed into the grandest of trees, and now stand
+			shoulder to shoulder with the most feared and respected
+			names in all of Elysea! My pride is immeasurable, but to
+			sit here and rest easy now would be a crime. There is
+			much to do, for this great war is still not won, and Elysea
+			needs its best now more than ever before.
+			<Br><Br><Br><Br>
+			The great halls of Beshmundir Temple have swung open
+			to you. This place will trouble you more than anything
+			you've faced before. Perhaps you would be best off first
+			unlocking the last of your Stigma potential? Hmm....
+			<Br><Br><Br><Br>
+			Elsewhere, two mighty beasts are ready to be tackled.
+			No doubt you have already heard of Sematariux and
+			Padmarashka, ancient drakan that failed to ascend to the
+			ranks of the Dragon Lords, but who still command
+			immense power. You could try fighting them, but be
+			warned... no-one I know of has succeeded yet.
+			<Br><Br><Br><Br>
+			One mountain has been climbed my child, but there is
+			still much to do. Faith and arms!
+			<Br><Br><Br><Br>
+			~Pernos
+			<BR><BR><BR><BR>
+			IMPORTANT!!! Be sure to have plenty of inventory space BEFORE
+			accepting this survey!!
+			<br><br>]]>
+		</message>
+		<select>Faith and arms!</select>
+		<survey itemId="186000096" count="10"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+		<survey itemId="186000051" count="1"/>
+	</guide>
+</guides>

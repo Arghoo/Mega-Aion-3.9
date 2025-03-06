@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Bitte ab jetzt alle Drops von AturamHimmelsfestung hier einfuegen -->
+<npc_drops>
+	<npc_drop npc_id="205494">
+        <drop_group name="" use_category="false">
+            <drop chance="100" max_amount="1" min_amount="1" item_id="164000163"/>
+            <drop chance="100" max_amount="1" min_amount="1" item_id="164000202"/>
+        </drop_group>
+    </npc_drop>    
+</npc_drops>

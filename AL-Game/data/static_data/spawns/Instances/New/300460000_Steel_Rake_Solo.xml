@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<spawns>
+    <spawn_map map_id="300460000">
+        <spawn custom="true" respawn_time="0" npc_id="700949" difficult_id="0"/>
+        <spawn custom="true" respawn_time="295" npc_id="730199" difficult_id="0">
+            <spot h="90" z="942.67725" y="501.13025" x="691.0038"/>
+        </spawn>
+    </spawn_map>
+</spawns>

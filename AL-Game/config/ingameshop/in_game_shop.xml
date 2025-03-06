@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<in_game_shop xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="in_game_shop.xsd">
+<!-- All items -->
+	<category id="0" name="Shop">
+		<sub_category id="10" name="Tickets"/>
+		<sub_category id="11" name="Boosts"/>
+		<sub_category id="12" name="Titles"/>
+		<sub_category id="13" name="Wing Skins"/>
+		<sub_category id="14" name="Weapon Skins"/>
+		<sub_category id="15" name="Costumes"/>
+		<sub_category id="16" name="Hats"/>
+		<sub_category id="17" name="Armor Skins"/>
+		<sub_category id="18" name="Dye"/>
+		<sub_category id="19" name="Candy"/>
+		<sub_category id="20" name="Mounts"/>
+		<sub_category id="21" name="Pets"/>
+		<sub_category id="22" name="Rings"/>
+		<sub_category id="23" name="VIP"/>
+	</category>
+</in_game_shop>

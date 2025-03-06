@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Bitte ab jetzt alle Drops hier einfuegen -->
+<npc_drops>
+        <npc_drop npc_id="218756"> <!-- Padmarashka -->
+                <drop_group name="ENCHANTMENTS">
+                        <drop chance="100" eachmember="true" item_id="166000106" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000107" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000108" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000109" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000110" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000111" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000112" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000113" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000114" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000115" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000116" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000117" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000118" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000119" max_amount="1" min_amount="1"/>
+                        <drop chance="100" eachmember="true" item_id="166000120" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="Legacy_Medal_Honor">
+                        <drop chance="100" eachmember="true" item_id="186000262" max_amount="5" min_amount="5"/>
+                </drop_group>
+                <drop_group name="KINAH">
+                        <drop chance="100" eachmember="true" item_id="182400001" max_amount="191491" min_amount="137050"/>
+                </drop_group>
+                <drop_group name="TITLE">
+                        <drop chance="100" eachmember="true" item_id="169610001" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="QUEST_ITEM" race="ASMODIANS">
+                        <drop chance="50.00" item_id="182213039" max_amount="1" min_amount="1"/><!-- Padmarashkas Brut -->
+                </drop_group>
+                <drop_group name="QUEST_ITEM">
+                        <drop chance="50.00" item_id="182213038" max_amount="1" min_amount="1"/><!-- Padmarashkas Brut -->
+                </drop_group>
+		<drop_group name="Raging_Weapon_Eternal">
+                        <drop chance="10" item_id="101701018" max_amount="1" min_amount="1"/><!-- Padmarashkas Langbogen des Zorns -->
+                        <drop chance="10" item_id="100201134" max_amount="1" min_amount="1"/><!-- Padmarashkas Dolch des Zorns -->
+                        <drop chance="10" item_id="100201160" max_amount="1" min_amount="1"/><!-- Padmarashkas Langdolch des Zorns -->
+                        <drop chance="10" item_id="100900979" max_amount="1" min_amount="1"/><!-- Padmarashkas Großschwert des Zorns -->
+                        <drop chance="10" item_id="100500992" max_amount="1" min_amount="1"/><!-- Padmarashkas Juwel des Zorns -->
+                        <drop chance="10" item_id="100001281" max_amount="1" min_amount="1"/><!-- Padmarashkas Schwert des Zorns -->
+                        <drop chance="10" item_id="100001317" max_amount="1" min_amount="1"/><!-- Padmarashkas Schuppenschwert des Zorns -->
+                        <drop chance="10" item_id="100001318" max_amount="1" min_amount="1"/><!-- Padmarashkas umgekehrtes Schwert des Zorns --> 
+                        <drop chance="10" item_id="101501004" max_amount="1" min_amount="1"/><!-- Padmarashkas Stab des Zorns -->
+                        <drop chance="10" item_id="101300937" max_amount="1" min_amount="1"/><!-- Padmarashkas Speer des Zorns -->
+                        <drop chance="10" item_id="100100976" max_amount="1" min_amount="1"/><!-- Padmarashkas Kriegshammer des Zorns -->
+                        <drop chance="10" item_id="100601046" max_amount="1" min_amount="1"/><!-- Padmarashkas Magiebuch des Zorns -->
+                        <drop chance="10" item_id="101701174" max_amount="1" min_amount="1"/>
+                </drop_group>
+		<drop_group name="Weapon_Eternal">
+                        <drop chance="10" item_id="101700735" max_amount="1" min_amount="1"/><!-- Padmarashkas Langbogen -->
+                        <drop chance="10" item_id="100200820" max_amount="1" min_amount="1"/><!-- Padmarashkas Dolch -->
+                        <drop chance="10" item_id="100900697" max_amount="1" min_amount="1"/><!-- Padmarashkas Großschwert -->
+                        <drop chance="10" item_id="100500711" max_amount="1" min_amount="1"/><!-- Padmarashkas Juwel -->
+                        <drop chance="10" item_id="100000920" max_amount="1" min_amount="1"/><!-- Padmarashkas Schwert -->
+                        <drop chance="10" item_id="101500712" max_amount="1" min_amount="1"/><!-- Padmarashkas Stab -->
+                        <drop chance="10" item_id="101300667" max_amount="1" min_amount="1"/><!-- Padmarashkas Speer -->
+                        <drop chance="10" item_id="100100690" max_amount="1" min_amount="1"/><!-- Padmarashkas Kriegshammer -->
+                        <drop chance="10" item_id="100600768" max_amount="1" min_amount="1"/><!-- Padmarashkas Magiebuch -->
+                </drop_group>
+                <drop_group name="Shield_Eternal">
+                        <drop chance="10" item_id="115001847" max_amount="1" min_amount="1"/><!-- Padmarashkas Cleric Shield -->
+                        <drop chance="10" item_id="115001325" max_amount="1" min_amount="1"/><!-- Padmarashkas Schild des Zorns -->
+                        <drop chance="10" item_id="115001332" max_amount="1" min_amount="1"/><!-- Padmarashkas Schuppenschild des Zorns -->
+                </drop_group>
+                <drop_group name="Armor_Eternal">
+			<drop chance="15" item_id="110501279" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenhemd des Zorns -->
+                        <drop chance="15" item_id="110551175" max_amount="1" min_amount="1"/>
+                        <drop chance="15" item_id="113501752" max_amount="1" min_amount="1"/>
+                        <drop chance="15" item_id="112501673" max_amount="1" min_amount="1"/>
+                        <drop chance="15" item_id="111501734" max_amount="1" min_amount="1"/>
+                        <drop chance="15" item_id="114501762" max_amount="1" min_amount="1"/>
+                        <drop chance="15" item_id="113501255" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenhose des Zorns -->
+                        <drop chance="15" item_id="111501238" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenhandschuhe des Zorns -->
+                        <drop chance="15" item_id="114501259" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenstiefel des Zorns -->
+                        <drop chance="15" item_id="112501183" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenschulterschutz des Zorns -->
+                        <drop chance="15" item_id="110301301" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederwams des Zorns -->
+                        <drop chance="15" item_id="113301270" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederhose des Zorns -->
+                        <drop chance="15" item_id="111301244" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederhandschuhe des Zorns -->
+                        <drop chance="15" item_id="112301190" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederschulterschutz des Zorns -->
+                        <drop chance="15" item_id="114301301" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederschuhe des Zorns -->
+                        <drop chance="15" item_id="110601252" max_amount="1" min_amount="1"/><!-- Padmarashkas Brustplatte des Zorns -->
+                        <drop chance="15" item_id="113601208" max_amount="1" min_amount="1"/><!-- Padmarashkas Plattenbeinschienen des Zorns -->
+                        <drop chance="15" item_id="111601217" max_amount="1" min_amount="1"/><!-- Padmarashkas Plattenhandschuhe des Zorns -->
+                        <drop chance="15" item_id="114601201" max_amount="1" min_amount="1"/><!-- Padmarashkas Plattenstiefel des Zorns -->
+                        <drop chance="15" item_id="112601195" max_amount="1" min_amount="1"/><!-- Padmarashkas Plattenschulterschutz des Zorns -->
+                        <drop chance="15" item_id="110101374" max_amount="1" min_amount="1"/><!-- Padmarashkas Stofftunika des Zorns -->
+                        <drop chance="15" item_id="113101268" max_amount="1" min_amount="1"/><!-- Padmarashkas Stoffhose des Zorns -->
+                        <drop chance="15" item_id="111101249" max_amount="1" min_amount="1"/><!-- Padmarashkas Stoffhandschuhe des Zorns -->
+                        <drop chance="15" item_id="112101207" max_amount="1" min_amount="1"/><!-- Padmarashkas Stoffschulterschutz des Zorns -->
+                        <drop chance="15" item_id="114101295" max_amount="1" min_amount="1"/><!-- Padmarashkas Stoffschuhe des Zorns -->
+                </drop_group>
+                <drop_group name="Armor_UNIQUE">
+			<drop chance="25" item_id="110501007" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenhemd -->
+                        <drop chance="25" item_id="112500926" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenschulterschutz -->
+                        <drop chance="25" item_id="114500989" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenstiefel -->
+                        <drop chance="25" item_id="113500980" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenhose -->
+                        <drop chance="25" item_id="111500977" max_amount="1" min_amount="1"/><!-- Padmarashkas Kettenhandschuhe -->
+                        <drop chance="25" item_id="110301039" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederwams -->
+                        <drop chance="25" item_id="114301046" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederschuhe -->
+                        <drop chance="25" item_id="112300939" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederschulterschutz -->
+                        <drop chance="25" item_id="111300990" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederhandschuhe -->
+                        <drop chance="25" item_id="113301010" max_amount="1" min_amount="1"/><!-- Padmarashkas Lederhose -->
+                        <drop chance="25" item_id="110600987" max_amount="1" min_amount="1"/><!-- Padmarashkas Brustplatte -->
+                        <drop chance="25" item_id="114600948" max_amount="1" min_amount="1"/><!-- Padmarashkas Plattenstiefel -->
+                        <drop chance="25" item_id="112600941" max_amount="1" min_amount="1"/><!-- Padmarashkas Plattenschulterschutz -->
+                        <drop chance="25" item_id="113600951" max_amount="1" min_amount="1"/><!-- Padmarashkas Plattenbeinschienen -->
+                        <drop chance="25" item_id="111600968" max_amount="1" min_amount="1"/><!-- Padmarashkas Plattenhandschuhe -->
+                        <drop chance="25" item_id="110101090" max_amount="1" min_amount="1"/><!-- Padmarashkas Stofftunika -->
+                        <drop chance="25" item_id="111100985" max_amount="1" min_amount="1"/><!-- Padmarashkas Stoffhandschuhe -->
+                        <drop chance="25" item_id="113100997" max_amount="1" min_amount="1"/><!-- Padmarashkas Stoffhose -->
+                        <drop chance="25" item_id="114101026" max_amount="1" min_amount="1"/><!-- Padmarashkas Stoffschuhe -->
+                        <drop chance="25" item_id="112100941" max_amount="1" min_amount="1"/><!-- Padmarashkas Stoffschulterschutz -->
+                </drop_group>
+                <drop_group name="BALIC_EMOTION_UNIQUE">
+                        <drop chance="10" item_id="152013021" max_amount="1" min_amount="1"/>
+                        <drop chance="10" item_id="152013024" max_amount="1" min_amount="1"/>
+                        <drop chance="10" item_id="152013027" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="FLUX_RARE">
+                        <drop chance="9.0" item_id="152011076" max_amount="1" min_amount="1"/>
+                        <drop chance="9.0" item_id="152011071" max_amount="1" min_amount="1"/>
+                        <drop chance="9.0" item_id="152011066" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="MANASTONE_COMMON">
+                        <drop chance="33.75" item_id="167000547" max_amount="1" min_amount="1"/>
+                        <drop chance="33.75" item_id="167000546" max_amount="1" min_amount="1"/>
+                        <drop chance="33.75" item_id="167000545" max_amount="1" min_amount="1"/>
+                        <drop chance="33.75" item_id="167000544" max_amount="1" min_amount="1"/>
+                        <drop chance="33.75" item_id="167000550" max_amount="1" min_amount="1"/>
+                        <drop chance="33.75" item_id="167000549" max_amount="1" min_amount="1"/>
+                        <drop chance="33.75" item_id="167000548" max_amount="1" min_amount="1"/>
+                        <drop chance="33.75" item_id="167000543" max_amount="1" min_amount="1"/>
+                        <drop chance="15.75" item_id="167000358" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="STIGMA">
+                        <drop chance="2.25" item_id="140000656" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000657" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000635" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000634" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000609" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000610" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000586" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000544" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000543" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000542" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000516" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000517" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000515" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000512" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000494" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000483" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000485" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000484" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000506" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000511" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000466" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000471" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000430" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000423" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000421" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000420" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000419" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000394" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000390" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000384" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000408" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000355" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000356" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000364" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000365" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000373" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000378" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000383" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000337" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000336" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000343" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000344" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000311" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="140000317" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="POWER_SHARDS">
+                        <drop chance="67.5" item_id="169000009" max_amount="5" min_amount="1"/>
+                </drop_group>
+                <drop_group name="FLUX_COMMON">
+                        <drop chance="18.0" item_id="152011075" max_amount="1" min_amount="1"/>
+                        <drop chance="18.0" item_id="152011070" max_amount="1" min_amount="1"/>
+                        <drop chance="18.0" item_id="152011065" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="BALIC_EMOTION_LEGEND">
+                        <drop chance="2.25" item_id="152013012" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="152013018" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="152013006" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="152013023" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="152013020" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="152013026" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="BALAUR_SCALE">
+                        <drop chance="11.25" item_id="152014012" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="152014017" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="FLUX_LEGEND">
+                        <drop chance="4.5" item_id="152011072" max_amount="1" min_amount="1"/>
+                        <drop chance="4.5" item_id="152011077" max_amount="1" min_amount="1"/>
+                        <drop chance="4.5" item_id="152011067" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="BALAUR_MATERIAL">
+                        <drop chance="6.75" item_id="186000097" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="FLUX_UNIQUE">
+                        <drop chance="2.25" item_id="152011073" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="152011078" max_amount="1" min_amount="1"/>
+                        <drop chance="2.25" item_id="152011068" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="BALIC_EMOTION_RARE">
+                        <drop chance="4.5" item_id="152013009" max_amount="1" min_amount="1"/>
+                        <drop chance="4.5" item_id="152013015" max_amount="1" min_amount="1"/>
+                        <drop chance="4.5" item_id="152013003" max_amount="1" min_amount="1"/>
+                        <drop chance="4.5" item_id="152013019" max_amount="1" min_amount="1"/>
+                        <drop chance="4.5" item_id="152013022" max_amount="1" min_amount="1"/>
+                        <drop chance="4.5" item_id="152013025" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="RECIPE_RARE_TYPEB_ELYOS_ELYOS" race="ELYOS">
+                        <drop chance="0.0020" item_id="152203532" max_amount="1" min_amount="1"/>
+                        <drop chance="0.0020" item_id="152203533" max_amount="1" min_amount="1"/>
+                        <drop chance="0.0020" item_id="152203534" max_amount="1" min_amount="1"/>
+                        <drop chance="0.0020" item_id="152203531" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="BALAUR_HORN">
+                        <drop chance="11.25" item_id="152014011" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="152014016" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="BALAUR_SKIN">
+                        <drop chance="11.25" item_id="152014013" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="152014018" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="BALAUR_MEAT">
+                        <drop chance="11.25" item_id="152014015" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="152014020" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="RECIPE_RARE_TYPEB_ASMOS_ASMODIANS" race="ASMODIANS">
+                        <drop chance="0.0020" item_id="152208533" max_amount="1" min_amount="1"/>
+                        <drop chance="0.0020" item_id="152208535" max_amount="1" min_amount="1"/>
+                        <drop chance="0.0020" item_id="152208534" max_amount="1" min_amount="1"/>
+                        <drop chance="0.0020" item_id="152208536" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="MANASTONE_RARE">
+                        <drop chance="11.25" item_id="167000560" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="167000561" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="167000551" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="167000555" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="167000554" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="167000553" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="167000552" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="167000558" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="167000557" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="167000556" max_amount="1" min_amount="1"/>
+                        <drop chance="4.5" item_id="167000518" max_amount="1" min_amount="1"/>
+                </drop_group>
+                <drop_group name="BALAUR_BLOOD">
+                        <drop chance="11.25" item_id="152014014" max_amount="1" min_amount="1"/>
+                        <drop chance="11.25" item_id="152014019" max_amount="1" min_amount="1"/>
+                </drop_group>
+        </npc_drop>
+</npc_drops>

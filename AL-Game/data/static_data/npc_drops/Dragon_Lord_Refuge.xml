@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc_drops>
+    <npc_drop npc_id="219407">
+       <drop_group name="Tiamat_Guard_Eternal">
+            <drop chance="0.4" item_id="114301369" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="110601317" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="113301336" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="114501325" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="113501319" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="111601282" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="111101317" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="113601271" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="111501304" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="110501344" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="110301369" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="113101334" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="112101274" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="114601266" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="114101363" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="112301255" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="112601262" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="112501244" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="110101459" max_amount="1" min_amount="1"/>
+	        <drop chance="0.4" item_id="111301312" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="0.8" item_id="114301390" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="110601338" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="113301355" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="114501346" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="113501338" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="111601301" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="111101336" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="113601290" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="111501323" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="110501365" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="110301390" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="113101353" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="112101293" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="114601287" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="114101384" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="112301274" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="112601281" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="112501263" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="110101482" max_amount="1" min_amount="1"/>
+	        <drop chance="0.8" item_id="111301331" max_amount="1" min_amount="1"/>
+        </drop_group>
+	    <drop_group name="DRAGON_LORDS_EPIC_WEAPON">
+	        <drop chance="0.4" item_id="100501049" max_amount="1" min_amount="1"/>
+		    <drop chance="0.4" item_id="100101037" max_amount="1" min_amount="1"/>
+		    <drop chance="0.4" item_id="100601105" max_amount="1" min_amount="1"/>
+		    <drop chance="0.4" item_id="101701085" max_amount="1" min_amount="1"/>
+		    <drop chance="0.4" item_id="101300993" max_amount="1" min_amount="1"/>
+		    <drop chance="0.4" item_id="100901050" max_amount="1" min_amount="1"/>
+		    <drop chance="0.4" item_id="101501069" max_amount="1" min_amount="1"/>
+		    <drop chance="0.4" item_id="100001359" max_amount="1" min_amount="1"/>
+	    </drop_group>
+	    <drop_group name="TIAMAT_EPIC_WEAPON">
+	        <drop chance="0.8" item_id="101501070" max_amount="1" min_amount="1"/>
+		    <drop chance="0.8" item_id="100901081" max_amount="1" min_amount="1"/>
+		    <drop chance="0.8" item_id="100501050" max_amount="1" min_amount="1"/>
+		    <drop chance="0.8" item_id="101701111" max_amount="1" min_amount="1"/>
+		    <drop chance="0.8" item_id="100201206" max_amount="1" min_amount="1"/>
+		    <drop chance="0.8" item_id="101301018" max_amount="1" min_amount="1"/>
+		    <drop chance="0.8" item_id="100201207" max_amount="1" min_amount="1"/>
+		    <drop chance="0.8" item_id="100001360" max_amount="1" min_amount="1"/>
+		    <drop chance="0.8" item_id="100601106" max_amount="1" min_amount="1"/>
+		    <drop chance="0.8" item_id="100101038" max_amount="1" min_amount="1"/>
+	    </drop_group>
+    </npc_drop>
+	<npc_drop npc_id="219666">
+	    <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="114301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110601338" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113301355" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114501346" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113501338" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="111601301" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111101336" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113601290" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111501323" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110501365" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="110301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113101353" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112101293" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114601287" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114101384" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="112301274" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112601281" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112501263" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110101482" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111301331" max_amount="1" min_amount="1"/>
+	    </drop_group>
+	    <drop_group name="" use_category="false">
+            <drop chance="50.0" max_amount="1" min_amount="1" item_id="160003556"/>
+            <drop chance="50.0" max_amount="5" min_amount="3" item_id="141000001"/>
+            <drop chance="100.0" max_amount="1" min_amount="1" item_id="182005559"/>
+        </drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219665">
+	    <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="114301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110601338" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113301355" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114501346" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113501338" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="111601301" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111101336" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113601290" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111501323" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110501365" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="110301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113101353" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112101293" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114601287" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114101384" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="112301274" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112601281" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112501263" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110101482" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111301331" max_amount="1" min_amount="1"/>
+	    </drop_group>
+	    <drop_group name="" use_category="false">
+            <drop chance="50.0" max_amount="1" min_amount="1" item_id="160003556"/>
+            <drop chance="50.0" max_amount="5" min_amount="3" item_id="141000001"/>
+            <drop chance="100.0" max_amount="1" min_amount="1" item_id="182005559"/>
+        </drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219660">
+	    <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="114301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110601338" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113301355" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114501346" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113501338" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="111601301" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111101336" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113601290" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111501323" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110501365" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="110301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113101353" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112101293" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114601287" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114101384" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="112301274" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112601281" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112501263" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110101482" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111301331" max_amount="1" min_amount="1"/>
+	    </drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219659">
+	    <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="114301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110601338" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113301355" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114501346" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113501338" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="111601301" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111101336" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113601290" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111501323" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110501365" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="110301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113101353" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112101293" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114601287" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114101384" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="112301274" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112601281" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112501263" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110101482" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111301331" max_amount="1" min_amount="1"/>
+	    </drop_group>
+	    <drop_group name="" use_category="false">
+            <drop chance="50.0" max_amount="1" min_amount="1" item_id="160003556"/>
+            <drop chance="50.0" max_amount="5" min_amount="3" item_id="141000001"/>
+            <drop chance="100.0" max_amount="1" min_amount="1" item_id="182005559"/>
+        </drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219661">
+	    <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="114301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110601338" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113301355" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114501346" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113501338" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="111601301" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111101336" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113601290" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111501323" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110501365" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="110301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113101353" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112101293" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114601287" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114101384" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="112301274" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112601281" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112501263" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110101482" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111301331" max_amount="1" min_amount="1"/>
+	    </drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219664">
+	    <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="114301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110601338" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113301355" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114501346" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113501338" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="111601301" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111101336" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113601290" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111501323" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110501365" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="110301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113101353" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112101293" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114601287" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114101384" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="112301274" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112601281" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112501263" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110101482" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111301331" max_amount="1" min_amount="1"/>
+	    </drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219663">
+	    <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="114301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110601338" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113301355" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114501346" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113501338" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="111601301" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111101336" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113601290" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111501323" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110501365" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="110301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113101353" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112101293" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114601287" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114101384" max_amount="1" min_amount="1"/>
+        </drop_group>
+        <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="112301274" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112601281" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="112501263" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110101482" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="111301331" max_amount="1" min_amount="1"/>
+	    </drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219662">
+	    <drop_group name="Tiamat_Guard_Fable">
+            <drop chance="10.0" item_id="114301390" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="110601338" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113301355" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="114501346" max_amount="1" min_amount="1"/>
+	        <drop chance="10.0" item_id="113501338" max_amount="1" min_amount="1"/>
+        </drop_group>
+    <drop_group name="Tiamat_Guard_Fable">
+       <drop chance="10.0" item_id="111601301" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="111101336" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="113601290" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="111501323" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="110501365" max_amount="1" min_amount="1"/>
+    </drop_group>
+    <drop_group name="Tiamat_Guard_Fable">
+       <drop chance="10.0" item_id="110301390" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="113101353" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="112101293" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="114601287" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="114101384" max_amount="1" min_amount="1"/>
+    </drop_group>
+    <drop_group name="Tiamat_Guard_Fable">
+       <drop chance="10.0" item_id="112301274" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="112601281" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="112501263" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="110101482" max_amount="1" min_amount="1"/>
+	   <drop chance="10.0" item_id="111301331" max_amount="1" min_amount="1"/>
+	</drop_group>
+	<drop_group name="" use_category="false">
+       <drop chance="50.0" max_amount="1" min_amount="1" item_id="160003556"/>
+       <drop chance="50.0" max_amount="5" min_amount="3" item_id="141000001"/>
+       <drop chance="100.0" max_amount="1" min_amount="1" item_id="182005559"/>
+    </drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219413">
+	<drop_group name="Tiamat_Guard_Fable">
+       <drop chance="0.8" item_id="114301390" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="110601338" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="113301355" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="114501346" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="113501338" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="111601301" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="111101336" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="113601290" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="111501323" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="110501365" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="110301390" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="113101353" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="112101293" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="114601287" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="114101384" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="112301274" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="112601281" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="112501263" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="110101482" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="111301331" max_amount="1" min_amount="1"/>
+    </drop_group>
+	<drop_group name="DRAGON_LORDS_EPIC_WEAPON">
+	    <drop chance="0.4" item_id="100501049" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="100101037" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="100601105" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="101701085" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="101300993" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="100901050" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="101501069" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="100001359" max_amount="1" min_amount="1"/>
+	</drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219414">
+	<drop_group name="Tiamat_Guard_Fable">
+       <drop chance="0.8" item_id="114301390" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="110601338" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="113301355" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="114501346" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="113501338" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="111601301" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="111101336" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="113601290" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="111501323" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="110501365" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="110301390" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="113101353" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="112101293" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="114601287" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="114101384" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="112301274" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="112601281" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="112501263" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="110101482" max_amount="1" min_amount="1"/>
+	   <drop chance="0.8" item_id="111301331" max_amount="1" min_amount="1"/>
+    </drop_group>
+	<drop_group name="DRAGON_LORDS_EPIC_WEAPON">
+	    <drop chance="0.4" item_id="100501049" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="100101037" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="100601105" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="101701085" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="101300993" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="100901050" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="101501069" max_amount="1" min_amount="1"/>
+		<drop chance="0.4" item_id="100001359" max_amount="1" min_amount="1"/>
+	</drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219415">
+	<drop_group name="Tiamat_Guard_Fable">
+       <drop chance="1.8" item_id="114301390" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="110601338" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="113301355" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="114501346" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="113501338" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="111601301" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="111101336" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="113601290" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="111501323" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="110501365" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="110301390" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="113101353" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="112101293" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="114601287" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="114101384" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="112301274" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="112601281" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="112501263" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="110101482" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="111301331" max_amount="1" min_amount="1"/>
+    </drop_group>
+	<drop_group name="DRAGON_LORDS_EPIC_WEAPON">
+	    <drop chance="1.4" item_id="100501049" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="100101037" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="100601105" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="101701085" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="101300993" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="100901050" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="101501069" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="100001359" max_amount="1" min_amount="1"/>
+	</drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219416">
+	<drop_group name="Tiamat_Guard_Fable">
+       <drop chance="1.8" item_id="114301390" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="110601338" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="113301355" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="114501346" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="113501338" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="111601301" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="111101336" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="113601290" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="111501323" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="110501365" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="110301390" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="113101353" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="112101293" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="114601287" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="114101384" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="112301274" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="112601281" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="112501263" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="110101482" max_amount="1" min_amount="1"/>
+	   <drop chance="1.8" item_id="111301331" max_amount="1" min_amount="1"/>
+    </drop_group>
+	<drop_group name="DRAGON_LORDS_EPIC_WEAPON">
+	    <drop chance="1.4" item_id="100501049" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="100101037" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="100601105" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="101701085" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="101300993" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="100901050" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="101501069" max_amount="1" min_amount="1"/>
+		<drop chance="1.4" item_id="100001359" max_amount="1" min_amount="1"/>
+	</drop_group>
+	</npc_drop>
+	<npc_drop npc_id="219410">
+	    <drop_group name="DISTORTED_EPIC_WEAPON">
+		    <drop chance="1.8" item_id="100101082" max_amount="1" min_amount="1"/>
+			<drop chance="1.8" item_id="101301035" max_amount="1" min_amount="1"/>
+			<drop chance="1.8" item_id="100901098" max_amount="1" min_amount="1"/>
+			<drop chance="1.8" item_id="100201244" max_amount="1" min_amount="1"/>
+			<drop chance="1.8" item_id="101501116" max_amount="1" min_amount="1"/>
+			<drop chance="1.8" item_id="100001405" max_amount="1" min_amount="1"/>
+		</drop_group>
+		<drop_group name="EPIC_TREASURE_CHEST">
+		    <drop chance="100.0" item_id="188052084" max_amount="1" min_amount="1"/>
+		</drop_group>
+		<drop_group name="EPIC_WINGS">
+		    <drop chance="10.0" item_id="187000090" max_amount="1" min_amount="1"/>
+		</drop_group>
+		<drop_group name="EPIC_HOUSING">
+		    <drop chance="0.5" item_id="170030053" max_amount="1" min_amount="1"/>
+			<drop chance="0.5" item_id="170170090" max_amount="1" min_amount="1"/>
+		</drop_group>
+	</npc_drop>
+</npc_drops>

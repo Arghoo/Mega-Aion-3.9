@@ -1,0 +1,194 @@
+package com.aionemu.gameserver.utils;
+
+import com.aionemu.gameserver.model.ChatType;
+import com.aionemu.gameserver.model.gameobjects.VisibleObject;
+import com.aionemu.gameserver.model.gameobjects.player.Player;
+import com.aionemu.gameserver.model.team.legion.Legion;
+import com.aionemu.gameserver.network.aion.AionServerPacket;
+import com.aionemu.gameserver.network.aion.serverpackets.SM_MESSAGE;
+import com.aionemu.gameserver.world.World;
+import com.aionemu.gameserver.world.zone.SiegeZoneInstance;
+
+import java.util.function.Predicate;
+
+/**
+ * This class contains static methods, which are utility methods, all of them are interacting only with objects passed
+ * as parameters.<br>
+ * These methods could be placed directly into Player class, but we want to keep Player class as a pure data holder.<br>
+ *
+ * @author Luno
+ */
+public class PacketSendUtility
+{
+	/**
+	 * Global message sending
+	 */
+	public static void sendMessage(Player player, String senderName, String msg, ChatType chatType)
+	{
+		sendPacket(player, new SM_MESSAGE(0, senderName, msg, chatType));
+	}
+
+	public static void sendMessage(Player player, String msg)
+	{
+		sendPacket(player, new SM_MESSAGE(0, null, msg, ChatType.GOLDEN_YELLOW));
+	}
+
+	public static void sendWhiteMessage(Player player, String msg)
+	{
+		sendPacket(player, new SM_MESSAGE(0, null, msg, ChatType.WHITE));
+	}
+
+	public static void sendWhiteMessageOnCenter(Player player, String msg)
+	{
+		sendPacket(player, new SM_MESSAGE(0, null, msg, ChatType.WHITE_CENTER));
+	}
+
+	public static void sendYellowMessage(Player player, String msg)
+	{
+		sendPacket(player, new SM_MESSAGE(0, null, msg, ChatType.YELLOW));
+	}
+
+	public static void sendYellowMessageOnCenter(Player player, String msg)
+	{
+		sendPacket(player, new SM_MESSAGE(0, null, msg, ChatType.YELLOW_CENTER));
+	}
+
+	public static void sendBrightYellowMessage(Player player, String msg)
+	{
+		sendPacket(player, new SM_MESSAGE(0, null, msg, ChatType.BRIGHT_YELLOW));
+	}
+
+	public static void sendBrightYellowMessageOnCenter(Player player, String msg)
+	{
+		sendPacket(player, new SM_MESSAGE(0, null, msg, ChatType.BRIGHT_YELLOW_CENTER));
+	}
+
+	/**
+	 * Send packet to this player
+	 */
+	public static void sendPacket(Player player, AionServerPacket packet)
+	{
+		if (player.getClientConnection() != null) {
+			player.getClientConnection().sendPacket(packet);
+		}
+	}
+
+	/**
+	 * Broadcast packet to all visible players.
+	 *
+	 * @param player
+	 * @param packet ServerPacket that will be broadcast
+	 * @param toSelf true if packet should also be sent to this player
+	 */
+	public static void broadcastPacket(Player player, AionServerPacket packet, boolean toSelf)
+	{
+		if (toSelf)
+			sendPacket(player, packet);
+
+		broadcastPacket(player, packet);
+	}
+
+	/**
+	 * Broadcast packet to all visible players.
+	 *
+	 * @param visibleObject
+	 * @param packet
+	 */
+	public static void broadcastPacketAndReceive(VisibleObject visibleObject, AionServerPacket packet)
+	{
+		if (visibleObject instanceof Player)
+			sendPacket((Player) visibleObject, packet);
+
+		broadcastPacket(visibleObject, packet);
+	}
+
+	/**
+	 * Broadcast packet to all Players from knownList of the given visible object.
+	 *
+	 * @param visibleObject
+	 * @param packet
+	 */
+	public static void broadcastPacket(VisibleObject visibleObject, final AionServerPacket packet)
+	{
+		visibleObject.getKnownList().doOnAllPlayers(player -> {
+			if (player.isOnline()) {
+				PacketSendUtility.sendPacket(player, packet);
+			}
+		});
+	}
+
+	/**
+	 * Broadcasts packet to all visible players matching a filter
+	 *
+	 * @param object VisibleObject
+	 * @param packet ServerPacket to be broadcast
+	 * @param toSelf true if packet should also be sent to this player
+	 * @param filter filter determining who should be messaged
+	 */
+	public static void broadcastPacket(VisibleObject object, final AionServerPacket packet, boolean toSelf, Predicate<Player> filter)
+	{
+		if (toSelf) {
+			sendPacket((Player) object, packet);
+		}
+
+		object.getKnownList().forEachPlayer(player -> {
+			if (filter.test(player))
+				sendPacket(player, packet);
+		});
+	}
+
+	/**
+	 * Broadcasts packet to all Players from knownList of the given visible object within the specified distance in meters
+	 *
+	 * @param visibleObject
+	 * @param packet
+	 * @param distance
+	 */
+	public static void broadcastPacket(final VisibleObject visibleObject, final AionServerPacket packet, final int distance)
+	{
+		visibleObject.getKnownList().doOnAllPlayers(p -> {
+			if (MathUtil.isIn3dRange(visibleObject, p, distance))
+				PacketSendUtility.sendPacket(p, packet);
+		});
+	}
+
+	/**
+	 * Broadcasts packet to ALL players matching a filter
+	 *
+	 * @param packet ServerPacket to be broadcast
+	 * @param filter filter determining who should be messaged
+	 */
+	public static void broadcastFilteredPacket(final AionServerPacket packet, final Predicate<Player> filter)
+	{
+		World.getInstance().forEachPlayer(object -> {
+			if (filter.test(object))
+				PacketSendUtility.sendPacket(object, packet);
+		});
+	}
+
+	/**
+	 * Broadcasts packet to all legion members of a legion
+	 *
+	 * @param legion Legion to broadcast packet to
+	 * @param packet ServerPacket to be broadcast
+	 */
+	public static void broadcastPacketToLegion(Legion legion, AionServerPacket packet)
+	{
+		for (Player onlineLegionMember : legion.getOnlineLegionMembers()) {
+			sendPacket(onlineLegionMember, packet);
+		}
+	}
+
+	public static void broadcastPacketToLegion(Legion legion, AionServerPacket packet, int playerObjId)
+	{
+		for (Player onlineLegionMember : legion.getOnlineLegionMembers()) {
+			if (onlineLegionMember.getObjectId() != playerObjId)
+				sendPacket(onlineLegionMember, packet);
+		}
+	}
+
+	public static void broadcastPacketToZone(SiegeZoneInstance zone, final AionServerPacket packet)
+	{
+		zone.doOnAllPlayers(player -> PacketSendUtility.sendPacket(player, packet));
+	}
+}

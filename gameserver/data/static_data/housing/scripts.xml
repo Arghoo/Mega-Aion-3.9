@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lboxes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
-  <lbox>
-    <id>101</id>
-    <name><![CDATA[New Script]]></name>
-    <desc><![CDATA[Enter the description.]]></desc>
-    <script><![CDATA[function OnInit()
+	<lbox>
+		<id>101</id>
+		<name><![CDATA[New Script]]></name>
+		<desc><![CDATA[Enter the description.]]></desc>
+		<script><![CDATA[function OnInit()
     -- Create the initialization script.
 end
 ]]></script>
-    <icon>1</icon>
-  </lbox>
-  <lbox>
-    <id>102</id>
-    <name><![CDATA[Greeting]]></name>
-    <desc><![CDATA[The butler will say a greeting to an approaching visitor.]]></desc>
-    <script><![CDATA[-- You can customize the butler's greeting to match every visitor.
+		<icon>1</icon>
+	</lbox>
+	<lbox>
+		<id>102</id>
+		<name><![CDATA[Greeting]]></name>
+		<desc><![CDATA[The butler will say a greeting to an approaching visitor.]]></desc>
+		<script><![CDATA[-- You can customize the butler's greeting to match every visitor.
 -- Enter the character name in the table below, along with the greeting text and sound for the character's visit.
 
-helloTable = { 
+helloTable = {
                    ["[kvalue:Name1;Character Name1;str]"] = {"[kvalue:Greeting1;, Hello;str]",    [kvalue:Greet SFX 1;H.Percussion.fx2;fx] },
                    ["[kvalue:Name2;Character Name2;str]"] = {"[kvalue:Greeting2;, Hi;str]",    [kvalue:Greet SFX 2;H.Percussion.fx11;fx] },
                    ["[kvalue:Name3;Character Name3;str]"] = {"[kvalue:Greeting3;, Come on in;str]",  [kvalue:Greet SFX 3;H.Percussion.fx6;fx] },
@@ -79,25 +79,25 @@ function OnUserEntered(desc)
 end
 
 -- Available Motions for Setup:
---    point, sleep, angry, blush, dance, clap, comfort, drink, eat, laugh, kneel, no, 
+--    point, sleep, angry, blush, dance, clap, comfort, drink, eat, laugh, kneel, no,
 --    otl, pat, plead, ready, sad, slap, surprise, taunt, thanks, thunder,
 --    useup, victory, yes, wave, boo, charge, dislike, panic, salute, smile,
 --    sorry, think, blueflag, twoflag, whiteflag, sing, jump]]></script>
-    <icon>4</icon>
-  </lbox>
-  <lbox>
-    <id>116</id>
-    <name><![CDATA[Simonerk Says]]></name>
-    <desc><![CDATA[Enter the text "Simonerk Says" in the chat window to play the game with the butler.]]></desc>
-    <script>
-    <![CDATA[
+		<icon>4</icon>
+	</lbox>
+	<lbox>
+		<id>116</id>
+		<name><![CDATA[Simonerk Says]]></name>
+		<desc><![CDATA[Enter the text "Simonerk Says" in the chat window to play the game with the butler.]]></desc>
+		<script>
+			<![CDATA[
 -- You modify how the game is played by changing the command text strings shown below.
-g_flagTable = { 
+g_flagTable = {
   { "[kvalue:Command1;Simonerk says Lift the Blue Flag;str]",			  [kvalue:Motion1;H.Emotion.blueflag;moti]  },
   { "[kvalue:Command2;Simonerk says Don't lift the white flag, lift the blue flag!;str]", [kvalue:Motion2;H.Emotion.blueflag;moti]  },
   { "[kvalue:Command3;Simonerk says Lift the white flag;str]",			  [kvalue:Motion3;H.Emotion.whiteflag;moti] },
   { "[kvalue:Command4;Simonerk says Don't lift the blue flag, lift the white flag!;str]", [kvalue:Motion4;H.Emotion.whiteflag;moti]  },
-  { "[kvalue:Command5;Simonerk says Lift both flags;str]",			  [kvalue:Motion5;H.Emotion.twoflag;moti]   }, 
+  { "[kvalue:Command5;Simonerk says Lift both flags;str]",			  [kvalue:Motion5;H.Emotion.twoflag;moti]   },
   { "[kvalue:Command6;Simonerk says Don't lift the blue flag, lift both flags!;str]", [kvalue:Motion6;H.Emotion.twoflag;moti]  },
   { "[kvalue:Command7;Simonerk says Don't lift the white flag, lift both flags!;str]", [kvalue:Motion7;H.Emotion.twoflag;moti]  },
 };
@@ -109,7 +109,7 @@ function OnInit()
 
     -- Activates the OnSoundPlay function
     H.EnableSoundCallback(1);
-	
+
 	g_playerName = H.GetPlayerName();
 end
 
@@ -150,7 +150,7 @@ function OnBroadcasted(fromUser, msg, param1, param2)
 	      AddUser(fromUser);
 	    end
 
-    -- Win/Lose text display and sound effects	    
+    -- Win/Lose text display and sound effects
 	  elseif (string.find(msg, "Win")) then
 	    H.SayNoBalloon(1, msg.sub(msg, 8, -1) .. " won!");
 	    if (string.find(msg, g_playerName)) then
@@ -211,12 +211,12 @@ function OnUserEmotion(motion, desc)
 	          OutFailedUsers();
 	        end
 	      end
-	  end  
+	  end
 	  H.PlaySound(2, "r[1]");
 	end
 end
 
-function SetRandomFlagType()  
+function SetRandomFlagType()
   randVal = math.random(#g_flagTable);
   g_curFlagMotion = g_flagTable[randVal][2];
   randFlagName    = g_flagTable[randVal][1];
@@ -269,13 +269,14 @@ function OnUserSay(str, desc)
   end
 end
 ]]></script>
-    <icon>6</icon>
-  </lbox>
-  <lbox>
-    <id>117</id>
-    <name><![CDATA[Table Jump]]></name>
-    <desc><![CDATA[Enter "Table Jump" in the chat window to start a game of Jump on the Glowing Furniture.  Designate each piece of furniture you want to use as an Outlet by clicking on a number in the Outlet window and then clicking on the piece of furniture you want to use. ]]></desc>
-    <script><![CDATA[constStageNum        = 10;
+		<icon>6</icon>
+	</lbox>
+	<lbox>
+		<id>117</id>
+		<name><![CDATA[Table Jump]]></name>
+		<desc>
+			<![CDATA[Enter "Table Jump" in the chat window to start a game of Jump on the Glowing Furniture.  Designate each piece of furniture you want to use as an Outlet by clicking on a number in the Outlet window and then clicking on the piece of furniture you want to use. ]]></desc>
+		<script><![CDATA[constStageNum        = 10;
 constTableNum         = 6;
 constTableNumPerStage = 2;     -- About one-third of constTableNum is good enough.
 
@@ -304,30 +305,30 @@ end
 function BeginGameHost()
   if (gameState == gsReady) then
     gameState = gsInGame;
-    
+
 	  -- Initialize
 	  for i = 1, constTableNum do
 	    outletState[i] = 0;
 	  end
-	  
+
 	  math.randomseed(H.GetGameTime());
-	  
+
 	  -- String for correct synchronization
 	  local str = "";
 	  for i = 1, constStageNum do
 	    str = str .. "r1r1[" .. i .. "]";
 	  end
-	  
+
 	  H.PlaySound(0, str);
-	
+
 	  -- Initialize the first Table
 		for i = 1, constTableNum do
 	    H.Broadcast("SetOutletState", i, 0);
 		end
-	
+
 	  -- Initialize the score
 	  userScore   = {};
-	
+
 	  -- Start
 	  H.SayAll(-1, "Start the Table Jump ===========");
 	end
@@ -346,22 +347,22 @@ function EndGameHost()
 	  isHost      = false;
 	  gameState   = gsReady;
 	end
-end 
+end
 
 function BeginGameGuest()
   if (gameState == gsReady) then
     gameState = gsInGame;
-    
+
 	  for i = 1, constTableNum do
 	    outletState[i] = 0;
 	  end
-	  
+
 	  local str = "";
 	  for i = 1, constStageNum do
 	    str = str .. "r1r1"
 	  end
 	  str = str .. "r1[" .. constStageNum .. "]";    -- Gives additional time
-	  
+
 	  H.PlaySound(0, str);
 	end
 end
@@ -379,7 +380,7 @@ function newStage()
 	  end
 	  i = i + 1;
 	until count >= constTableNumPerStage or i > 100;
-	
+
 	-- notify another client.
 	for i = 1, constTableNum do
 	  if (outletState[i] == 1 or outletState[i] == 2) then
@@ -395,7 +396,7 @@ function OnSoundPlay(channel, note, len, label)
   if (isHost and channel == 0 and label > 0) then
     newStage();
   end
-  
+
   if (label == constStageNum) then
     if (isHost) then
       H.Broadcast("EndGame", 0, 0);
@@ -411,7 +412,7 @@ function OnBroadcasted(fromUser, msg, outletIndex, state)
     if (isHost and state == 2 and outletState[outletIndex] ~= 1) then
       return;
     end
-      
+
 	  outletState[outletIndex] = state;
 	  if (state == 0 or state == 2) then
 	    H.GlowNow(outletIndex, -1, 0, 0, 0);
@@ -420,7 +421,7 @@ function OnBroadcasted(fromUser, msg, outletIndex, state)
 	    H.GlowNow(outletIndex, 100, 0, 0, 255);
 	    H.SetPosNow(outletIndex, 0, 0, 0, 0.5);
 	  end
-	  
+
 	  if (state == 2) then
 			-- If it is a host, it gives marks.
 			if (isHost) then
@@ -439,14 +440,14 @@ function OnBroadcasted(fromUser, msg, outletIndex, state)
      else
        BeginGameGuest();
      end
-     
+
    elseif (msg == "EndGame") then
 		if (isHost) then
 		  EndGameHost();
 		else
 		  gameState   = gsReady;
 		end
-		
+
 		-- Go where the glowing table is
 		for i = 1, constTableNum do
 		  H.SetPosNow(i, 0, 0, 0, 0.5);
@@ -463,14 +464,14 @@ function OnPlayerJumpEnd(outletIndex)
   end
 end
 ]]></script>
-    <icon>5</icon>
-  </lbox>
-  <lbox>
-    <id>103</id>
-    <name><![CDATA[Play Song]]></name>
-    <desc><![CDATA[Add the action to the butler’s right click menu to play a song.]]></desc>
-    <script>
-  <![CDATA[-- Prompts on script initialization.
+		<icon>5</icon>
+	</lbox>
+	<lbox>
+		<id>103</id>
+		<name><![CDATA[Play Song]]></name>
+		<desc><![CDATA[Add the action to the butler’s right click menu to play a song.]]></desc>
+		<script>
+			<![CDATA[-- Prompts on script initialization.
 function OnInit()
 
     -- Add the right-click menu to the butler.
@@ -516,7 +517,7 @@ end
 -- Musical Scale: (Fourth Octave) Do (g), Re (a), Mi (b), (Fifth Octave) Fa (c), Sol (d), La (e), Ti (f#)
 -- Length of Musical Notes: Half note (2) Quarter note (4), Eighth note (8), Sixteenth note (16), Whole notes are the default.
 -- Other Commands: Rest (r), Octave (o), Volume (v), Tempo (t), Percussion Beat (x), Sustain Note (_), Sharp Note (#)
--- Musical Instrument: 
+-- Musical Instrument:
 --        List of Instruments in SetInstrument(): The default setting is a piano.
 --            H.Instrument.abass (Acoustic Bass), H.Instrument.ebass (Electric Bass),
 --            H.Instrument.aguitar (Acoustic Guitar), H.Instrument.accordion (Accordion)
@@ -527,14 +528,14 @@ end
 --            H.Percussion.snare (Snare) H.Percussion.tomtom1 (Tom-tom 1)
 --            H.Percussion.tomtom2 (Tom-tom 2) H.Percussion.tomtom3 (Tom-tom 3)
 --            H.Percussion.fx1 - H.Percussion.fx20 (Effect Sound 1 - 20)]]></script>
-    <icon>2</icon>
-  </lbox>
-  <lbox>
-    <id>119</id>
-    <name><![CDATA[Scales]]></name>
-    <desc><![CDATA[Add the action to the butler’s right click menu and choose it to play some simple scales and Mary Had a Little Lamb]]></desc>
-    <script>
-      <![CDATA[-- Prompts on script initialization.
+		<icon>2</icon>
+	</lbox>
+	<lbox>
+		<id>119</id>
+		<name><![CDATA[Scales]]></name>
+		<desc><![CDATA[Add the action to the butler’s right click menu and choose it to play some simple scales and Mary Had a Little Lamb]]></desc>
+		<script>
+			<![CDATA[-- Prompts on script initialization.
 function OnInit()
 
     -- Add the right-click menu to the butler.
@@ -562,7 +563,7 @@ end
 -- Musical Scale: (Fourth Octave) Do (g), Re (a), Mi (b), (Fifth Octave) Fa (c), Sol (d), La (e), Ti (f#)
 -- Length of Musical Notes: Half note (2) Quarter note (4), Eighth note (8), Sixteenth note (16), Whole notes are the default.
 -- Other Commands: Rest (r), Octave (o), Volume (v), Tempo (t), Percussion Beat (x), Sustain Note (_), Sharp Note (#)
--- Musical Instrument: 
+-- Musical Instrument:
 --        List of Instruments in SetInstrument(): The default setting is a piano.
 --            H.Instrument.abass (Acoustic Bass), H.Instrument.ebass (Electric Bass),
 --            H.Instrument.aguitar (Acoustic Guitar), H.Instrument.accordion (Accordion)
@@ -573,15 +574,15 @@ end
 --            H.Percussion.snare (Snare) H.Percussion.tomtom1 (Tom-tom 1)
 --            H.Percussion.tomtom2 (Tom-tom 2) H.Percussion.tomtom3 (Tom-tom 3)
 --            H.Percussion.fx1 - H.Percussion.fx20 (Effect Sound 1 - 20)]]>
-    </script>
-    <icon>2</icon>
-  </lbox>
-  <lbox>
-    <id>104</id>
-    <name><![CDATA[SFX Song]]></name>
-    <desc><![CDATA[Add the action to the butler’s right click menu to play a song using Aion sound effects for percussion.]]></desc>
-    <script>
-  <![CDATA[-- Script initialization
+		</script>
+		<icon>2</icon>
+	</lbox>
+	<lbox>
+		<id>104</id>
+		<name><![CDATA[SFX Song]]></name>
+		<desc><![CDATA[Add the action to the butler’s right click menu to play a song using Aion sound effects for percussion.]]></desc>
+		<script>
+			<![CDATA[-- Script initialization
 function OnInit()
 
     -- Add the right-click menu to the butler.
@@ -627,7 +628,7 @@ end
 -- Musical Scale: (Fourth Octave) Do (g), Re (a), Mi (b), (Fifth Octave) Fa (c), Sol (d), La (e), Ti (f#)
 -- Length of Musical Notes: Half note (2) Quarter note (4), Eighth note (8), Sixteenth note (16), Whole notes are the default.
 -- Other Commands: Rest (r), Octave (o), Volume (v), Tempo (t), Percussion Beat (x), Sustain Note (_), Sharp Note (#)
--- Musical Instrument: 
+-- Musical Instrument:
 --        List of Instruments in SetInstrument(): The default setting is a piano.
 --            H.Instrument.abass (Acoustic Bass), H.Instrument.ebass (Electric Bass),
 --            H.Instrument.aguitar (Acoustic Guitar), H.Instrument.accordion (Accordion)
@@ -638,14 +639,14 @@ end
 --            H.Percussion.snare (Snare) H.Percussion.tomtom1 (Tom-tom 1)
 --            H.Percussion.tomtom2 (Tom-tom 2) H.Percussion.tomtom3 (Tom-tom 3)
 --            H.Percussion.fx1 - H.Percussion.fx20 (Effect Sound 1 - 20)]]>
-    </script>
-    <icon>5</icon>
-  </lbox>
-  <lbox>
-    <id>105</id>
-    <name><![CDATA[Laughing]]></name>
-    <desc><![CDATA[Enter "Giggle" inside the house and the butler will laugh.]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		</script>
+		<icon>5</icon>
+	</lbox>
+	<lbox>
+		<id>105</id>
+		<name><![CDATA[Laughing]]></name>
+		<desc><![CDATA[Enter "Giggle" inside the house and the butler will laugh.]]></desc>
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 end
 
@@ -665,13 +666,13 @@ function OnUserSay(str)
 
     end
 end]]></script>
-    <icon>3</icon>
-  </lbox>
-  <lbox>
-    <id>106</id>
-    <name><![CDATA[Dance]]></name>
-    <desc><![CDATA[Dance at home and the butler will start singing.]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		<icon>3</icon>
+	</lbox>
+	<lbox>
+		<id>106</id>
+		<name><![CDATA[Dance]]></name>
+		<desc><![CDATA[Dance at home and the butler will start singing.]]></desc>
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 end
 
@@ -705,15 +706,15 @@ function OnUserEmotion(motion)
         H.PlaySound(5, "t250 r r r r r r r r x_");
   end
 end]]></script>
-    <icon>6</icon>
-  </lbox>
-  <lbox>
-    <id>107</id>
-    <name><![CDATA[Move Cube]]></name>
-    <desc><![CDATA[Enter "Move" inside the house and the furniture designated as the outlet starts moving. (Except for PC)
+		<icon>6</icon>
+	</lbox>
+	<lbox>
+		<id>107</id>
+		<name><![CDATA[Move Cube]]></name>
+		<desc><![CDATA[Enter "Move" inside the house and the furniture designated as the outlet starts moving. (Except for PC)
 (Only designate Cube Accents or decorative letters as the outlet. Other furniture is fixed in position.
 You can buy a Cube Accent from [pos:Garkinerk (Furniture Merchant);700010000 1177.3 1937.6 0.0 0] if you're Elyos, or from [pos:Hopurunerk (Furniture Merchant);710010000 1082.8 1405.4 0.0 0] if you're Asmodian.)]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 
     -- Activates when the player enters a 4m radius of the butler.
@@ -729,7 +730,7 @@ function OnUserSay(str)
 
   -- Enter "Move" to move the selected furniture.
   if (string.find(str, "Move")) then
-  
+
     -- [1]. Set the label equal to [2].
     H.PlaySound(0, "r2[1] r2[2]");
 
@@ -742,15 +743,15 @@ function OnUserSay(str)
   end
 end
 ]]></script>
-    <icon>4</icon>
-  </lbox>
-  <lbox>
-    <id>108</id>
-    <name><![CDATA[Flashlight]]></name>
-    <desc><![CDATA[Add the action to the butler’s right click menu to make the furniture designated as the outlet light up.
+		<icon>4</icon>
+	</lbox>
+	<lbox>
+		<id>108</id>
+		<name><![CDATA[Flashlight]]></name>
+		<desc><![CDATA[Add the action to the butler’s right click menu to make the furniture designated as the outlet light up.
 (HQ Shader Quality: Needs to be set as High)
 ]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 
     -- Add the right-click menu to the butler.
@@ -785,15 +786,15 @@ function OnMenu(menuNum)
     H.PlaySound(0, "r2[1]");
 end
 ]]></script>
-    <icon>5</icon>
-  </lbox>
-  <lbox>
-    <id>109</id>
-    <name><![CDATA[Jump Items]]></name>
-    <desc><![CDATA[Enter "Jump" while inside the house to make the designated item jump.
+		<icon>5</icon>
+	</lbox>
+	<lbox>
+		<id>109</id>
+		<name><![CDATA[Jump Items]]></name>
+		<desc><![CDATA[Enter "Jump" while inside the house to make the designated item jump.
 (Only house staff, Cube Accents, and decorative letters should be selected as the outlet. Other installations are fixed in position.)]]></desc>
-    <script>
-  <![CDATA[-- Starts when the house script is initialized.
+		<script>
+			<![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 
     -- Set the number of outlets to 1.
@@ -806,7 +807,7 @@ function OnUserSay(str)
 
     -- Say "Jump" and the furniture designated as the outlet starts to jump.
     if (string.find(str, "Jump")) then
-        
+
         -- Sets the label no. [1].
         H.PlaySound(0, "r2[1]");
 
@@ -817,13 +818,13 @@ function OnUserSay(str)
         H.Jump(H.Outlet.outlet1, 1, 1);
     end
 end]]></script>
-    <icon>1</icon>
-  </lbox>
-  <lbox>
-    <id>110</id>
-    <name><![CDATA[Look At]]></name>
-    <desc><![CDATA[Enter "Butler" inside the house and the butler looks at the speaker.]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		<icon>1</icon>
+	</lbox>
+	<lbox>
+		<id>110</id>
+		<name><![CDATA[Look At]]></name>
+		<desc><![CDATA[Enter "Butler" inside the house and the butler looks at the speaker.]]></desc>
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 end
 
@@ -840,20 +841,20 @@ function OnUserSay(str, username)
         -- Do as follows, and the butler looks at the target with the same name.
         -- as the desc for 2 seconds from the label no. [1].
         -- When the PlaySound ends, it returns to the original setting regardless of the set time.
-        H.Target(1, username, 2); 
+        H.Target(1, username, 2);
 
         -- Set the label no. [1].
         H.PlaySound(0, "r2[1] r2");
 
     end
 end]]></script>
-    <icon>4</icon>
-  </lbox>
-  <lbox>
-    <id>111</id>
-    <name><![CDATA[Blue Flag White Flag]]></name>
-    <desc><![CDATA[When you say "Blue Flag" or "White Flag" inside the house, the butler will hold up a blue or white flag.]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		<icon>4</icon>
+	</lbox>
+	<lbox>
+		<id>111</id>
+		<name><![CDATA[Blue Flag White Flag]]></name>
+		<desc><![CDATA[When you say "Blue Flag" or "White Flag" inside the house, the butler will hold up a blue or white flag.]]></desc>
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 end
 
@@ -880,15 +881,15 @@ function OnUserSay(str)
         H.StartAnimation(0, 1, H.Emotion.twoflag);
         H.PlaySound(0, "r[1]");
 
-    end     
+    end
 end]]></script>
-    <icon>5</icon>
-  </lbox>
-  <lbox>
-    <id>112</id>
-    <name><![CDATA[Party Time]]></name>
-    <desc><![CDATA[Do the "Victory" motion or say "Begin" in chat inside the house. The butler starts to clap his hands, the installation designated as the outlet shines, and the melody is played.]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		<icon>5</icon>
+	</lbox>
+	<lbox>
+		<id>112</id>
+		<name><![CDATA[Party Time]]></name>
+		<desc><![CDATA[Do the "Victory" motion or say "Begin" in chat inside the house. The butler starts to clap his hands, the installation designated as the outlet shines, and the melody is played.]]></desc>
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 
     -- Sets the number of outlets to 1.
@@ -964,19 +965,19 @@ function OnUserSay(str)
        PartyTime()
     end
 end]]></script>
-    <icon>6</icon>
-  </lbox>
-  <lbox>
-    <id>113</id>
-    <name><![CDATA[Disco]]></name>
-    <desc><![CDATA[Say "Light" inside the house and the installation designated as the outlet starts responding with light according to the given melody.]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		<icon>6</icon>
+	</lbox>
+	<lbox>
+		<id>113</id>
+		<name><![CDATA[Disco]]></name>
+		<desc><![CDATA[Say "Light" inside the house and the installation designated as the outlet starts responding with light according to the given melody.]]></desc>
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 
     -- Sets the number of outlets to 7.
     -- Right-click the outlet icon to choose the outlet.
     H.SetOutletCount(7);
-    
+
     -- Activates the OnSoundPlay function.
     H.EnableSoundCallback(1)
 end
@@ -1016,19 +1017,19 @@ function OnSoundPlay(channel, note, len, label)
     end
 end
 ]]></script>
-    <icon>3</icon>
-  </lbox>
-  <lbox>
-    <id>114</id>
-    <name><![CDATA[Flag Dance]]></name>
-    <desc><![CDATA[Enter "Flag" inside the house and the butler starts responding by raising a blue flag and white flag according to the given melody.]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		<icon>3</icon>
+	</lbox>
+	<lbox>
+		<id>114</id>
+		<name><![CDATA[Flag Dance]]></name>
+		<desc><![CDATA[Enter "Flag" inside the house and the butler starts responding by raising a blue flag and white flag according to the given melody.]]></desc>
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 
     -- Sets the number of outlets to 3.
     -- Right-click the outlet icon to choose the outlet.
     H.SetOutletCount(3);
-    
+
     -- Activates the OnSoundPlay function.
     H.EnableSoundCallback(1)
 end
@@ -1085,15 +1086,15 @@ function OnSoundPlay(channel, note, len, label)
     end
 end
 ]]></script>
-    <icon>2</icon>
-  </lbox>
-  <lbox>
-    <id>115</id>
-    <name><![CDATA[Box Dance]]></name>
-    <desc><![CDATA[Add the action to the butler’s right click menu to play melodies and to move the designated outlet installation.
+		<icon>2</icon>
+	</lbox>
+	<lbox>
+		<id>115</id>
+		<name><![CDATA[Box Dance]]></name>
+		<desc><![CDATA[Add the action to the butler’s right click menu to play melodies and to move the designated outlet installation.
 (Designate only the Cube Accents or decorative letters as the outlet. Other installations are fixed in position.
 You can buy a Cube Accent from [pos:Garkinerk (Furniture Merchant);700010000 1177.3 1937.6 0.0 0] if you're Elyos, or from [pos:Hopurunerk (Furniture Merchant);710010000 1082.8 1405.4 0.0 0] if you're Asmodian.)]]></desc>
-    <script><![CDATA[-- Starts when the house script is initialized.
+		<script><![CDATA[-- Starts when the house script is initialized.
 function OnInit()
 
     -- Add the right-click menu to the butler.
@@ -1116,11 +1117,11 @@ function OnMenu(menuNum)
     end
 
     -- Sets the label number from [1] to [4].
-    H.PlaySound(0, "t130 r2[1] r2 r2 r2[2] r2 r2 r2[3] r2 r2 r2[4]");    
-    
+    H.PlaySound(0, "t130 r2[1] r2 r2 r2[2] r2 r2 r2[3] r2 r2 r2[4]");
+
     H.SetInstrument(1, H.Instrument.aguitar);
     H.PlaySound(1, "t130 o5 e f# g o6 c o5 d# e f# b e f# g o6 c o5 d# e f# b o5 g8 f8# g8 o4 b8 o5 e g a8 o4 a8 o5 g8 o4 b8 o5 d8# o4 b8 g8 d8# e");
-    
+
     H.PlaySound(2, "t130 o6 c8 o5 g8 f8# e8 o6 c8 o5 g8 f8# e8 o6 c8 o5 b8 f8# d8# o6 c8 o5 b8 f8# d8# o6 c8 o5 g8 f8# e8 o6 c8 o5 g8 f8# e8 o6 c8 o5 b8 f8# d8# o6 c8 o5 b8 f8# d8# e8 f8# g8 b8 o6 e8 f8# g8 f8# d8# o5 a8 g8 d8# o4 b8 r8 d8# r8 e");
 
     H.SetInstrument(3, H.Instrument.accordion);
@@ -1133,7 +1134,7 @@ function OnMenu(menuNum)
 
     H.SetPercussion(6, H.Percussion.fx10);
     H.PlaySound(6, "t130 rrrr rrrr rrrr rrrr rrrr rrrr x");
-    
+
     H.SetPercussion(7, H.Percussion.fx15);
     H.PlaySound(7, "t130 rrrr rrrr rrrr rrrr rrrr rx");
 
@@ -1201,16 +1202,16 @@ function OnMenu(menuNum)
     H.SetPos(12, 4, 0, 0, 2, 1);
     H.SetPos(13, 4, 0, 0, 2, 1);
     H.SetPos(14, 4, 0, 0, 2, 1);
-	
+
 end]]></script>
-    <icon>6</icon>
-  </lbox>
-  <lbox>
-    <id>118</id>
-    <name><![CDATA[Jukebox]]></name>
-    <desc><![CDATA[Plays one of the songs in the Jukebox Playlist when a character enters a house.
+		<icon>6</icon>
+	</lbox>
+	<lbox>
+		<id>118</id>
+		<name><![CDATA[Jukebox]]></name>
+		<desc><![CDATA[Plays one of the songs in the Jukebox Playlist when a character enters a house.
 A player can control the Jukebox by entering commands in the chat window such as "Next," "Previous," "Current," "Pause," "Play," or "Volume 60."]]></desc>
-    <script><![CDATA[-- The song that is played varies for each visitor.
+		<script><![CDATA[-- The song that is played varies for each visitor.
 -- Enter the character's name and the index (the order of songs in the playlist) to be played when that character visits in the table below.
 
 songTable = {
@@ -1268,6 +1269,6 @@ end
 --    H.ReplayJukeBoxSong();     ->   Replays the current song from the beginning.
 --    H.SetJukeBoxVolume();      ->   Adjusts the volume of the Jukebox. (0~100)
 ]]></script>
-    <icon>1</icon>
-  </lbox>
+		<icon>1</icon>
+	</lbox>
 </lboxes>

@@ -59,10 +59,12 @@ import com.aionemu.gameserver.geoEngine.utils.BufferUtils;
 import com.aionemu.gameserver.geoEngine.utils.IntMap;
 import com.aionemu.gameserver.geoEngine.utils.IntMap.Entry;
 
-public class Mesh {
+public class Mesh
+{
 
 	// TODO: Document this enum
-	public enum Mode {
+	public enum Mode
+	{
 		Points,
 		Lines,
 		LineLoop,
@@ -101,66 +103,80 @@ public class Mesh {
 
 	private short collisionFlags = -1;
 
-	public Mesh() {
+	public Mesh()
+	{
 	}
 
-	public int[] getModeStart() {
+	public int[] getModeStart()
+	{
 		return modeStart;
 	}
 
-	public void setModeStart(int[] modeStart) {
+	public void setModeStart(int[] modeStart)
+	{
 		this.modeStart = modeStart;
 	}
 
-	public Mode getMode() {
+	public Mode getMode()
+	{
 		return mode;
 	}
 
-	public void setMode(Mode mode) {
+	public void setMode(Mode mode)
+	{
 		this.mode = mode;
 		updateCounts();
 	}
 
-	public int getMaxNumWeights() {
+	public int getMaxNumWeights()
+	{
 		return maxNumWeights;
 	}
 
-	public void setMaxNumWeights(int maxNumWeights) {
+	public void setMaxNumWeights(int maxNumWeights)
+	{
 		this.maxNumWeights = maxNumWeights;
 	}
 
-	public float getPointSize() {
+	public float getPointSize()
+	{
 		return pointSize;
 	}
 
-	public void setPointSize(float pointSize) {
+	public void setPointSize(float pointSize)
+	{
 		this.pointSize = pointSize;
 	}
 
-	public float getLineWidth() {
+	public float getLineWidth()
+	{
 		return lineWidth;
 	}
 
-	public void setLineWidth(float lineWidth) {
+	public void setLineWidth(float lineWidth)
+	{
 		this.lineWidth = lineWidth;
 	}
 
 	/**
 	 * Locks the mesh so it cannot be modified anymore, thus optimizing its data.
 	 */
-	public void setStatic() {
+	public void setStatic()
+	{
 		for (Entry<VertexBuffer> entry : buffers) {
 			entry.getValue().setUsage(Usage.Static);
 		}
 	}
 
-	public void setStreamed() {
+	public void setStreamed()
+	{
 		for (Entry<VertexBuffer> entry : buffers) {
 			entry.getValue().setUsage(Usage.Stream);
 		}
 	}
 
-	public void setInterleaved() {
+	public void setInterleaved()
+	{
 		ArrayList<VertexBuffer> vbs = new ArrayList<VertexBuffer>();
 		for (Entry<VertexBuffer> entry : buffers) {
 			vbs.add(entry.getValue());
@@ -232,7 +248,8 @@ public class Mesh {
 		}
 	}
 
-	private int computeNumElements(int bufSize) {
+	private int computeNumElements(int bufSize)
+	{
 		switch (mode) {
 			case Triangles:
 				return bufSize / 3;
@@ -252,7 +269,8 @@ public class Mesh {
 		}
 	}
 
-	public void updateCounts() {
+	public void updateCounts()
+	{
 		if (getBuffer(Type.InterleavedData) != null)
 			throw new IllegalStateException("Should update counts before interleave");
 
@@ -263,33 +281,38 @@ public class Mesh {
 		}
 		if (ib != null) {
 			elementCount = computeNumElements(ib.getData().capacity());
-		}
-		else {
+		} else {
 			elementCount = computeNumElements(vertCount);
 		}
 	}
 
-	public int getTriangleCount(int lod) {
+	public int getTriangleCount(int lod)
+	{
 		return elementCount;
 	}
 
-	public int getTriangleCount() {
+	public int getTriangleCount()
+	{
 		return elementCount;
 	}
 
-	public int getVertexCount() {
+	public int getVertexCount()
+	{
 		return vertCount;
 	}
 
-	public void setTriangleCount(int count) {
+	public void setTriangleCount(int count)
+	{
 		this.elementCount = count;
 	}
 
-	public void setVertexCount(int count) {
+	public void setVertexCount(int count)
+	{
 		this.vertCount = count;
 	}
 
-	public void getTriangle(int index, Vector3f v1, Vector3f v2, Vector3f v3) {
+	public void getTriangle(int index, Vector3f v1, Vector3f v2, Vector3f v3)
+	{
 		VertexBuffer pb = getBuffer(Type.Position);
 		VertexBuffer ib = getBuffer(Type.Index);
 
@@ -313,12 +336,14 @@ public class Mesh {
 		}
 	}
 
-	public void getTriangle(int index, Triangle tri) {
+	public void getTriangle(int index, Triangle tri)
+	{
 		getTriangle(index, tri.get1(), tri.get2(), tri.get3());
 		tri.setIndex(index);
 	}
 
-	public void getTriangle(int index, int[] indices) {
+	public void getTriangle(int index, int[] indices)
+	{
 		VertexBuffer ib = getBuffer(Type.Index);
 		if (ib.getFormat() == Format.UnsignedShort) {
 			// accepted format for buffers
@@ -332,18 +357,21 @@ public class Mesh {
 		}
 	}
 
-	public int getId() {
+	public int getId()
+	{
 		return vertexArrayID;
 	}
 
-	public void setId(int id) {
+	public void setId(int id)
+	{
 		if (vertexArrayID != -1)
 			throw new IllegalStateException("ID has already been set.");
 
 		vertexArrayID = id;
 	}
 
-	public void createCollisionData() {
+	public void createCollisionData()
+	{
 		if (collisionTree != null) {
 			return;
 		}
@@ -352,7 +380,8 @@ public class Mesh {
 		collisionTree = tree;
 	}
 
-	public int collideWith(Collidable other, Matrix4f worldMatrix, BoundingVolume worldBound, CollisionResults results) {
+	public int collideWith(Collidable other, Matrix4f worldMatrix, BoundingVolume worldBound, CollisionResults results)
+	{
 
 		if (collisionTree == null) {
 			createCollisionData();
@@ -361,7 +390,8 @@ public class Mesh {
 		return collisionTree.collideWith(other, worldMatrix, worldBound, results);
 	}
 
-	public void setBuffer(Type type, int components, FloatBuffer buf) {
+	public void setBuffer(Type type, int components, FloatBuffer buf)
+	{
 		VertexBuffer vb = buffers.get(type.ordinal());
 		if (vb == null) {
 			if (buf == null)
@@ -371,18 +401,19 @@ public class Mesh {
 			vb.setupData(Usage.Dynamic, components, Format.Float, buf);
 			// buffers.put(type, vb);
 			buffers.put(type.ordinal(), vb);
-		}
-		else {
+		} else {
 			vb.setupData(Usage.Dynamic, components, Format.Float, buf);
 		}
 		updateCounts();
 	}
 
-	public void setBuffer(Type type, int components, float[] buf) {
+	public void setBuffer(Type type, int components, float[] buf)
+	{
 		setBuffer(type, components, BufferUtils.createFloatBuffer(buf));
 	}
 
-	public void setBuffer(Type type, int components, IntBuffer buf) {
+	public void setBuffer(Type type, int components, IntBuffer buf)
+	{
 		VertexBuffer vb = buffers.get(type.ordinal());
 		if (vb == null) {
 			vb = new VertexBuffer(type);
@@ -392,11 +423,13 @@ public class Mesh {
 		}
 	}
 
-	public void setBuffer(Type type, int components, int[] buf) {
+	public void setBuffer(Type type, int components, int[] buf)
+	{
 		setBuffer(type, components, BufferUtils.createIntBuffer(buf));
 	}
 
-	public void setBuffer(Type type, int components, ShortBuffer buf) {
+	public void setBuffer(Type type, int components, ShortBuffer buf)
+	{
 		VertexBuffer vb = buffers.get(type.ordinal());
 		if (vb == null) {
 			vb = new VertexBuffer(type);
@@ -406,11 +439,13 @@ public class Mesh {
 		}
 	}
 
-	public void setBuffer(Type type, int components, byte[] buf) {
+	public void setBuffer(Type type, int components, byte[] buf)
+	{
 		setBuffer(type, components, BufferUtils.createByteBuffer(buf));
 	}
 
-	public void setBuffer(Type type, int components, ByteBuffer buf) {
+	public void setBuffer(Type type, int components, ByteBuffer buf)
+	{
 		VertexBuffer vb = buffers.get(type.ordinal());
 		if (vb == null) {
 			vb = new VertexBuffer(type);
@@ -420,26 +455,31 @@ public class Mesh {
 		}
 	}
 
-	public void setBuffer(VertexBuffer vb) {
+	public void setBuffer(VertexBuffer vb)
+	{
 		if (buffers.containsKey(vb.getBufferType().ordinal()))
 			throw new IllegalArgumentException("Buffer type already set: " + vb.getBufferType());
 
 		buffers.put(vb.getBufferType().ordinal(), vb);
 	}
 
-	public void clearBuffer(VertexBuffer.Type type) {
+	public void clearBuffer(VertexBuffer.Type type)
+	{
 		buffers.remove(type.ordinal());
 	}
 
-	public void setBuffer(Type type, int components, short[] buf) {
+	public void setBuffer(Type type, int components, short[] buf)
+	{
 		setBuffer(type, components, BufferUtils.createShortBuffer(buf));
 	}
 
-	public VertexBuffer getBuffer(Type type) {
+	public VertexBuffer getBuffer(Type type)
+	{
 		return buffers.get(type.ordinal());
 	}
 
-	public FloatBuffer getFloatBuffer(Type type) {
+	public FloatBuffer getFloatBuffer(Type type)
+	{
 		VertexBuffer vb = getBuffer(type);
 		if (vb == null)
 			return null;
@@ -447,7 +487,8 @@ public class Mesh {
 		return (FloatBuffer) vb.getData();
 	}
 
-	public ShortBuffer getShortBuffer(Type type) {
+	public ShortBuffer getShortBuffer(Type type)
+	{
 		VertexBuffer vb = getBuffer(type);
 		if (vb == null)
 			return null;
@@ -455,7 +496,8 @@ public class Mesh {
 		return (ShortBuffer) vb.getData();
 	}
 
-	public IndexBuffer getIndexBuffer() {
+	public IndexBuffer getIndexBuffer()
+	{
 		VertexBuffer vb = getBuffer(Type.Index);
 		if (vb == null)
 			return null;
@@ -463,19 +505,17 @@ public class Mesh {
 		Buffer buf = vb.getData();
 		if (buf instanceof ByteBuffer) {
 			return new IndexByteBuffer((ByteBuffer) buf);
-		}
-		else if (buf instanceof ShortBuffer) {
+		} else if (buf instanceof ShortBuffer) {
 			return new IndexShortBuffer((ShortBuffer) buf);
-		}
-		else if (buf instanceof IntBuffer) {
+		} else if (buf instanceof IntBuffer) {
 			return new IndexIntBuffer((IntBuffer) buf);
-		}
-		else {
+		} else {
 			throw new UnsupportedOperationException("Index buffer type unsupported: " + buf.getClass());
 		}
 	}
 
-	public void scaleTextureCoordinates(Vector2f scaleFactor) {
+	public void scaleTextureCoordinates(Vector2f scaleFactor)
+	{
 		VertexBuffer tc = getBuffer(Type.TexCoord);
 		if (tc == null)
 			throw new IllegalStateException("The mesh has no texture coordinates");
@@ -499,7 +539,8 @@ public class Mesh {
 		fb.clear();
 	}
 
-	public void updateBound() {
+	public void updateBound()
+	{
 		VertexBuffer posBuf = getBuffer(VertexBuffer.Type.Position);
 		if (meshBound == null)
 			meshBound = new BoundingBox();
@@ -508,31 +549,38 @@ public class Mesh {
 		}
 	}
 
-	public BoundingVolume getBound() {
+	public BoundingVolume getBound()
+	{
 		return meshBound;
 	}
 
-	public void setBound(BoundingVolume modelBound) {
+	public void setBound(BoundingVolume modelBound)
+	{
 		meshBound = modelBound;
 	}
 
-	public IntMap<VertexBuffer> getBuffers() {
+	public IntMap<VertexBuffer> getBuffers()
+	{
 		return buffers;
 	}
 
-	public short getCollisionFlags() {
+	public short getCollisionFlags()
+	{
 		return collisionFlags;
 	}
 
-	public void setCollisionFlags(short collisionFlags) {
+	public void setCollisionFlags(short collisionFlags)
+	{
 		this.collisionFlags = collisionFlags;
 	}
-	
-	public byte getMaterialId() {
+
+	public byte getMaterialId()
+	{
 		return (byte) (collisionFlags & 0xFF);
 	}
-	
-	public byte getIntentions() {
+
+	public byte getIntentions()
+	{
 		return (byte) (collisionFlags >> 8);
 	}
 

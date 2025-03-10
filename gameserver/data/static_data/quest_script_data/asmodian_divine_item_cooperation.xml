@@ -9,8 +9,8 @@
 		[END] SUMMARY
 	-->
 	<!-- COLLECTING QUESTS -->
-	<item_collecting id="47500" start_npc_ids="0" end_npc_ids="205651 205646"/>
-	<item_collecting id="47501" start_npc_ids="0" end_npc_ids="205651 205646"/>
-	<item_collecting id="47502" start_npc_ids="0" end_npc_ids="205651 205646"/>
-	<item_collecting id="47503" start_npc_ids="0" end_npc_ids="205651 205646"/>
+	<item_collecting id="47500" start_npc_ids="0" end_npc_ids="205651 205646" />
+	<item_collecting id="47501" start_npc_ids="0" end_npc_ids="205651 205646" />
+	<item_collecting id="47502" start_npc_ids="0" end_npc_ids="205651 205646" />
+	<item_collecting id="47503" start_npc_ids="0" end_npc_ids="205651 205646" />
 </quest_scripts>

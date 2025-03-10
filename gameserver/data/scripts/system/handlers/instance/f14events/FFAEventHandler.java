@@ -10,7 +10,6 @@ import com.aionemu.gameserver.utils.PacketSendUtility;
 import com.aionemu.gameserver.utils.ThreadPoolManager;
 import com.aionemu.gameserver.world.WorldMapInstance;
 
-import java.util.Collections;
 import java.util.concurrent.ScheduledFuture;
 
 import pirate.announcer.Balalaka;
@@ -208,7 +207,7 @@ public class FFAEventHandler extends BaseEventHandler
 			eventIsComplete = true;
 			this.stopTimer();
 			int rank = 1;
-			Collections.sort(score);
+			score.sort(null);
 			for (EventScore es : this.score) {
 				Player player = this.getPlayerFromEventList(es.PlayerObjectId);
 				this.sendSpecMessage(EventManager, String.format("Вы заняли %s место", rank), player);

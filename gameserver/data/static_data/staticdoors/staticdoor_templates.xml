@@ -484,18 +484,18 @@
 	<world world="300460000">
 		<staticdoor keyid="185000044" doorid="39" x="454.92999" y="530.87" z="953.46997" mesh="shulack_keydoor_01a.cga" state="0xA" />
 		<staticdoor keyid="185000043" doorid="43" x="374.04999" y="490.34" z="948.56" mesh="shulack_keydoor_01a.cga" state="0xA" />
-		<staticdoor keyid="185000048" doorid="70" x="342.95001" y="464.48001" z="898.90997"/>
+		<staticdoor keyid="185000048" doorid="70" x="342.95001" y="464.48001" z="898.90997" />
 		<staticdoor keyid="185000054" doorid="73" x="411.75" y="552.21997" z="947.85999" mesh="shulack_keydoor_01a.cga" state="0xA" />
 		<staticdoor keyid="185000042" doorid="74" x="333.17001" y="546.15002" z="953.75" mesh="shulack_keydoor_01a.cga" state="0xA" />
 		<staticdoor keyid="185000045" doorid="75" x="539.22998" y="501.04001" z="953.65002" mesh="shulack_keydoor_01a.cga" state="0xA" />
-		<staticdoor keyid="185000051" doorid="80" x="699.87665" y="478.4967" z="869.55444"/>
-		<staticdoor keyid="185000074" doorid="91" x="712.25" y="531.28998" z="1014.88"/>
-		<staticdoor keyid="185000053" doorid="93" x="638.90002" y="470.87" z="1032.89"/>
-		<staticdoor keyid="185000049" doorid="94" x="534.96002" y="441.5" z="884.15002"/>
+		<staticdoor keyid="185000051" doorid="80" x="699.87665" y="478.4967" z="869.55444" />
+		<staticdoor keyid="185000074" doorid="91" x="712.25" y="531.28998" z="1014.88" />
+		<staticdoor keyid="185000053" doorid="93" x="638.90002" y="470.87" z="1032.89" />
+		<staticdoor keyid="185000049" doorid="94" x="534.96002" y="441.5" z="884.15002" />
 	</world>
 	<world world="300470000">
 		<staticdoor keyid="1" doorid="62" x="460.31766" y="618.45068" z="177.48994" mesh="idtiamat_reward_cave_door.cga" state="0x0" />
-		<staticdoor doorid="77" x="496.45001" y="661.58002" z="176.87785"/>
+		<staticdoor doorid="77" x="496.45001" y="661.58002" z="176.87785" />
 		<staticdoor doorid="79" x="521.70917" y="745.80811" z="180.9431" mesh="idtiamat_reward_boss_door.cga" state="0x8" />
 		<staticdoor keyid="1" doorid="82" x="537.03217" y="618.58734" z="177.48994" mesh="idtiamat_reward_cave_door.cga" state="0x0" />
 		<staticdoor keyid="1" doorid="84" x="556.95935" y="349.23703" z="158.68079" mesh="idtiamat_reward_door_01a.cga" state="0x8" />
@@ -512,7 +512,7 @@
 	</world>
 	<world world="300510000">
 		<staticdoor keyid="1" doorid="11" x="752.8927" y="1319.1438" z="397.72916" mesh="idtiamat_named_mid_door.cga" state="0x2" />
-		<staticdoor keyid="1" doorid="20" x="1030.4901" y="494.88681" z="448.51999"/>
+		<staticdoor keyid="1" doorid="20" x="1030.4901" y="494.88681" z="448.51999" />
 		<staticdoor keyid="1" doorid="22" x="1085.66" y="761.96997" z="495.51999" mesh="idtiamat_common_large_door.cga" state="0x0" />
 		<staticdoor keyid="1" doorid="37" x="739.51245" y="1068.5604" z="501.22964" mesh="idtiamat_named_small_door.cga" state="0x0" />
 		<staticdoor keyid="1" doorid="48" x="1173.0504" y="1068.9629" z="492.10983" mesh="idtiamat_castle_door_scale10.cga" state="0x0" />
@@ -762,11 +762,11 @@
 		<staticdoor keyid="185000023" doorid="64" x="457.85895" y="530.14252" z="187.72795" mesh="librarydoor.cga" state="0xA" />
 		<staticdoor keyid="185000021" doorid="95" x="302.24316" y="530.0022" z="187.7227" mesh="librarydoor_03c.cga" state="0xA" />
 		<staticdoor keyid="185000018" doorid="127" x="302.6702" y="494.341" z="187.7227" mesh="librarydoor_03c.cga" state="0xA" />
-		<staticdoor keyid="185000024" doorid="128" x="418.13388" y="682.33209" z="187.75204"/>
+		<staticdoor keyid="185000024" doorid="128" x="418.13388" y="682.33209" z="187.75204" />
 		<staticdoor doorid="129" x="538.4234" y="700.78229" z="202.05693" mesh="librarydoor_05e.cga" state="0xA" />
 		<staticdoor keyid="185000025" doorid="130" x="601.10327" y="593.65863" z="159.36613" mesh="librarydoor_05e.cga" state="0xA" />
-		<staticdoor keyid="185000017" doorid="132" x="497.13641" y="323.06158" z="176.19296"/>
-		<staticdoor keyid="185000017" doorid="133" x="459.09161" y="323.06158" z="176.19296"/>
+		<staticdoor keyid="185000017" doorid="132" x="497.13641" y="323.06158" z="176.19296" />
+		<staticdoor keyid="185000017" doorid="133" x="459.09161" y="323.06158" z="176.19296" />
 		<staticdoor keyid="185000016" doorid="233" x="666.29272" y="181.68481" z="166.0341" mesh="librarydoor_04d.cga" state="0xA" />
 	</world>
 	<world world="320090000">

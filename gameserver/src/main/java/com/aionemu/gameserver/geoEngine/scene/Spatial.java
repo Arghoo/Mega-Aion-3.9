@@ -42,15 +42,17 @@ import com.aionemu.gameserver.geoEngine.math.Vector3f;
  * <code>Spatial</code> defines the base class for scene graph nodes. It maintains a link to a parent, it's local
  * transforms and the world's transforms. All other nodes, such as <code>Node</code> and <code>Geometry</code> are
  * subclasses of <code>Spatial</code>.
- * 
+ *
  * @author Mark Powell
  * @author Joshua Slack
  * @author Rolandas - added materials
  * @version $Revision: 4075 $, $Data$
  */
-public abstract class Spatial implements Collidable, Cloneable {
+public abstract class Spatial implements Collidable, Cloneable
+{
 
-	public enum CullHint {
+	public enum CullHint
+	{
 		/**
 		 * Do whatever our parent does. If no parent, we'll default to dynamic.
 		 */
@@ -90,17 +92,18 @@ public abstract class Spatial implements Collidable, Cloneable {
 	/**
 	 * Default Constructor.
 	 */
-	public Spatial() {
+	public Spatial()
+	{
 	}
 
 	/**
 	 * Constructor instantiates a new <code>Spatial</code> object setting the rotation, translation and scale value to
 	 * defaults.
-	 * 
-	 * @param name
-	 *          the name of the scene element. This is required for identification and comparision purposes.
+	 *
+	 * @param name the name of the scene element. This is required for identification and comparision purposes.
 	 */
-	public Spatial(String name) {
+	public Spatial(String name)
+	{
 		this();
 		if (name != null)
 			this.name = name.intern();
@@ -108,50 +111,53 @@ public abstract class Spatial implements Collidable, Cloneable {
 
 	/**
 	 * Sets the name of this spatial.
-	 * 
-	 * @param name
-	 *          The spatial's new name.
+	 *
+	 * @param name The spatial's new name.
 	 */
-	public void setName(String name) {
+	public void setName(String name)
+	{
 		if (name != null)
 			this.name = name.intern();
 	}
 
 	/**
 	 * Returns the name of this spatial.
-	 * 
+	 *
 	 * @return This spatial's name.
 	 */
-	public String getName() {
+	public String getName()
+	{
 		return name;
 	}
 
 	/**
 	 * <code>getParent</code> retrieve's this node's parent. If the parent is null this is the root node.
-	 * 
+	 *
 	 * @return the parent of this node.
 	 */
-	public Node getParent() {
+	public Node getParent()
+	{
 		return parent;
 	}
 
 	/**
 	 * Called by {@link Node#attachChild(Spatial)} and {@link Node#detachChild(Spatial)} - don't call directly.
 	 * <code>setParent</code> sets the parent of this node.
-	 * 
-	 * @param parent
-	 *          the parent of this node.
+	 *
+	 * @param parent the parent of this node.
 	 */
-	protected void setParent(Node parent) {
+	protected void setParent(Node parent)
+	{
 		this.parent = parent;
 	}
 
 	/**
 	 * <code>removeFromParent</code> removes this Spatial from it's parent.
-	 * 
+	 *
 	 * @return true if it has a parent and performed the remove.
 	 */
-	public boolean removeFromParent() {
+	public boolean removeFromParent()
+	{
 		if (parent != null) {
 			parent.detachChild(this);
 			return true;
@@ -161,19 +167,17 @@ public abstract class Spatial implements Collidable, Cloneable {
 
 	/**
 	 * determines if the provided Node is the parent, or parent's parent, etc. of this Spatial.
-	 * 
-	 * @param ancestor
-	 *          the ancestor object to look for.
+	 *
+	 * @param ancestor the ancestor object to look for.
 	 * @return true if the ancestor is found, false otherwise.
 	 */
-	public boolean hasAncestor(Node ancestor) {
+	public boolean hasAncestor(Node ancestor)
+	{
 		if (parent == null) {
 			return false;
-		}
-		else if (parent.equals(ancestor)) {
+		} else if (parent.equals(ancestor)) {
 			return true;
-		}
-		else {
+		} else {
 			return parent.hasAncestor(ancestor);
 		}
 	}
@@ -185,9 +189,8 @@ public abstract class Spatial implements Collidable, Cloneable {
 
 	/**
 	 * <code>setModelBound</code> sets the bounding object for this Spatial.
-	 * 
-	 * @param modelBound
-	 *          the bounding object for this spatial.
+	 *
+	 * @param modelBound the bounding object for this spatial.
 	 */
 	public abstract void setModelBound(BoundingVolume modelBound);
 
@@ -200,32 +203,33 @@ public abstract class Spatial implements Collidable, Cloneable {
 	 * @return The sum of all triangles under this Spatial.
 	 */
 	public abstract int getTriangleCount();
-	
-	public byte getMaterialId() {
+
+	public byte getMaterialId()
+	{
 		return (byte) (getCollisionFlags() & 0xFF);
 	}
-	
-	public byte getIntentions() {
+
+	public byte getIntentions()
+	{
 		return (byte) (getCollisionFlags() >> 8);
 	}
-	
+
 	public abstract short getCollisionFlags();
-	
+
 	public abstract void setCollisionFlags(short flags);
 
 	/**
 	 * Note that we are <i>matching</i> the pattern, therefore the pattern must match the entire pattern (i.e. it behaves
 	 * as if it is sandwiched between "^" and "$"). You can set regex modes, like case insensitivity, by using the (?X) or
 	 * (?X:Y) constructs.
-	 * 
-	 * @param spatialSubclass
-	 *          Subclass which this must implement. Null causes all Spatials to qualify.
-	 * @param nameRegex
-	 *          Regular expression to match this name against. Null causes all Names to qualify.
+	 *
+	 * @param spatialSubclass Subclass which this must implement. Null causes all Spatials to qualify.
+	 * @param nameRegex       Regular expression to match this name against. Null causes all Names to qualify.
 	 * @return true if this implements the specified class and this's name matches the specified pattern.
 	 * @see java.util.regex.Pattern
 	 */
-	public boolean matches(Class<? extends Spatial> spatialSubclass, String nameRegex) {
+	public boolean matches(Class<? extends Spatial> spatialSubclass, String nameRegex)
+	{
 		if (spatialSubclass != null && !spatialSubclass.isInstance(this))
 			return false;
 
@@ -234,31 +238,34 @@ public abstract class Spatial implements Collidable, Cloneable {
 
 		return true;
 	}
-	
+
 	/**
 	 * <code>getWorldBound</code> retrieves the world bound at this node level.
-	 * 
+	 *
 	 * @return the world bound at this level.
 	 */
-	public BoundingVolume getWorldBound() {
+	public BoundingVolume getWorldBound()
+	{
 		return worldBound;
 	}
 
 	/**
 	 * Returns the Spatial's name followed by the class of the spatial <br>
 	 * Example: "MyNode (com.jme3.scene.Spatial)
-	 * 
+	 *
 	 * @return Spatial's name followed by the class of the Spatial
 	 */
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return name + " (" + this.getClass().getSimpleName() + ") use " + CollisionIntention.toString(getIntentions());
 	}
 
 	public abstract void setTransform(Matrix3f rotation, Vector3f loc, float scale);
 
 	@Override
-	public Spatial clone() throws CloneNotSupportedException {
+	public Spatial clone() throws CloneNotSupportedException
+	{
 		return (Spatial) super.clone();
 	}
 }

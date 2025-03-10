@@ -5,7 +5,6 @@ import gnu.trove.map.hash.TIntObjectHashMap;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -341,15 +340,7 @@ public final class ZoneService implements GameEngine
 				}
 			}
 		}
-		Collections.sort(templates, new Comparator<ZoneTemplate>()
-		{
-
-			@Override
-			public int compare(ZoneTemplate o1, ZoneTemplate o2)
-			{
-				return o1.getMapid() - o2.getMapid();
-			}
-		});
+		templates.sort(Comparator.comparingInt(ZoneTemplate::getMapid));
 
 		ZoneData zoneData = new ZoneData();
 		zoneData.zoneList = templates;

@@ -221,7 +221,7 @@ public final class RunnableStatsManager {
 		}
 
 		if (sortBy != null)
-			Collections.sort(methodStats, sortBy.comparator);
+			methodStats.sort(sortBy.comparator);
 
 		final List<String> lines = new ArrayList<String>();
 

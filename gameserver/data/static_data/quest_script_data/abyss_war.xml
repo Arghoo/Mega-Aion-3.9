@@ -7,8 +7,8 @@
 		[END] SUMMARY
 	-->
 	<!-- REPORTING QUESTS -->
-	<report_to id="9546" start_npc_ids="798129" end_npc_ids="798129"/>
-	<report_to id="9547" start_npc_ids="798130" end_npc_ids="798130"/>
+	<report_to id="9546" start_npc_ids="798129" end_npc_ids="798129" />
+	<report_to id="9547" start_npc_ids="798130" end_npc_ids="798130" />
 	<!-- COLLECTING QUESTS -->
 	<!-- HUNTING QUESTS -->
 </quest_scripts>

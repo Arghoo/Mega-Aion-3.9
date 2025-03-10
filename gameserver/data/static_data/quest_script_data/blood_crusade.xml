@@ -15,15 +15,15 @@
 		[END] SUMMARY
 	-->
 	<!-- REPORTING QUESTS -->
-	<report_to start_npc_ids="204191" end_npc_ids="799868" id="48004"/>
+	<report_to start_npc_ids="204191" end_npc_ids="799868" id="48004" />
 	<!-- COLLECTING QUESTS -->
 	<!-- HUNTING QUESTS -->
-	<kill_in_world id="45502" end_npc_ids="799870" worlds="400010000" amount="3"/>
-	<kill_in_world id="45503" start_npc_ids="799865 799866" end_npc_ids="799865 799866" worlds="600010000" amount="5"/>
-	<kill_in_world id="45504" end_npc_ids="799865 799866" worlds="220070000" amount="5"/>
-	<kill_in_world id="45505" end_npc_ids="799865 799866" worlds="210050000" amount="5"/>
-	<kill_in_world id="45506" start_npc_ids="799870" end_npc_ids="799870" worlds="220020000 220040000" amount="2"/>
-	<kill_in_world id="45507" start_npc_ids="799870" end_npc_ids="799870" worlds="210020000 210040000" amount="1"/>
-	<kill_in_world id="45508" end_npc_ids="799870" worlds="0" amount="5"/>
-	<kill_in_world id="45509" end_npc_ids="799865 799866" worlds="0" amount="5"/>
+	<kill_in_world id="45502" end_npc_ids="799870" worlds="400010000" amount="3" />
+	<kill_in_world id="45503" start_npc_ids="799865 799866" end_npc_ids="799865 799866" worlds="600010000" amount="5" />
+	<kill_in_world id="45504" end_npc_ids="799865 799866" worlds="220070000" amount="5" />
+	<kill_in_world id="45505" end_npc_ids="799865 799866" worlds="210050000" amount="5" />
+	<kill_in_world id="45506" start_npc_ids="799870" end_npc_ids="799870" worlds="220020000 220040000" amount="2" />
+	<kill_in_world id="45507" start_npc_ids="799870" end_npc_ids="799870" worlds="210020000 210040000" amount="1" />
+	<kill_in_world id="45508" end_npc_ids="799870" worlds="0" amount="5" />
+	<kill_in_world id="45509" end_npc_ids="799865 799866" worlds="0" amount="5" />
 </quest_scripts>

@@ -26,8 +26,6 @@ import com.aionemu.gameserver.model.items.GodStone;
 import com.aionemu.gameserver.model.items.ItemStone;
 import com.aionemu.gameserver.model.items.ItemStone.ItemStoneType;
 import com.aionemu.gameserver.model.items.ManaStone;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Sets;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +35,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -52,10 +51,6 @@ public class ItemStoneListDAO
 	public static final String UPDATE_QUERY = "UPDATE `item_stones` SET `item_id`=?, `slot`=? where `item_unique_id`=? AND `category`=?";
 	public static final String DELETE_QUERY = "DELETE FROM `item_stones` WHERE `item_unique_id`=? AND slot=? AND category=?";
 	public static final String SELECT_QUERY = "SELECT `item_id`, `slot`, `category` FROM `item_stones` WHERE `item_unique_id`=?";
-
-	private static final Predicate<ItemStone> itemStoneAddPredicate = itemStone -> itemStone != null && PersistentState.NEW == itemStone.getPersistentState();
-	private static final Predicate<ItemStone> itemStoneDeletedPredicate = itemStone -> itemStone != null && PersistentState.DELETED == itemStone.getPersistentState();
-	private static final Predicate<ItemStone> itemStoneUpdatePredicate = itemStone -> itemStone != null && PersistentState.UPDATE_REQUIRED == itemStone.getPersistentState();
 
 	/**
 	 * Loads stones of item
@@ -132,9 +127,9 @@ public class ItemStoneListDAO
 			return;
 		}
 
-		Set<? extends ItemStone> stonesToAdd = Sets.filter(stones, itemStoneAddPredicate);
-		Set<? extends ItemStone> stonesToDelete = Sets.filter(stones, itemStoneDeletedPredicate);
-		Set<? extends ItemStone> stonesToUpdate = Sets.filter(stones, itemStoneUpdatePredicate);
+		Set<? extends ItemStone> stonesToAdd = stones.stream().filter(i -> i != null && PersistentState.NEW == i.getPersistentState()).collect(Collectors.toSet());
+		Set<? extends ItemStone> stonesToDelete = stones.stream().filter(i -> i != null && PersistentState.DELETED == i.getPersistentState()).collect(Collectors.toSet());
+		Set<? extends ItemStone> stonesToUpdate = stones.stream().filter(i -> i != null && PersistentState.UPDATE_REQUIRED == i.getPersistentState()).collect(Collectors.toSet());
 
 		try (Connection con = DatabaseFactory.getConnection()) {
 			con.setAutoCommit(false);
@@ -157,9 +152,9 @@ public class ItemStoneListDAO
 			return;
 		}
 
-		Set<ManaStone> manaStones = Sets.newHashSet();
-		Set<ManaStone> fusionStones = Sets.newHashSet();
-		Set<GodStone> godStones = Sets.newHashSet();
+		Set<ManaStone> manaStones = new HashSet<>();
+		Set<ManaStone> fusionStones = new HashSet<>();
+		Set<GodStone> godStones = new HashSet<>();
 
 		for (Item item : items) {
 			if (item.hasManaStones()) {

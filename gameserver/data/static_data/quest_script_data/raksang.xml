@@ -63,68 +63,68 @@
 		[END] SUMMARY
 	-->
 	<!-- REPORTING QUESTS -->
-	<report_to id="18712" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235"/>
-	<report_to id="18714" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235"/>
-	<report_to id="18716" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235"/>
-	<report_to id="18718" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235"/>
-	<report_to id="18720" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235"/>
-	<report_to id="18722" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235"/>
-	<report_to id="18724" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235"/>
-	<report_to id="18726" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235"/>
-	<report_to id="18728" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235"/>
-	<report_to id="28712" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253"/>
-	<report_to id="28714" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253"/>
-	<report_to id="28716" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253"/>
-	<report_to id="28718" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253"/>
-	<report_to id="28720" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253"/>
-	<report_to id="28722" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253"/>
-	<report_to id="28724" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253"/>
-	<report_to id="28726" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253"/>
-	<report_to id="28728" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253"/>
+	<report_to id="18712" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235" />
+	<report_to id="18714" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235" />
+	<report_to id="18716" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235" />
+	<report_to id="18718" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235" />
+	<report_to id="18720" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235" />
+	<report_to id="18722" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235" />
+	<report_to id="18724" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235" />
+	<report_to id="18726" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235" />
+	<report_to id="18728" start_npc_ids="799433" end_npc_ids="205591" item_id="182212235" />
+	<report_to id="28712" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253" />
+	<report_to id="28714" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253" />
+	<report_to id="28716" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253" />
+	<report_to id="28718" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253" />
+	<report_to id="28720" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253" />
+	<report_to id="28722" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253" />
+	<report_to id="28724" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253" />
+	<report_to id="28726" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253" />
+	<report_to id="28728" start_npc_ids="799437" end_npc_ids="205591" item_id="182212253" />
 	<!-- COLLECTING QUESTS -->
-	<item_collecting id="18707" start_npc_ids="799532"/>
-	<item_collecting id="18711" start_npc_ids="799531" end_npc_ids="799433"/>
-	<item_collecting id="18713" start_npc_ids="799531" end_npc_ids="799433"/>
-	<item_collecting id="18715" start_npc_ids="799531" end_npc_ids="799433"/>
-	<item_collecting id="18717" start_npc_ids="799531" end_npc_ids="799433"/>
-	<item_collecting id="18719" start_npc_ids="799531" end_npc_ids="799433"/>
-	<item_collecting id="18721" start_npc_ids="799531" end_npc_ids="799433"/>
-	<item_collecting id="18723" start_npc_ids="799531" end_npc_ids="799433"/>
-	<item_collecting id="18725" start_npc_ids="799531" end_npc_ids="799433"/>
-	<item_collecting id="18727" start_npc_ids="799531" end_npc_ids="799433"/>
-	<item_collecting id="28707" start_npc_ids="799266"/>
-	<item_collecting id="28711" start_npc_ids="799531" end_npc_ids="799437"/>
-	<item_collecting id="28713" start_npc_ids="799531" end_npc_ids="799437"/>
-	<item_collecting id="28715" start_npc_ids="799531" end_npc_ids="799437"/>
-	<item_collecting id="28717" start_npc_ids="799531" end_npc_ids="799437"/>
-	<item_collecting id="28719" start_npc_ids="799531" end_npc_ids="799437"/>
-	<item_collecting id="28721" start_npc_ids="799531" end_npc_ids="799437"/>
-	<item_collecting id="28723" start_npc_ids="799531" end_npc_ids="799437"/>
-	<item_collecting id="28725" start_npc_ids="799531" end_npc_ids="799437"/>
-	<item_collecting id="28727" start_npc_ids="799531" end_npc_ids="799437"/>
+	<item_collecting id="18707" start_npc_ids="799532" />
+	<item_collecting id="18711" start_npc_ids="799531" end_npc_ids="799433" />
+	<item_collecting id="18713" start_npc_ids="799531" end_npc_ids="799433" />
+	<item_collecting id="18715" start_npc_ids="799531" end_npc_ids="799433" />
+	<item_collecting id="18717" start_npc_ids="799531" end_npc_ids="799433" />
+	<item_collecting id="18719" start_npc_ids="799531" end_npc_ids="799433" />
+	<item_collecting id="18721" start_npc_ids="799531" end_npc_ids="799433" />
+	<item_collecting id="18723" start_npc_ids="799531" end_npc_ids="799433" />
+	<item_collecting id="18725" start_npc_ids="799531" end_npc_ids="799433" />
+	<item_collecting id="18727" start_npc_ids="799531" end_npc_ids="799433" />
+	<item_collecting id="28707" start_npc_ids="799266" />
+	<item_collecting id="28711" start_npc_ids="799531" end_npc_ids="799437" />
+	<item_collecting id="28713" start_npc_ids="799531" end_npc_ids="799437" />
+	<item_collecting id="28715" start_npc_ids="799531" end_npc_ids="799437" />
+	<item_collecting id="28717" start_npc_ids="799531" end_npc_ids="799437" />
+	<item_collecting id="28719" start_npc_ids="799531" end_npc_ids="799437" />
+	<item_collecting id="28721" start_npc_ids="799531" end_npc_ids="799437" />
+	<item_collecting id="28723" start_npc_ids="799531" end_npc_ids="799437" />
+	<item_collecting id="28725" start_npc_ids="799531" end_npc_ids="799437" />
+	<item_collecting id="28727" start_npc_ids="799531" end_npc_ids="799437" />
 	<!-- HUNTING QUESTS -->
 	<monster_hunt id="18701" start_npc_ids="799434">
-		<monster var="0" npc_ids="217421 217422" end_var="20"/>
+		<monster var="0" npc_ids="217421 217422" end_var="20" />
 	</monster_hunt>
 	<monster_hunt id="18702" start_npc_ids="799434">
-		<monster var="0" npc_ids="217421 217422" end_var="20"/>
+		<monster var="0" npc_ids="217421 217422" end_var="20" />
 	</monster_hunt>
 	<monster_hunt id="18704" start_npc_ids="799433">
-		<monster var="0" npc_ids="217415" end_var="20"/>
+		<monster var="0" npc_ids="217415" end_var="20" />
 	</monster_hunt>
 	<monster_hunt id="18705" start_npc_ids="799433">
-		<monster var="0" npc_ids="217415" end_var="20"/>
+		<monster var="0" npc_ids="217415" end_var="20" />
 	</monster_hunt>
 	<monster_hunt id="28701" start_npc_ids="799434">
-		<monster var="0" npc_ids="217401 217402" end_var="20"/>
+		<monster var="0" npc_ids="217401 217402" end_var="20" />
 	</monster_hunt>
 	<monster_hunt id="28702" start_npc_ids="799434">
-		<monster var="0" npc_ids="217401 217402" end_var="20"/>
+		<monster var="0" npc_ids="217401 217402" end_var="20" />
 	</monster_hunt>
 	<monster_hunt id="28704" start_npc_ids="799437">
-		<monster var="0" npc_ids="217415 217416" end_var="15"/>
+		<monster var="0" npc_ids="217415 217416" end_var="15" />
 	</monster_hunt>
 	<monster_hunt id="28705" start_npc_ids="799437">
-		<monster var="0" npc_ids="217415 217416" end_var="15"/>
+		<monster var="0" npc_ids="217415 217416" end_var="15" />
 	</monster_hunt>
 </quest_scripts>

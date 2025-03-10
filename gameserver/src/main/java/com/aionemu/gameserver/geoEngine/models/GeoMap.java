@@ -26,7 +26,8 @@ import com.aionemu.gameserver.geoEngine.scene.mesh.DoorGeometry;
 /**
  * @author Mr. Poke
  */
-public class GeoMap extends Node {
+public class GeoMap extends Node
+{
 
 	private static final Logger log = LoggerFactory.getLogger(GeoMap.class);
 
@@ -35,9 +36,10 @@ public class GeoMap extends Node {
 	private Map<String, DoorGeometry> doors = new FastMap<String, DoorGeometry>();
 
 	/**
-	 * 
+	 *
 	 */
-	public GeoMap(String name, int worldSize) {
+	public GeoMap(String name, int worldSize)
+	{
 		setCollisionFlags((short) (CollisionIntention.ALL.getId() << 8));
 		for (int x = 0; x < worldSize; x += 256) {
 			for (int y = 0; y < worldSize; y += 256) {
@@ -49,7 +51,8 @@ public class GeoMap extends Node {
 		}
 	}
 
-	public String getDoorName(int worldId, String meshFile, float x, float y, float z) {
+	public String getDoorName(int worldId, String meshFile, float x, float y, float z)
+	{
 		if (!GeoDataConfig.GEO_DOORS_ENABLE)
 			return null;
 		String mesh = meshFile.toUpperCase();
@@ -80,7 +83,8 @@ public class GeoMap extends Node {
 		return foundDoor.getName();
 	}
 
-	public void setDoorState(int instanceId, String name, boolean isOpened) {
+	public void setDoorState(int instanceId, String name, boolean isOpened)
+	{
 		DoorGeometry door = doors.get(name);
 		if (door != null)
 			door.setDoorState(instanceId, isOpened);
@@ -91,7 +95,8 @@ public class GeoMap extends Node {
 	 * @see aionjHungary.geoEngine.scene.Node#attachChild(aionjHungary.geoEngine.scene.Spatial)
 	 */
 	@Override
-	public int attachChild(Spatial child) {
+	public int attachChild(Spatial child)
+	{
 		int i = 0;
 
 		if (child instanceof DoorGeometry)
@@ -107,14 +112,15 @@ public class GeoMap extends Node {
 	}
 
 	/**
-	 * @param terrainData
-	 *          The terrainData to set.
+	 * @param terrainData The terrainData to set.
 	 */
-	public void setTerrainData(short[] terrainData) {
+	public void setTerrainData(short[] terrainData)
+	{
 		this.terrainData = terrainData;
 	}
 
-	public float getZ(float x, float y) {
+	public float getZ(float x, float y)
+	{
 		CollisionResults results = new CollisionResults(CollisionIntention.PHYSICAL.getId(), false, 1);
 		Vector3f pos = new Vector3f(x, y, 4000);
 		Vector3f dir = new Vector3f(x, y, 0);
@@ -126,8 +132,7 @@ public class GeoMap extends Node {
 		Vector3f terrain = null;
 		if (terrainData.length == 1) {
 			terrain = new Vector3f(x, y, terrainData[0] / 32f);
-		}
-		else
+		} else
 			terrain = terraionCollision(x, y, r);
 		if (terrain != null) {
 			CollisionResult result = new CollisionResult(terrain, Math.max(0, Math.max(4000 - terrain.z, terrain.z)));
@@ -139,7 +144,8 @@ public class GeoMap extends Node {
 		return results.getClosestCollision().getContactPoint().z;
 	}
 
-	public float getZ(float x, float y, float z, int instanceId) {
+	public float getZ(float x, float y, float z, int instanceId)
+	{
 		CollisionResults results = new CollisionResults(CollisionIntention.PHYSICAL.getId(), false, instanceId);
 		Vector3f pos = new Vector3f(x, y, z + 2);
 		Vector3f dir = new Vector3f(x, y, z - 100);
@@ -152,8 +158,7 @@ public class GeoMap extends Node {
 		if (terrainData.length == 1) {
 			if (terrainData[0] != 0)
 				terrain = new Vector3f(x, y, terrainData[0] / 32f);
-		}
-		else
+		} else
 			terrain = terraionCollision(x, y, r);
 		if (terrain != null && terrain.z > 0 && terrain.z < z + 2) {
 			CollisionResult result = new CollisionResult(terrain, Math.abs(z - terrain.z + 2));
@@ -165,8 +170,8 @@ public class GeoMap extends Node {
 		return results.getClosestCollision().getContactPoint().z;
 	}
 
-	public Vector3f getClosestCollision(float x, float y, float z, float targetX, float targetY, float targetZ, boolean changeDirection,
-		boolean fly, int instanceId, byte intentions) {
+	public Vector3f getClosestCollision(float x, float y, float z, float targetX, float targetY, float targetZ, boolean changeDirection, boolean fly, int instanceId, byte intentions)
+	{
 		float zChecked1 = 0;
 		float zChecked2 = 0;
 		if (!fly && changeDirection) {
@@ -228,9 +233,9 @@ public class GeoMap extends Node {
 
 		return contactPoint;
 	}
-	
-	public CollisionResults getCollisions(float x, float y, float z, float targetX, float targetY, float targetZ, boolean changeDirection,
-		boolean fly, int instanceId, byte intentions) {
+
+	public CollisionResults getCollisions(float x, float y, float z, float targetX, float targetY, float targetZ, boolean changeDirection, boolean fly, int instanceId, byte intentions)
+	{
 		if (!fly && changeDirection) {
 			z = getZ(x, y, z + 2, instanceId);
 		}
@@ -257,7 +262,8 @@ public class GeoMap extends Node {
 		return results;
 	}
 
-	private Vector3f calculateTerrainCollision(float x, float y, float z, float targetX, float targetY, float targetZ, Ray ray) {
+	private Vector3f calculateTerrainCollision(float x, float y, float z, float targetX, float targetY, float targetZ, Ray ray)
+	{
 
 		float x2 = targetX - x;
 		float y2 = targetY - y;
@@ -273,7 +279,8 @@ public class GeoMap extends Node {
 		return null;
 	}
 
-	private Vector3f terraionCollision(float x, float y, Ray ray) {
+	private Vector3f terraionCollision(float x, float y, Ray ray)
+	{
 		y /= 2f;
 		x /= 2f;
 		int xInt = (int) x;
@@ -285,36 +292,33 @@ public class GeoMap extends Node {
 		float p1, p2, p3, p4;
 		if (terrainData.length == 1) {
 			p1 = p2 = p3 = p4 = terrainData[0] / 32f;
-		}
-		else {
+		} else {
 			int size = (int) Math.sqrt(terrainData.length);
 			try {
 				p1 = terrainData[(yInt + (xInt * size))] / 32f;
 				p2 = terrainData[((yInt + 1) + (xInt * size))] / 32f;
 				p3 = terrainData[((yInt) + ((xInt + 1) * size))] / 32f;
 				p4 = terrainData[((yInt + 1) + ((xInt + 1) * size))] / 32f;
-			}
-			catch (Exception e) {
+			} catch (Exception e) {
 				return null;
 			}
 		}
 		Vector3f result = new Vector3f();
 		if (p1 >= 0 && p2 >= 0 && p3 >= 0) {
-			Triangle tringle1 = new Triangle(new Vector3f(xInt * 2, yInt * 2, p1), new Vector3f(xInt * 2, (yInt + 1) * 2, p2), new Vector3f(
-				(xInt + 1) * 2, yInt * 2, p3));
+			Triangle tringle1 = new Triangle(new Vector3f(xInt * 2, yInt * 2, p1), new Vector3f(xInt * 2, (yInt + 1) * 2, p2), new Vector3f((xInt + 1) * 2, yInt * 2, p3));
 			if (ray.intersectWhere(tringle1, result))
 				return result;
 		}
 		if (p4 >= 0 && p2 >= 0 && p3 >= 0) {
-			Triangle tringle2 = new Triangle(new Vector3f((xInt + 1) * 2, (yInt + 1) * 2, p4), new Vector3f(xInt * 2, (yInt + 1) * 2, p2),
-				new Vector3f((xInt + 1) * 2, yInt * 2, p3));
+			Triangle tringle2 = new Triangle(new Vector3f((xInt + 1) * 2, (yInt + 1) * 2, p4), new Vector3f(xInt * 2, (yInt + 1) * 2, p2), new Vector3f((xInt + 1) * 2, yInt * 2, p3));
 			if (ray.intersectWhere(tringle2, result))
 				return result;
 		}
 		return null;
 	}
 
-	public boolean canSee(float x, float y, float z, float targetX, float targetY, float targetZ, float limit, int instanceId) {
+	public boolean canSee(float x, float y, float z, float targetX, float targetY, float targetZ, float limit, int instanceId)
+	{
 		targetZ += 1;
 		z += 1;
 		// Another fix can see in instances
@@ -340,8 +344,7 @@ public class GeoMap extends Node {
 			if (result != null)
 				return false;
 		}
-		CollisionResults results = new CollisionResults((byte) (CollisionIntention.PHYSICAL.getId() | CollisionIntention.DOOR.getId()), false,
-			instanceId);
+		CollisionResults results = new CollisionResults((byte) (CollisionIntention.PHYSICAL.getId() | CollisionIntention.DOOR.getId()), false, instanceId);
 		int collisions = this.collideWith(r, results);
 		return (results.size() == 0 && collisions == 0);
 	}
@@ -352,7 +355,8 @@ public class GeoMap extends Node {
 	 */
 
 	@Override
-	public void updateModelBound() {
+	public void updateModelBound()
+	{
 		if (getChildren() != null) {
 			Iterator<Spatial> i = getChildren().iterator();
 			while (i.hasNext()) {

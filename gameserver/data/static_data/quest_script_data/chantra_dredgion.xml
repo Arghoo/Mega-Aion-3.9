@@ -16,9 +16,9 @@
 	-->
 	<!-- REPORTING QUESTS -->
 	<!-- COLLECTING QUESTS -->
-	<item_collecting id="3723" start_npc_ids="799069" action_item_ids="700837"/>
-	<item_collecting id="3724" start_npc_ids="799069" end_npc_ids="798928"/>
-	<item_collecting id="4723" start_npc_ids="799403" action_item_ids="700837"/>
-	<item_collecting id="4724" start_npc_ids="799403" end_npc_ids="799226"/>
+	<item_collecting id="3723" start_npc_ids="799069" action_item_ids="700837" />
+	<item_collecting id="3724" start_npc_ids="799069" end_npc_ids="798928" />
+	<item_collecting id="4723" start_npc_ids="799403" action_item_ids="700837" />
+	<item_collecting id="4724" start_npc_ids="799403" end_npc_ids="799226" />
 	<!-- HUNTING QUESTS -->
 </quest_scripts>

@@ -3,7 +3,6 @@ package com.aionemu.gameserver.services;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -162,7 +161,7 @@ public class HousingBidService extends AbstractCronTask
 		Set<PlayerHouseBid> playerBidData = HouseBidsDAO.loadBids();
 
 		List<PlayerHouseBid> sortedBids = new ArrayList<PlayerHouseBid>(playerBidData);
-		Collections.sort(sortedBids);
+		sortedBids.sort(null);
 
 		FastMap<Integer, House> housesById = FastMap.newInstance();
 		for (House house : HousingService.getInstance().getCustomHouses()) {

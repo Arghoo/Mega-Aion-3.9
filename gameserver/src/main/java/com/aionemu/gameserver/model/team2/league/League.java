@@ -2,7 +2,6 @@ package com.aionemu.gameserver.model.team2.league;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Comparator;
 
 import com.aionemu.gameserver.model.Race;
@@ -108,7 +107,7 @@ public class League extends GeneralTeam<PlayerAlliance, LeagueMember>
 	public Collection<LeagueMember> getSortedMembers()
 	{
 		ArrayList<LeagueMember> newArrayList = Lists.newArrayList(members.values());
-		Collections.sort(newArrayList, MEMBER_COMPARATOR);
+		newArrayList.sort(MEMBER_COMPARATOR);
 		return newArrayList;
 	}
 

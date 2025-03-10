@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.sql.Types;
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,8 +19,6 @@ import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.model.gameobjects.player.QuestStateList;
 import com.aionemu.gameserver.questEngine.model.QuestState;
 import com.aionemu.gameserver.questEngine.model.QuestStatus;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Collections2;
 
 /**
  * @author MrPoke
@@ -33,10 +32,6 @@ public class PlayerQuestListDAO
 	public static final String UPDATE_QUERY = "UPDATE `player_quests` SET `status`=?, `quest_vars`=?, `complete_count`=?, `next_repeat_time`=?, `reward`=?, `complete_time`=? WHERE `player_id`=? AND `quest_id`=?";
 	public static final String DELETE_QUERY = "DELETE FROM `player_quests` WHERE `player_id`=? AND `quest_id`=?";
 	public static final String INSERT_QUERY = "INSERT INTO `player_quests` (`player_id`, `quest_id`, `status`, `quest_vars`, `complete_count`, `next_repeat_time`, `reward`, `complete_time`) VALUES (?,?,?,?,?,?,?,?)";
-
-	private static final Predicate<QuestState> questsToAddPredicate = input -> input != null && PersistentState.NEW == input.getPersistentState();
-	private static final Predicate<QuestState> questsToUpdatePredicate = input -> input != null && PersistentState.UPDATE_REQUIRED == input.getPersistentState();
-	private static final Predicate<QuestState> questsToDeletePredicate = input -> input != null && PersistentState.DELETED == input.getPersistentState();
 
 	/**
 	 * @param player
@@ -100,8 +95,7 @@ public class PlayerQuestListDAO
 
 	private static void addQuests(Connection con, int playerId, Collection<QuestState> states)
 	{
-		states = Collections2.filter(states, questsToAddPredicate);
-
+		states = states.stream().filter(i -> i != null && PersistentState.NEW == i.getPersistentState()).collect(Collectors.toList());
 		if (GenericValidator.isBlankOrNull(states)) {
 			return;
 		}
@@ -139,8 +133,7 @@ public class PlayerQuestListDAO
 
 	private static void updateQuests(Connection con, int playerId, Collection<QuestState> states)
 	{
-		states = Collections2.filter(states, questsToUpdatePredicate);
-
+		states = states.stream().filter(i -> i != null && PersistentState.UPDATE_REQUIRED == i.getPersistentState()).collect(Collectors.toList());
 		if (GenericValidator.isBlankOrNull(states)) {
 			return;
 		}
@@ -178,8 +171,7 @@ public class PlayerQuestListDAO
 
 	private static void deleteQuest(Connection con, int playerId, Collection<QuestState> states)
 	{
-		states = Collections2.filter(states, questsToDeletePredicate);
-
+		states = states.stream().filter(i -> i != null && PersistentState.DELETED == i.getPersistentState()).collect(Collectors.toList());
 		if (GenericValidator.isBlankOrNull(states)) {
 			return;
 		}

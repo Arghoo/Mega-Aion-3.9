@@ -15,7 +15,7 @@ public class AbyssSkillService
 	/**
 	 * @param player
 	 */
-	public static final void updateSkills(Player player)
+	public static void updateSkills(Player player)
 	{
 		AbyssRank abyssRank = player.getAbyssRank();
 		if (abyssRank == null) {
@@ -31,17 +31,17 @@ public class AbyssSkillService
 			}
 		}
 		// add new skills
-		// if (abyssRank.getRank().getId() >= AbyssRankEnum.GREAT_GENERAL.getId()) {
-		// 	for (int skillId : AbyssSkills.getSkills(player.getRace(), rankEnum)) {
-		// 		player.getSkillList().addAbyssSkill(player, skillId, 1);
-		// 	}
-		// }
+		if (abyssRank.getRank().getId() >= AbyssRankEnum.STAR5_OFFICER.getId()) {
+			for (int skillId : AbyssSkills.getSkills(player.getRace(), rankEnum)) {
+				player.getSkillList().addAbyssSkill(player, skillId, 1);
+			}
+		}
 	}
 
 	/**
 	 * @param player
 	 */
-	public static final void onEnterWorld(Player player)
+	public static void onEnterWorld(Player player)
 	{
 		updateSkills(player);
 	}

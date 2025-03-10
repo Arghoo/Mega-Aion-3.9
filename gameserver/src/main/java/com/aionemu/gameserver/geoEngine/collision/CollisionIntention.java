@@ -5,7 +5,8 @@ import java.util.EnumSet;
 /**
  * @author Rolandas
  */
-public enum CollisionIntention {
+public enum CollisionIntention
+{
 	NONE(0),
 	PHYSICAL(1 << 0), // Physical collision
 	MATERIAL(1 << 1), // Mesh materials with skills
@@ -21,15 +22,18 @@ public enum CollisionIntention {
 
 	private byte id;
 
-	private CollisionIntention(int id) {
+	private CollisionIntention(int id)
+	{
 		this.id = (byte) id;
 	}
 
-	public byte getId() {
+	public byte getId()
+	{
 		return id;
 	}
 
-	public static EnumSet<CollisionIntention> getFlagsFormValue(int value) {
+	public static EnumSet<CollisionIntention> getFlagsFormValue(int value)
+	{
 		EnumSet<CollisionIntention> result = EnumSet.noneOf(CollisionIntention.class);
 		for (CollisionIntention m : CollisionIntention.values()) {
 			if ((value & m.getId()) == m.getId()) {
@@ -41,7 +45,8 @@ public enum CollisionIntention {
 		return result;
 	}
 
-	public static String toString(int value) {
+	public static String toString(int value)
+	{
 		String str = "";
 		for (CollisionIntention m : CollisionIntention.values()) {
 			if (m == NONE || m == ALL)

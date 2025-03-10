@@ -50,7 +50,8 @@ import com.aionemu.gameserver.geoEngine.math.Vector3f;
  * Bounding Interval Hierarchy. Based on: Instant Ray Tracing: The Bounding Interval Hierarchy By Carsten Wächter and
  * Alexander Keller
  */
-public final class BIHNode {
+public final class BIHNode
+{
 
 	private int leftIndex, rightIndex;
 
@@ -60,57 +61,70 @@ public final class BIHNode {
 	private float rightPlane;
 	private int axis;
 
-	public BIHNode(int l, int r) {
+	public BIHNode(int l, int r)
+	{
 		leftIndex = l;
 		rightIndex = r;
 		axis = 3; // indicates leaf
 	}
 
-	public BIHNode(int axis) {
+	public BIHNode(int axis)
+	{
 		this.axis = axis;
 	}
 
-	public BIHNode() {
+	public BIHNode()
+	{
 	}
 
-	public BIHNode getLeftChild() {
+	public BIHNode getLeftChild()
+	{
 		return left;
 	}
 
-	public void setLeftChild(BIHNode left) {
+	public void setLeftChild(BIHNode left)
+	{
 		this.left = left;
 	}
 
-	public float getLeftPlane() {
+	public float getLeftPlane()
+	{
 		return leftPlane;
 	}
 
-	public void setLeftPlane(float leftPlane) {
+	public void setLeftPlane(float leftPlane)
+	{
 		this.leftPlane = leftPlane;
 	}
 
-	public BIHNode getRightChild() {
+	public BIHNode getRightChild()
+	{
 		return right;
 	}
 
-	public void setRightChild(BIHNode right) {
+	public void setRightChild(BIHNode right)
+	{
 		this.right = right;
 	}
 
-	public float getRightPlane() {
+	public float getRightPlane()
+	{
 		return rightPlane;
 	}
 
-	public void setRightPlane(float rightPlane) {
+	public void setRightPlane(float rightPlane)
+	{
 		this.rightPlane = rightPlane;
 	}
 
-	public static final class BIHStackData {
+	public static final class BIHStackData
+	{
 
 		private final BIHNode node;
 		private final float min, max;
 
-		BIHStackData(BIHNode node, float min, float max) {
+		BIHStackData(BIHNode node, float min, float max)
+		{
 			this.node = node;
 			this.min = min;
 			this.max = max;
@@ -118,7 +132,8 @@ public final class BIHNode {
 
 	}
 
-	public final int intersectWhere(Collidable col, BoundingBox box, Matrix4f worldMatrix, BIHTree tree, CollisionResults results) {
+	public final int intersectWhere(Collidable col, BoundingBox box, Matrix4f worldMatrix, BIHTree tree, CollisionResults results)
+	{
 
 		FastList<BIHStackData> stack = FastList.newInstance();
 
@@ -131,7 +146,8 @@ public final class BIHNode {
 		Triangle t = new Triangle();
 		int cols = 0;
 
-		stackloop: while (stack.size() > 0) {
+		stackloop:
+		while (stack.size() > 0) {
 			BIHNode node = stack.remove(stack.size() - 1).node;
 
 			while (node.axis != 3) {
@@ -149,11 +165,9 @@ public final class BIHNode {
 
 				if (maxExt < node.rightPlane) {
 					node = node.left;
-				}
-				else if (minExt > node.leftPlane) {
+				} else if (minExt > node.leftPlane) {
 					node = node.right;
-				}
-				else {
+				} else {
 					stack.add(new BIHStackData(node.right, 0, 0));
 					node = node.left;
 				}
@@ -179,7 +193,8 @@ public final class BIHNode {
 		return cols;
 	}
 
-	public final int intersectBrute(Ray r, Matrix4f worldMatrix, BIHTree tree, float sceneMin, float sceneMax, CollisionResults results) {
+	public final int intersectBrute(Ray r, Matrix4f worldMatrix, BIHTree tree, float sceneMin, float sceneMax, CollisionResults results)
+	{
 		float tHit = Float.POSITIVE_INFINITY;
 
 		Vector3f v1 = new Vector3f(), v2 = new Vector3f(), v3 = new Vector3f();
@@ -227,7 +242,8 @@ public final class BIHNode {
 		return cols;
 	}
 
-	public final int intersectWhere(Ray r, Matrix4f worldMatrix, BIHTree tree, float sceneMin, float sceneMax, CollisionResults results) {
+	public final int intersectWhere(Ray r, Matrix4f worldMatrix, BIHTree tree, float sceneMin, float sceneMax, CollisionResults results)
+	{
 
 		FastList<BIHStackData> stack = FastList.newInstance();
 
@@ -254,7 +270,8 @@ public final class BIHNode {
 		int cols = 0;
 
 		stack.add(new BIHStackData(this, sceneMin, sceneMax));
-		stackloop: while (stack.size() > 0) {
+		stackloop:
+		while (stack.size() > 0) {
 
 			BIHStackData data = stack.remove(stack.size() - 1);
 			BIHNode node = data.node;
@@ -295,12 +312,10 @@ public final class BIHNode {
 				if (tMin > tNearSplit) {
 					tMin = max(tMin, tFarSplit);
 					node = farNode;
-				}
-				else if (tMax < tFarSplit) {
+				} else if (tMax < tFarSplit) {
 					tMax = min(tMax, tNearSplit);
 					node = nearNode;
-				}
-				else {
+				} else {
 					stack.add(new BIHStackData(farNode, max(tMin, tFarSplit), tMax));
 					tMax = min(tMax, tNearSplit);
 					node = nearNode;

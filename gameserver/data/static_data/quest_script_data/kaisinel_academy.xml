@@ -16,14 +16,14 @@
 	-->
 	<!-- REPORTING QUESTS -->
 	<!-- COLLECTING QUESTS -->
-	<item_collecting id="37001" start_npc_ids="0" end_npc_ids="799835"/>
-	<item_collecting id="37005" start_npc_ids="0" end_npc_ids="799836"/>
-	<item_collecting id="37008" start_npc_ids="0" end_npc_ids="799836"/>
+	<item_collecting id="37001" start_npc_ids="0" end_npc_ids="799835" />
+	<item_collecting id="37005" start_npc_ids="0" end_npc_ids="799836" />
+	<item_collecting id="37008" start_npc_ids="0" end_npc_ids="799836" />
 	<!-- HUNTING QUESTS -->
 	<mentor_monster_hunt id="37002" start_npc_ids="0" end_npc_ids="799835">
-		<monster end_var="5" var="0" npc_ids="210168 210179 210180 210185 210186 210694"/>
+		<monster end_var="5" var="0" npc_ids="210168 210179 210180 210185 210186 210694" />
 	</mentor_monster_hunt>
 	<mentor_monster_hunt id="37004" start_npc_ids="0" end_npc_ids="799836">
-		<monster end_var="5" var="0" npc_ids="211781 211782 211783 211784 211785 211786 211787"/>
+		<monster end_var="5" var="0" npc_ids="211781 211782 211783 211784 211785 211786 211787" />
 	</mentor_monster_hunt>
 </quest_scripts>

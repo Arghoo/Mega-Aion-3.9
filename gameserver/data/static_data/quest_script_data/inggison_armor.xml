@@ -9,8 +9,8 @@
 			11055 [XML] [Group] Another Piece
 		[END] SUMMARY
 	-->
-	<item_collecting id="11051" start_npc_ids="798989"/>
-	<item_collecting id="11052" start_npc_ids="798984"/>
-	<item_collecting id="11054" start_npc_ids="799017"/>
-	<item_collecting id="11055" start_npc_ids="798990"/>
+	<item_collecting id="11051" start_npc_ids="798989" />
+	<item_collecting id="11052" start_npc_ids="798984" />
+	<item_collecting id="11054" start_npc_ids="799017" />
+	<item_collecting id="11055" start_npc_ids="798990" />
 </quest_scripts>

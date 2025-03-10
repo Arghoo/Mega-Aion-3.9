@@ -13,8 +13,6 @@ import com.aionemu.gameserver.utils.PacketSendUtility;
 import com.aionemu.gameserver.utils.chathandlers.PlayerCommand;
 import com.aionemu.gameserver.world.World;
 
-import org.apache.commons.lang.StringUtils;
-
 /**
  * @author Shepper, modified: bobobear
  */
@@ -61,7 +59,7 @@ public class cmd_faction extends PlayerCommand
 			return;
 		}
 
-		String message = StringUtils.join(params, " ");
+		String message = String.join(" ", params);
 		String LogMessage = message;
 
 		if (CustomConfig.FACTION_CHAT_CHANNEL) {

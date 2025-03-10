@@ -18,8 +18,8 @@
 	<!-- COLLECTING QUESTS -->
 	<!-- HUNTING QUESTS -->
 	<monster_hunt id="4211" start_npc_ids="798331">
-		<monster var="1" npc_ids="215069" end_var="1"/>
-		<monster var="2" npc_ids="215070" end_var="1"/>
-		<monster var="3" npc_ids="215081" end_var="1"/>
+		<monster var="1" npc_ids="215069" end_var="1" />
+		<monster var="2" npc_ids="215070" end_var="1" />
+		<monster var="3" npc_ids="215081" end_var="1" />
 	</monster_hunt>
 </quest_scripts>

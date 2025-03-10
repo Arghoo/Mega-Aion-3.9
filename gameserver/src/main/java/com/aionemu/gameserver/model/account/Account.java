@@ -19,8 +19,6 @@ package com.aionemu.gameserver.model.account;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -236,20 +234,14 @@ public class Account implements Iterable<PlayerAccountData>
 	{
 		ArrayList<PlayerAccountData> list = new ArrayList<PlayerAccountData>();
 		list.addAll(players.values());
-		Collections.sort(list, new Comparator<PlayerAccountData>()
-		{
-
-			@Override
-			public int compare(PlayerAccountData x, PlayerAccountData y)
-			{
-				Timestamp t1 = x.getPlayerCommonData().getLastOnline();
-				Timestamp t2 = y.getPlayerCommonData().getLastOnline();
-				if (t2 == null)
-					return 1;
-				else if (t1 == null)
-					return -1;
-				return y.getPlayerCommonData().getLastOnline().compareTo(x.getPlayerCommonData().getLastOnline());
-			}
+		list.sort((x, y) -> {
+			Timestamp t1 = x.getPlayerCommonData().getLastOnline();
+			Timestamp t2 = y.getPlayerCommonData().getLastOnline();
+			if (t2 == null)
+				return 1;
+			else if (t1 == null)
+				return -1;
+			return y.getPlayerCommonData().getLastOnline().compareTo(x.getPlayerCommonData().getLastOnline());
 		});
 		return list;
 	}

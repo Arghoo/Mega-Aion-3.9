@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <spawns>
-    <spawn_map map_id="320030000">
-        <spawn custom="true" respawn_time="0" npc_id="700141" difficult_id="0">
-            <spot h="93" z="230.087" y="273.26025" x="250.54976"/>
-        </spawn>
-        <spawn custom="true" respawn_time="295" npc_id="700143" difficult_id="0"/>
-    </spawn_map>
+	<spawn_map map_id="320030000">
+		<spawn custom="true" respawn_time="0" npc_id="700141" difficult_id="0">
+			<spot h="93" z="230.087" y="273.26025" x="250.54976" />
+		</spawn>
+		<spawn custom="true" respawn_time="295" npc_id="700143" difficult_id="0" />
+	</spawn_map>
 </spawns>

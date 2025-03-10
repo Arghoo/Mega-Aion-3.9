@@ -3,7 +3,7 @@
 	<spawn_map map_id="310040000">
 		<!-- Kimeia -->
 		<spawn npc_id="204044">
-			<spot x="269.79" y="176.751" z="204.347" h="94"/>
+			<spot x="269.79" y="176.751" z="204.347" h="94" />
 		</spawn>
 	</spawn_map>
 </spawns>

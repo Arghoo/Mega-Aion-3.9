@@ -15,7 +15,7 @@
 		[END] SUMMARY
 	-->
 	<!-- REPORTING QUESTS -->
-	<report_to id="29065" start_npc_ids="204075" end_npc_ids="204053" item_id="182213240"/>
+	<report_to id="29065" start_npc_ids="204075" end_npc_ids="204053" item_id="182213240" />
 	<!-- COLLECTING QUESTS -->
 	<!-- HUNTING QUESTS -->
 </quest_scripts>

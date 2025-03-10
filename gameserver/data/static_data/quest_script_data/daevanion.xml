@@ -35,9 +35,9 @@
 	-->
 	<!-- REPORTING QUESTS -->
 	<!-- COLLECTING QUESTS -->
-	<item_collecting start_npc_ids="203771" id="1991"/>
-	<item_collecting start_npc_ids="203771" id="1997"/>
-	<item_collecting start_npc_ids="203771" id="1998"/>
-	<item_collecting start_npc_ids="203771" id="1999"/>
+	<item_collecting start_npc_ids="203771" id="1991" />
+	<item_collecting start_npc_ids="203771" id="1997" />
+	<item_collecting start_npc_ids="203771" id="1998" />
+	<item_collecting start_npc_ids="203771" id="1999" />
 	<!-- HUNTING QUESTS -->
 </quest_scripts>

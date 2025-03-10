@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <spawns>
-    <spawn_map map_id="320080000">
-        <spawn custom="true" respawn_time="0" npc_id="213380" difficult_id="0">
-            <spot h="115" z="613.549" y="426.712" x="472.573"/>
-            <spot h="81" z="617.013" y="393.47" x="500.972"/>
-            <spot h="109" z="599.263" y="640.012" x="378.835"/>
-            <spot h="114" z="613.897" y="416.425" x="470.231"/>
-            <spot h="8" z="601.781" y="566.869" x="389.815"/>
-            <spot h="1" z="597.529" y="704.955" x="357.213"/>
-            <spot h="0" z="597.048" y="714.038" x="356.235"/>
-            <spot h="99" z="586.836" y="709.298" x="393.342"/>
-            <spot h="103" z="586.503" y="704.123" x="387.858"/>
-            <spot h="3" z="597.796" y="699.105" x="332.939"/>
-            <spot h="113" z="597.632" y="711.32" x="331.169"/>
-        </spawn>
-        <spawn custom="true" respawn_time="0" npc_id="213385" difficult_id="0">
-            <spot walker_id="1D30CDFFE65A9E8AB0B768462AA98567CA368DA5" h="31" z="599.2681" y="588.39" x="389.02"/>
-            <spot walker_id="1D30CDFFE65A9E8AB0B768462AA98567CA368DA5" h="31" z="599.2681" y="588.39" x="389.02"/>
-        </spawn>
-    </spawn_map>
+	<spawn_map map_id="320080000">
+		<spawn custom="true" respawn_time="0" npc_id="213380" difficult_id="0">
+			<spot h="115" z="613.549" y="426.712" x="472.573" />
+			<spot h="81" z="617.013" y="393.47" x="500.972" />
+			<spot h="109" z="599.263" y="640.012" x="378.835" />
+			<spot h="114" z="613.897" y="416.425" x="470.231" />
+			<spot h="8" z="601.781" y="566.869" x="389.815" />
+			<spot h="1" z="597.529" y="704.955" x="357.213" />
+			<spot h="0" z="597.048" y="714.038" x="356.235" />
+			<spot h="99" z="586.836" y="709.298" x="393.342" />
+			<spot h="103" z="586.503" y="704.123" x="387.858" />
+			<spot h="3" z="597.796" y="699.105" x="332.939" />
+			<spot h="113" z="597.632" y="711.32" x="331.169" />
+		</spawn>
+		<spawn custom="true" respawn_time="0" npc_id="213385" difficult_id="0">
+			<spot walker_id="1D30CDFFE65A9E8AB0B768462AA98567CA368DA5" h="31" z="599.2681" y="588.39" x="389.02" />
+			<spot walker_id="1D30CDFFE65A9E8AB0B768462AA98567CA368DA5" h="31" z="599.2681" y="588.39" x="389.02" />
+		</spawn>
+	</spawn_map>
 </spawns>

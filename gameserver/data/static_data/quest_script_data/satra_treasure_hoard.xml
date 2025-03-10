@@ -14,7 +14,7 @@
 			28904 [SCRIPT] [Daily/Group] Apsilon's Abilities
 		[END] SUMMARY
 	-->
-       <!-- REPORTING QUESTS -->
-	<report_to start_npc_ids="205842" end_npc_ids="800332" id="18900"/>
-    <report_to start_npc_ids="205864" end_npc_ids="800332" id="28900"/>
+	<!-- REPORTING QUESTS -->
+	<report_to start_npc_ids="205842" end_npc_ids="800332" id="18900" />
+	<report_to start_npc_ids="205864" end_npc_ids="800332" id="28900" />
 </quest_scripts>

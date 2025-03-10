@@ -1,187 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc_drops>
 	<npc_drop npc_id="701574">
-        <drop_group name="" use_category="false">
-            <!-- Kinah -->
-            <drop chance="80" item_id="182400001" max_amount="2140887" min_amount="53211"/>
-            <!-- Coin Legion -->
-            <drop chance="4.0" item_id="186000199" max_amount="25" min_amount="1"/>
-			<drop chance="4.0" item_id="166100011" max_amount="125" min_amount="1"/>
-            <!-- Medals -->
-            <drop chance="1.15" item_id="186000147" max_amount="1" min_amount="1"/>
-            <drop chance="1.20" item_id="186000096" max_amount="1" min_amount="1"/>
-            <drop chance="1.25" item_id="186000030" max_amount="1" min_amount="1"/>
-            <drop chance="1.30" item_id="186000031" max_amount="1" min_amount="1"/>
-            <!-- Ancient Crown -->
-            <drop chance="1.14" item_id="186000051" max_amount="2" min_amount="1"/>
-            <drop chance="1.23" item_id="186000052" max_amount="3" min_amount="1"/>
-            <drop chance="1.35" item_id="186000053" max_amount="4" min_amount="1"/>
-            <drop chance="1.69" item_id="186000054" max_amount="5" min_amount="1"/>
-            <!-- Ancient Goblet -->
-            <drop chance="2.14" item_id="186000055" max_amount="2" min_amount="1"/>
-            <drop chance="2.23" item_id="186000056" max_amount="3" min_amount="1"/>
-            <drop chance="2.35" item_id="186000057" max_amount="5" min_amount="1"/>
-            <drop chance="2.69" item_id="186000058" max_amount="4" min_amount="1"/>
-            <!-- Ancient Seal -->
-            <drop chance="3.14" item_id="186000059" max_amount="2" min_amount="1"/>
-            <drop chance="3.23" item_id="186000061" max_amount="3" min_amount="1"/>
-            <drop chance="3.35" item_id="186000062" max_amount="4" min_amount="1"/>
-            <drop chance="3.69" item_id="186000063" max_amount="5" min_amount="1"/>
-            <!-- Ancient Icon -->
-            <drop chance="4.14" item_id="186000064" max_amount="2" min_amount="1"/>
-            <drop chance="4.23" item_id="186000065" max_amount="3" min_amount="1"/>
-            <drop chance="4.35" item_id="186000066" max_amount="4" min_amount="1"/>
-            <drop chance="4.69" item_id="186000067" max_amount="5" min_amount="1"/>
-        </drop_group>
-    </npc_drop>
+		<drop_group name="" use_category="false">
+			<!-- Kinah -->
+			<drop chance="80" item_id="182400001" max_amount="2140887" min_amount="53211" />
+			<!-- Coin Legion -->
+			<drop chance="4.0" item_id="186000199" max_amount="25" min_amount="1" />
+			<drop chance="4.0" item_id="166100011" max_amount="125" min_amount="1" />
+			<!-- Medals -->
+			<drop chance="1.15" item_id="186000147" max_amount="1" min_amount="1" />
+			<drop chance="1.20" item_id="186000096" max_amount="1" min_amount="1" />
+			<drop chance="1.25" item_id="186000030" max_amount="1" min_amount="1" />
+			<drop chance="1.30" item_id="186000031" max_amount="1" min_amount="1" />
+			<!-- Ancient Crown -->
+			<drop chance="1.14" item_id="186000051" max_amount="2" min_amount="1" />
+			<drop chance="1.23" item_id="186000052" max_amount="3" min_amount="1" />
+			<drop chance="1.35" item_id="186000053" max_amount="4" min_amount="1" />
+			<drop chance="1.69" item_id="186000054" max_amount="5" min_amount="1" />
+			<!-- Ancient Goblet -->
+			<drop chance="2.14" item_id="186000055" max_amount="2" min_amount="1" />
+			<drop chance="2.23" item_id="186000056" max_amount="3" min_amount="1" />
+			<drop chance="2.35" item_id="186000057" max_amount="5" min_amount="1" />
+			<drop chance="2.69" item_id="186000058" max_amount="4" min_amount="1" />
+			<!-- Ancient Seal -->
+			<drop chance="3.14" item_id="186000059" max_amount="2" min_amount="1" />
+			<drop chance="3.23" item_id="186000061" max_amount="3" min_amount="1" />
+			<drop chance="3.35" item_id="186000062" max_amount="4" min_amount="1" />
+			<drop chance="3.69" item_id="186000063" max_amount="5" min_amount="1" />
+			<!-- Ancient Icon -->
+			<drop chance="4.14" item_id="186000064" max_amount="2" min_amount="1" />
+			<drop chance="4.23" item_id="186000065" max_amount="3" min_amount="1" />
+			<drop chance="4.35" item_id="186000066" max_amount="4" min_amount="1" />
+			<drop chance="4.69" item_id="186000067" max_amount="5" min_amount="1" />
+		</drop_group>
+	</npc_drop>
 	<npc_drop npc_id="701580">
 		<drop_group name="" use_category="false">
-			<drop item_id="185000104" min_amount="1" max_amount="1" chance="100"/>
-			<drop item_id="182400001" min_amount="43086" max_amount="153518" chance="85.71"/>
-			<drop item_id="186000030" min_amount="1" max_amount="1" chance="1.062"/>
-			<drop chance="4.0" item_id="166100011" max_amount="125" min_amount="1"/>
+			<drop item_id="185000104" min_amount="1" max_amount="1" chance="100" />
+			<drop item_id="182400001" min_amount="43086" max_amount="153518" chance="85.71" />
+			<drop item_id="186000030" min_amount="1" max_amount="1" chance="1.062" />
+			<drop chance="4.0" item_id="166100011" max_amount="125" min_amount="1" />
 			<!-- Ancient Crown -->
-			<drop item_id="186000052" min_amount="1" max_amount="1" chance="2.04"/>
-			<drop item_id="186000053" min_amount="1" max_amount="1" chance="2.04"/>
+			<drop item_id="186000052" min_amount="1" max_amount="1" chance="2.04" />
+			<drop item_id="186000053" min_amount="1" max_amount="1" chance="2.04" />
 			<!-- Ancient Goblet -->
-			<drop item_id="186000056" min_amount="1" max_amount="1" chance="2.04"/>
-			<drop item_id="186000057" min_amount="1" max_amount="1" chance="1.062"/>
-			<drop item_id="186000058" min_amount="1" max_amount="1" chance="1.062"/>
+			<drop item_id="186000056" min_amount="1" max_amount="1" chance="2.04" />
+			<drop item_id="186000057" min_amount="1" max_amount="1" chance="1.062" />
+			<drop item_id="186000058" min_amount="1" max_amount="1" chance="1.062" />
 			<!-- Ancient Seal -->
-			<drop item_id="186000059" min_amount="1" max_amount="1" chance="1.062"/>
-			<drop item_id="186000061" min_amount="1" max_amount="1" chance="1.062"/>
-			<drop item_id="186000062" min_amount="1" max_amount="1" chance="1.062"/>
-			<drop item_id="186000063" min_amount="1" max_amount="1" chance="1.062"/>
+			<drop item_id="186000059" min_amount="1" max_amount="1" chance="1.062" />
+			<drop item_id="186000061" min_amount="1" max_amount="1" chance="1.062" />
+			<drop item_id="186000062" min_amount="1" max_amount="1" chance="1.062" />
+			<drop item_id="186000063" min_amount="1" max_amount="1" chance="1.062" />
 			<!-- Ancient Icon -->
-			<drop item_id="186000064" min_amount="1" max_amount="1" chance="1.062"/>
-			<drop item_id="186000065" min_amount="1" max_amount="1" chance="1.062"/>
-			<drop item_id="186000066" min_amount="1" max_amount="1" chance="1.062"/>
-			<drop item_id="186000096" min_amount="1" max_amount="1" chance="1.062"/>
+			<drop item_id="186000064" min_amount="1" max_amount="1" chance="1.062" />
+			<drop item_id="186000065" min_amount="1" max_amount="1" chance="1.062" />
+			<drop item_id="186000066" min_amount="1" max_amount="1" chance="1.062" />
+			<drop item_id="186000096" min_amount="1" max_amount="1" chance="1.062" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="701577"> <!-- Yamennes Easy mode -->
 		<drop_group name="" use_category="false">
-			<drop item_id="182400001" min_amount="1004335" max_amount="1230815" chance="50.0"/>
-			<drop item_id="186000030" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="186000053" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="186000054" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="186000055" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="186000058" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="186000061" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="186000062" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="186000065" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="186000066" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="186000096" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="115001476" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="101701156" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="101501138" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="101301057" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="100901121" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="100601193" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="100501112" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="100201266" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="100101105" min_amount="1" max_amount="1" chance="1.0742"/>
-			<drop item_id="100001448" min_amount="1" max_amount="1" chance="1.0742"/>
+			<drop item_id="182400001" min_amount="1004335" max_amount="1230815" chance="50.0" />
+			<drop item_id="186000030" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="186000053" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="186000054" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="186000055" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="186000058" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="186000061" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="186000062" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="186000065" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="186000066" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="186000096" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="115001476" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="101701156" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="101501138" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="101301057" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="100901121" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="100601193" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="100501112" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="100201266" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="100101105" min_amount="1" max_amount="1" chance="1.0742" />
+			<drop item_id="100001448" min_amount="1" max_amount="1" chance="1.0742" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="701580"> <!-- Yamennes Hard mode -->
 		<drop_group name="" use_category="false">
-			<drop item_id="182400001" min_amount="1004335" max_amount="1230815" chance="50"/>
-			<drop item_id="186000030" min_amount="1" max_amount="1" chance="2"/>
-			<drop item_id="186000053" min_amount="1" max_amount="1" chance="25"/>
-			<drop item_id="186000054" min_amount="1" max_amount="1" chance="50"/>
-			<drop item_id="186000055" min_amount="1" max_amount="1" chance="75"/>
-			<drop item_id="186000058" min_amount="1" max_amount="1" chance="50"/>
-			<drop item_id="186000061" min_amount="1" max_amount="1" chance="50"/>
-			<drop item_id="186000062" min_amount="1" max_amount="1" chance="75"/>
-			<drop item_id="186000065" min_amount="1" max_amount="1" chance="75"/>
-			<drop item_id="186000066" min_amount="1" max_amount="1" chance="100"/>
-			<drop item_id="186000096" min_amount="1" max_amount="1" chance="2"/>
-			<drop item_id="115001476" min_amount="1" max_amount="1" chance="4.0742"/>
-			<drop item_id="101701156" min_amount="1" max_amount="1" chance="4.0742"/>
-			<drop item_id="101501138" min_amount="1" max_amount="1" chance="4.0742"/>
-			<drop item_id="101301057" min_amount="1" max_amount="1" chance="4.0742"/>
-			<drop item_id="100901121" min_amount="1" max_amount="1" chance="4.0742"/>
-			<drop item_id="100601193" min_amount="1" max_amount="1" chance="4.0742"/>
-			<drop item_id="100501112" min_amount="1" max_amount="1" chance="4.0742"/>
-			<drop item_id="100201266" min_amount="1" max_amount="1" chance="4.0742"/>
-			<drop item_id="100101105" min_amount="1" max_amount="1" chance="4.0742"/>
-			<drop item_id="100001448" min_amount="1" max_amount="1" chance="4.0742"/>
+			<drop item_id="182400001" min_amount="1004335" max_amount="1230815" chance="50" />
+			<drop item_id="186000030" min_amount="1" max_amount="1" chance="2" />
+			<drop item_id="186000053" min_amount="1" max_amount="1" chance="25" />
+			<drop item_id="186000054" min_amount="1" max_amount="1" chance="50" />
+			<drop item_id="186000055" min_amount="1" max_amount="1" chance="75" />
+			<drop item_id="186000058" min_amount="1" max_amount="1" chance="50" />
+			<drop item_id="186000061" min_amount="1" max_amount="1" chance="50" />
+			<drop item_id="186000062" min_amount="1" max_amount="1" chance="75" />
+			<drop item_id="186000065" min_amount="1" max_amount="1" chance="75" />
+			<drop item_id="186000066" min_amount="1" max_amount="1" chance="100" />
+			<drop item_id="186000096" min_amount="1" max_amount="1" chance="2" />
+			<drop item_id="115001476" min_amount="1" max_amount="1" chance="4.0742" />
+			<drop item_id="101701156" min_amount="1" max_amount="1" chance="4.0742" />
+			<drop item_id="101501138" min_amount="1" max_amount="1" chance="4.0742" />
+			<drop item_id="101301057" min_amount="1" max_amount="1" chance="4.0742" />
+			<drop item_id="100901121" min_amount="1" max_amount="1" chance="4.0742" />
+			<drop item_id="100601193" min_amount="1" max_amount="1" chance="4.0742" />
+			<drop item_id="100501112" min_amount="1" max_amount="1" chance="4.0742" />
+			<drop item_id="100201266" min_amount="1" max_amount="1" chance="4.0742" />
+			<drop item_id="100101105" min_amount="1" max_amount="1" chance="4.0742" />
+			<drop item_id="100001448" min_amount="1" max_amount="1" chance="4.0742" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="219936">
 		<drop_group name="" use_category="false">
-			<drop item_id="141000001" min_amount="1" max_amount="2" chance="44.44"/>
-			<drop item_id="152010319" min_amount="1" max_amount="1" chance="22.22"/>
-			<drop item_id="152011065" min_amount="1" max_amount="1" chance="11.11"/>
-			<drop item_id="152011072" min_amount="1" max_amount="1" chance="11.11"/>
-			<drop item_id="152011076" min_amount="1" max_amount="1" chance="11.11"/>
-			<drop item_id="167000358" min_amount="1" max_amount="1" chance="11.11"/>
-			<drop item_id="167000545" min_amount="1" max_amount="1" chance="11.11"/>
-			<drop item_id="167000546" min_amount="1" max_amount="1" chance="11.11"/>
-			<drop item_id="167000549" min_amount="1" max_amount="1" chance="22.22"/>
-			<drop item_id="169000009" min_amount="1" max_amount="1" chance="11.11"/>
-			<drop item_id="182006343" min_amount="1" max_amount="1" chance="66.67"/>
+			<drop item_id="141000001" min_amount="1" max_amount="2" chance="44.44" />
+			<drop item_id="152010319" min_amount="1" max_amount="1" chance="22.22" />
+			<drop item_id="152011065" min_amount="1" max_amount="1" chance="11.11" />
+			<drop item_id="152011072" min_amount="1" max_amount="1" chance="11.11" />
+			<drop item_id="152011076" min_amount="1" max_amount="1" chance="11.11" />
+			<drop item_id="167000358" min_amount="1" max_amount="1" chance="11.11" />
+			<drop item_id="167000545" min_amount="1" max_amount="1" chance="11.11" />
+			<drop item_id="167000546" min_amount="1" max_amount="1" chance="11.11" />
+			<drop item_id="167000549" min_amount="1" max_amount="1" chance="22.22" />
+			<drop item_id="169000009" min_amount="1" max_amount="1" chance="11.11" />
+			<drop item_id="182006343" min_amount="1" max_amount="1" chance="66.67" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="219935">
 		<drop_group name="" use_category="false">
-			<drop item_id="140000485" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="141000001" min_amount="2" max_amount="2" chance="22.22"/>
-			<drop item_id="152010319" min_amount="1" max_amount="1" chance="25.93"/>
-			<drop item_id="152011066" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="152011072" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="152011075" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="152011076" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="160003562" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="167000358" min_amount="1" max_amount="1" chance="4.5198"/>
-			<drop item_id="167000518" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="167000543" min_amount="1" max_amount="1" chance="14.81"/>
-			<drop item_id="167000546" min_amount="1" max_amount="1" chance="7.41"/>
-			<drop item_id="167000548" min_amount="1" max_amount="1" chance="4.5198"/>
-			<drop item_id="167000550" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="167000553" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="169000009" min_amount="1" max_amount="1" chance="7.41"/>
-			<drop item_id="182006343" min_amount="1" max_amount="1" chance="55.56"/>
+			<drop item_id="140000485" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="141000001" min_amount="2" max_amount="2" chance="22.22" />
+			<drop item_id="152010319" min_amount="1" max_amount="1" chance="25.93" />
+			<drop item_id="152011066" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="152011072" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="152011075" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="152011076" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="160003562" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="167000358" min_amount="1" max_amount="1" chance="4.5198" />
+			<drop item_id="167000518" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="167000543" min_amount="1" max_amount="1" chance="14.81" />
+			<drop item_id="167000546" min_amount="1" max_amount="1" chance="7.41" />
+			<drop item_id="167000548" min_amount="1" max_amount="1" chance="4.5198" />
+			<drop item_id="167000550" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="167000553" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="169000009" min_amount="1" max_amount="1" chance="7.41" />
+			<drop item_id="182006343" min_amount="1" max_amount="1" chance="55.56" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="219948">
 		<drop_group name="" use_category="false">
-			<drop item_id="141000001" min_amount="2" max_amount="2" chance="15.79"/>
-			<drop item_id="152010319" min_amount="1" max_amount="1" chance="10.53"/>
-			<drop item_id="152011065" min_amount="1" max_amount="1" chance="5.26"/>
-			<drop item_id="152011071" min_amount="1" max_amount="1" chance="5.26"/>
-			<drop item_id="160003556" min_amount="1" max_amount="1" chance="5.26"/>
-			<drop item_id="160003562" min_amount="1" max_amount="1" chance="10.53"/>
-			<drop item_id="167000358" min_amount="1" max_amount="1" chance="15.79"/>
-			<drop item_id="167000543" min_amount="1" max_amount="1" chance="10.53"/>
-			<drop item_id="167000544" min_amount="1" max_amount="1" chance="4.6693"/>
-			<drop item_id="167000547" min_amount="1" max_amount="1" chance="4.6693"/>
-			<drop item_id="167000549" min_amount="1" max_amount="1" chance="5.26"/>
-			<drop item_id="167000550" min_amount="1" max_amount="1" chance="10.53"/>
-			<drop item_id="169000009" min_amount="1" max_amount="1" chance="10.53"/>
-			<drop item_id="182006319" min_amount="1" max_amount="1" chance="68.42"/>
+			<drop item_id="141000001" min_amount="2" max_amount="2" chance="15.79" />
+			<drop item_id="152010319" min_amount="1" max_amount="1" chance="10.53" />
+			<drop item_id="152011065" min_amount="1" max_amount="1" chance="5.26" />
+			<drop item_id="152011071" min_amount="1" max_amount="1" chance="5.26" />
+			<drop item_id="160003556" min_amount="1" max_amount="1" chance="5.26" />
+			<drop item_id="160003562" min_amount="1" max_amount="1" chance="10.53" />
+			<drop item_id="167000358" min_amount="1" max_amount="1" chance="15.79" />
+			<drop item_id="167000543" min_amount="1" max_amount="1" chance="10.53" />
+			<drop item_id="167000544" min_amount="1" max_amount="1" chance="4.6693" />
+			<drop item_id="167000547" min_amount="1" max_amount="1" chance="4.6693" />
+			<drop item_id="167000549" min_amount="1" max_amount="1" chance="5.26" />
+			<drop item_id="167000550" min_amount="1" max_amount="1" chance="10.53" />
+			<drop item_id="169000009" min_amount="1" max_amount="1" chance="10.53" />
+			<drop item_id="182006319" min_amount="1" max_amount="1" chance="68.42" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="219937">
 		<drop_group name="" use_category="false">
-			<drop item_id="140000384" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="141000001" min_amount="1" max_amount="2" chance="29.63"/>
-			<drop item_id="152010319" min_amount="1" max_amount="1" chance="29.63"/>
-			<drop item_id="152011065" min_amount="1" max_amount="1" chance="11.11"/>
-			<drop item_id="152011070" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="152011071" min_amount="1" max_amount="1" chance="7.41"/>
-			<drop item_id="152011072" min_amount="1" max_amount="1" chance="0.9315"/>
-			<drop item_id="152011075" min_amount="1" max_amount="1" chance="4.5198"/>
-			<drop item_id="152011076" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="160003556" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="167000358" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="167000544" min_amount="1" max_amount="1" chance="7.41"/>
-			<drop item_id="167000545" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="167000548" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="167000551" min_amount="1" max_amount="1" chance="3.7"/>
-			<drop item_id="169000009" min_amount="1" max_amount="1" chance="7.41"/>
-			<drop item_id="182006319" min_amount="1" max_amount="1" chance="62.96"/>
+			<drop item_id="140000384" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="141000001" min_amount="1" max_amount="2" chance="29.63" />
+			<drop item_id="152010319" min_amount="1" max_amount="1" chance="29.63" />
+			<drop item_id="152011065" min_amount="1" max_amount="1" chance="11.11" />
+			<drop item_id="152011070" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="152011071" min_amount="1" max_amount="1" chance="7.41" />
+			<drop item_id="152011072" min_amount="1" max_amount="1" chance="0.9315" />
+			<drop item_id="152011075" min_amount="1" max_amount="1" chance="4.5198" />
+			<drop item_id="152011076" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="160003556" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="167000358" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="167000544" min_amount="1" max_amount="1" chance="7.41" />
+			<drop item_id="167000545" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="167000548" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="167000551" min_amount="1" max_amount="1" chance="3.7" />
+			<drop item_id="169000009" min_amount="1" max_amount="1" chance="7.41" />
+			<drop item_id="182006319" min_amount="1" max_amount="1" chance="62.96" />
 		</drop_group>
 	</npc_drop>
 </npc_drops>

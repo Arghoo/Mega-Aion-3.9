@@ -3,168 +3,168 @@
 <npc_drops>
 	<npc_drop npc_id="216897"> <!-- Drudgelord Kakiti -->
 		<drop_group name="NAMED_RARE_WEAPON">
-			<drop item_id="100900811" max_amount="1" min_amount="1" chance="50.0"/>
+			<drop item_id="100900811" max_amount="1" min_amount="1" chance="50.0" />
 		</drop_group>
 		<drop_group name="NAMED_RARE_ACCESSORY">
-			<drop item_id="121001030" max_amount="1" min_amount="1" chance="15.0"/>
-			<drop item_id="121001029" max_amount="1" min_amount="1" chance="15.0"/>
+			<drop item_id="121001030" max_amount="1" min_amount="1" chance="15.0" />
+			<drop item_id="121001029" max_amount="1" min_amount="1" chance="15.0" />
 		</drop_group>
-	</npc_drop>	
+	</npc_drop>
 	<npc_drop npc_id="216907"> <!-- MuMu Ham the Grey -->
 		<drop_group name="NAMED_RARE_WEAPON">
-			<drop item_id="100001071" max_amount="1" min_amount="1" chance="50.0"/>
+			<drop item_id="100001071" max_amount="1" min_amount="1" chance="50.0" />
 		</drop_group>
 		<drop_group name="NAMED_RARE_ACCESSORY">
-			<drop item_id="122001265" max_amount="1" min_amount="1" chance="15.0"/>
-			<drop item_id="122001264" max_amount="1" min_amount="1" chance="15.0"/>
+			<drop item_id="122001265" max_amount="1" min_amount="1" chance="15.0" />
+			<drop item_id="122001264" max_amount="1" min_amount="1" chance="15.0" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="216915"> <!-- Bossman Nukiti -->
 		<drop_group name="NAMED_RARE_WEAPON">
-			<drop item_id="100100811" max_amount="1" min_amount="1" chance="50.0"/>
+			<drop item_id="100100811" max_amount="1" min_amount="1" chance="50.0" />
 		</drop_group>
 		<drop_group name="NAMED_RARE_ACCESSORY">
-			<drop item_id="123001094" max_amount="1" min_amount="1" chance="15.0"/>
-			<drop item_id="123001095" max_amount="1" min_amount="1" chance="15.0"/>
+			<drop item_id="123001094" max_amount="1" min_amount="1" chance="15.0" />
+			<drop item_id="123001095" max_amount="1" min_amount="1" chance="15.0" />
 		</drop_group>
-	</npc_drop>	
+	</npc_drop>
 	<npc_drop npc_id="216925"> <!-- Treasure Box -->
 		<drop_group name="KINAH">
-			<drop item_id="182400001" max_amount="3812" min_amount="1280" chance="91.97"/>
-		</drop_group>	
+			<drop item_id="182400001" max_amount="3812" min_amount="1280" chance="91.97" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-			<drop item_id="162000003" max_amount="20" min_amount="1" chance="50.0"/>
-			<drop item_id="162000008" max_amount="20" min_amount="1" chance="50.0"/>
+			<drop item_id="162000003" max_amount="20" min_amount="1" chance="50.0" />
+			<drop item_id="162000008" max_amount="20" min_amount="1" chance="50.0" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="700830"> <!-- haramel chest scout -->
-        <drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="10" min_amount="10" item_id="152000901"/>
-        </drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="100" min_amount="100" item_id="169300003"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="10" min_amount="10" item_id="152000901" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="5" min_amount="5" item_id="166000035"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="100" min_amount="100" item_id="169300003" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="120001115"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="5" min_amount="5" item_id="166000035" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="114301148"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="120001115" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="111301096"/>
-        </drop_group>
-    </npc_drop>
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="114301148" />
+		</drop_group>
+		<drop_group name="" use_category="false">
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="111301096" />
+		</drop_group>
+	</npc_drop>
 	<npc_drop npc_id="700829"> <!-- haramel chest warrior -->
-        <drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="10" min_amount="10" item_id="152000901"/>
-        </drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="100" min_amount="100" item_id="169300003"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="10" min_amount="10" item_id="152000901" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="5" min_amount="5" item_id="166000035"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="100" min_amount="100" item_id="169300003" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="120001115"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="5" min_amount="5" item_id="166000035" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="111601071"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="120001115" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="114601051"/>
-        </drop_group>
-    </npc_drop>
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="111601071" />
+		</drop_group>
+		<drop_group name="" use_category="false">
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="114601051" />
+		</drop_group>
+	</npc_drop>
 	<npc_drop npc_id="700831"> <!-- haramel chest mage -->
-        <drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="10" min_amount="10" item_id="152000901"/>
-        </drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="100" min_amount="100" item_id="169300003"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="10" min_amount="10" item_id="152000901" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="5" min_amount="5" item_id="166000035"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="100" min_amount="100" item_id="169300003" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="120001116"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="5" min_amount="5" item_id="166000035" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="111101097"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="120001116" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="114101138"/>
-        </drop_group>
-    </npc_drop>
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="111101097" />
+		</drop_group>
+		<drop_group name="" use_category="false">
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="114101138" />
+		</drop_group>
+	</npc_drop>
 	<npc_drop npc_id="700832"> <!-- haramel chest Cleric -->
-        <drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="10" min_amount="10" item_id="152000901"/>
-        </drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="100" min_amount="100" item_id="169300003"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="10" min_amount="10" item_id="152000901" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="5" min_amount="5" item_id="166000035"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="100" min_amount="100" item_id="169300003" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="120001116"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="5" min_amount="5" item_id="166000035" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="114501097"/>
-        </drop_group>
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="120001116" />
+		</drop_group>
 		<drop_group name="" use_category="false">
-            <drop chance="100.0" max_amount="1" min_amount="1" item_id="111501081"/>
-        </drop_group>
-    </npc_drop>
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="114501097" />
+		</drop_group>
+		<drop_group name="" use_category="false">
+			<drop chance="100.0" max_amount="1" min_amount="1" item_id="111501081" />
+		</drop_group>
+	</npc_drop>
 	<npc_drop npc_id="700853"> <!-- Severely Rusted Box -->
 		<drop_group name="NAMED_RARE_WEAPON">
-			<drop item_id="101500837" max_amount="1" min_amount="1" chance="1.51"/> <!--Dukaki Peon's Shovel -->
-		</drop_group>	
-         <drop_group name="" use_category="false">
-			<drop chance="100.0" item_id="182400001" max_amount="790" min_amount="69"/>
-			<drop chance="39.04" item_id="166000015" max_amount="1" min_amount="1"/>
-			<drop chance="23.25" item_id="166000016" max_amount="1" min_amount="1"/>
-			<drop chance="9.21" item_id="166000017" max_amount="1" min_amount="1"/>
-			<drop chance="8.33" item_id="166000018" max_amount="1" min_amount="1"/>
-			<drop chance="5.7" item_id="166000020" max_amount="1" min_amount="1"/>
-			<drop chance="4.82" item_id="166000021" max_amount="1" min_amount="1"/>
-			<drop chance="3.51" item_id="166000019" max_amount="1" min_amount="1"/>
-			<drop chance="3.07" item_id="166000022" max_amount="1" min_amount="1"/>
-			<drop chance="3.07" item_id="166000023" max_amount="1" min_amount="1"/>
+			<drop item_id="101500837" max_amount="1" min_amount="1" chance="1.51" /> <!--Dukaki Peon's Shovel -->
 		</drop_group>
-        <drop_group name="MANASTONE_COMMON">
-            <drop chance="12.3" item_id="167000259" max_amount="1" min_amount="1"/>
-            <drop chance="12.3" item_id="167000258" max_amount="1" min_amount="1"/>
-            <drop chance="12.3" item_id="167000263" max_amount="1" min_amount="1"/>
-            <drop chance="12.3" item_id="167000261" max_amount="1" min_amount="1"/>
-            <drop chance="12.3" item_id="167000260" max_amount="1" min_amount="1"/>
-            <drop chance="12.3" item_id="167000267" max_amount="1" min_amount="1"/>
-            <drop chance="12.3" item_id="167000265" max_amount="1" min_amount="1"/>
-            <drop chance="12.3" item_id="167000264" max_amount="1" min_amount="1"/>
-            <drop chance="12.3" item_id="167000528" max_amount="1" min_amount="1"/>
-			<drop chance="12.3" item_id="167000527" max_amount="1" min_amount="1"/>
-            <drop chance="5.74" item_id="167000230" max_amount="1" min_amount="1"/>
-        </drop_group>
-        <drop_group name="FLUX_COMMON">
-            <drop chance="6.56" item_id="152011022" max_amount="1" min_amount="1"/>
-            <drop chance="6.56" item_id="152011042" max_amount="1" min_amount="1"/>
-            <drop chance="6.56" item_id="152011002" max_amount="1" min_amount="1"/>
-        </drop_group>
-        <drop_group name="POWER_SHARDS">
-            <drop chance="24.6" item_id="169000004" max_amount="5" min_amount="1"/>
+		<drop_group name="" use_category="false">
+			<drop chance="100.0" item_id="182400001" max_amount="790" min_amount="69" />
+			<drop chance="39.04" item_id="166000015" max_amount="1" min_amount="1" />
+			<drop chance="23.25" item_id="166000016" max_amount="1" min_amount="1" />
+			<drop chance="9.21" item_id="166000017" max_amount="1" min_amount="1" />
+			<drop chance="8.33" item_id="166000018" max_amount="1" min_amount="1" />
+			<drop chance="5.7" item_id="166000020" max_amount="1" min_amount="1" />
+			<drop chance="4.82" item_id="166000021" max_amount="1" min_amount="1" />
+			<drop chance="3.51" item_id="166000019" max_amount="1" min_amount="1" />
+			<drop chance="3.07" item_id="166000022" max_amount="1" min_amount="1" />
+			<drop chance="3.07" item_id="166000023" max_amount="1" min_amount="1" />
 		</drop_group>
-        <drop_group name="MANASTONE_RARE">
-			<drop chance="4.1" item_id="167000535" max_amount="1" min_amount="1"/>
-			<drop chance="4.1" item_id="167000536" max_amount="1" min_amount="1"/>
-			<drop chance="4.1" item_id="167000427" max_amount="1" min_amount="1"/>
-			<drop chance="4.1" item_id="167000424" max_amount="1" min_amount="1"/>
-			<drop chance="4.1" item_id="167000425" max_amount="1" min_amount="1"/>
-            <drop chance="4.1" item_id="167000418" max_amount="1" min_amount="1"/>
-			<drop chance="4.1" item_id="167000419" max_amount="1" min_amount="1"/>
-			<drop chance="4.1" item_id="167000423" max_amount="1" min_amount="1"/>
-			<drop chance="4.1" item_id="167000420" max_amount="1" min_amount="1"/>
-			<drop chance="4.1" item_id="167000421" max_amount="1" min_amount="1"/>
+		<drop_group name="MANASTONE_COMMON">
+			<drop chance="12.3" item_id="167000259" max_amount="1" min_amount="1" />
+			<drop chance="12.3" item_id="167000258" max_amount="1" min_amount="1" />
+			<drop chance="12.3" item_id="167000263" max_amount="1" min_amount="1" />
+			<drop chance="12.3" item_id="167000261" max_amount="1" min_amount="1" />
+			<drop chance="12.3" item_id="167000260" max_amount="1" min_amount="1" />
+			<drop chance="12.3" item_id="167000267" max_amount="1" min_amount="1" />
+			<drop chance="12.3" item_id="167000265" max_amount="1" min_amount="1" />
+			<drop chance="12.3" item_id="167000264" max_amount="1" min_amount="1" />
+			<drop chance="12.3" item_id="167000528" max_amount="1" min_amount="1" />
+			<drop chance="12.3" item_id="167000527" max_amount="1" min_amount="1" />
+			<drop chance="5.74" item_id="167000230" max_amount="1" min_amount="1" />
 		</drop_group>
-	</npc_drop>					
+		<drop_group name="FLUX_COMMON">
+			<drop chance="6.56" item_id="152011022" max_amount="1" min_amount="1" />
+			<drop chance="6.56" item_id="152011042" max_amount="1" min_amount="1" />
+			<drop chance="6.56" item_id="152011002" max_amount="1" min_amount="1" />
+		</drop_group>
+		<drop_group name="POWER_SHARDS">
+			<drop chance="24.6" item_id="169000004" max_amount="5" min_amount="1" />
+		</drop_group>
+		<drop_group name="MANASTONE_RARE">
+			<drop chance="4.1" item_id="167000535" max_amount="1" min_amount="1" />
+			<drop chance="4.1" item_id="167000536" max_amount="1" min_amount="1" />
+			<drop chance="4.1" item_id="167000427" max_amount="1" min_amount="1" />
+			<drop chance="4.1" item_id="167000424" max_amount="1" min_amount="1" />
+			<drop chance="4.1" item_id="167000425" max_amount="1" min_amount="1" />
+			<drop chance="4.1" item_id="167000418" max_amount="1" min_amount="1" />
+			<drop chance="4.1" item_id="167000419" max_amount="1" min_amount="1" />
+			<drop chance="4.1" item_id="167000423" max_amount="1" min_amount="1" />
+			<drop chance="4.1" item_id="167000420" max_amount="1" min_amount="1" />
+			<drop chance="4.1" item_id="167000421" max_amount="1" min_amount="1" />
+		</drop_group>
+	</npc_drop>
 </npc_drops>

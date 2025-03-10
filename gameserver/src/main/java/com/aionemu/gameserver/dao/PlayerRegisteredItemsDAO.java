@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.sql.Types;
 import java.util.Collection;
 import java.util.HashMap;
-
-import javolution.util.FastList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +16,6 @@ import org.slf4j.LoggerFactory;
 import com.aionemu.commons.database.DB;
 import com.aionemu.commons.database.DatabaseFactory;
 import com.aionemu.commons.utils.GenericValidator;
-import com.aionemu.gameserver.model.gameobjects.AionObject;
 import com.aionemu.gameserver.model.gameobjects.HouseDecoration;
 import com.aionemu.gameserver.model.gameobjects.HouseObject;
 import com.aionemu.gameserver.model.gameobjects.PersistentState;
@@ -28,8 +27,6 @@ import com.aionemu.gameserver.services.HousingService;
 import com.aionemu.gameserver.services.item.HouseObjectFactory;
 import com.aionemu.gameserver.utils.idfactory.IDFactory;
 import com.aionemu.gameserver.world.World;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Collections2;
 
 /**
  * @author Rolandas
@@ -46,13 +43,6 @@ public class PlayerRegisteredItemsDAO extends IDFactoryAwareDAO
 		"UPDATE `player_registered_items` SET " + "`expire_time`=?,`color`=?,`color_expires`=?,`owner_use_count`=?,`visitor_use_count`=?,`x`=?,`y`=?,`z`=?,`h`=?,`area`=? " + "WHERE `player_id`=? AND `item_unique_id`=? AND `item_id`=?";
 	public static final String DELETE_QUERY = "DELETE FROM `player_registered_items` WHERE `item_unique_id` = ?";
 	public static final String RESET_QUERY = "UPDATE `player_registered_items` SET x=0,y=0,z=0,h=0,area='NONE' WHERE `player_id`=? AND `area` != 'DECOR'";
-
-	private static final Predicate<HouseObject<?>> objectsToAddPredicate = input -> input != null && (input.getPersistentState() == PersistentState.NEW);
-	private static final Predicate<HouseObject<?>> objectsToUpdatePredicate = input -> input != null && (input.getPersistentState() == PersistentState.UPDATE_REQUIRED);
-	private static final Predicate<HouseObject<?>> objectsToDeletePredicate = input -> input != null && PersistentState.DELETED == input.getPersistentState();
-	private static final Predicate<HouseDecoration> partsToAddPredicate = input -> input != null && (input.getPersistentState() == PersistentState.NEW);
-	private static final Predicate<HouseDecoration> partsToUpdatePredicate = input -> input != null && (input.getPersistentState() == PersistentState.UPDATE_REQUIRED);
-	private static final Predicate<HouseDecoration> partsToDeletePredicate = input -> input != null && PersistentState.DELETED == input.getPersistentState();
 
 	public static void loadRegistry(int playerId)
 	{
@@ -100,14 +90,14 @@ public class PlayerRegisteredItemsDAO extends IDFactoryAwareDAO
 
 	public static boolean store(HouseRegistry registry, int playerId)
 	{
-		FastList<HouseObject<?>> objects = registry.getObjects();
-		FastList<HouseDecoration> decors = registry.getAllParts();
-		Collection<HouseObject<?>> objectsToAdd = Collections2.filter(objects, objectsToAddPredicate);
-		Collection<HouseObject<?>> objectsToUpdate = Collections2.filter(objects, objectsToUpdatePredicate);
-		Collection<HouseObject<?>> objectsToDelete = Collections2.filter(objects, objectsToDeletePredicate);
-		Collection<HouseDecoration> partsToAdd = Collections2.filter(decors, partsToAddPredicate);
-		Collection<HouseDecoration> partsToUpdate = Collections2.filter(decors, partsToUpdatePredicate);
-		Collection<HouseDecoration> partsToDelete = Collections2.filter(decors, partsToDeletePredicate);
+		List<HouseObject<?>> objects = registry.getObjects();
+		List<HouseDecoration> decors = registry.getAllParts();
+		List<HouseObject<?>> objectsToAdd = objects.stream().filter(i -> i != null && PersistentState.NEW == i.getPersistentState()).collect(Collectors.toList());
+		List<HouseObject<?>> objectsToUpdate = objects.stream().filter(i -> i != null && PersistentState.UPDATE_REQUIRED == i.getPersistentState()).collect(Collectors.toList());
+		List<HouseObject<?>> objectsToDelete = objects.stream().filter(i -> i != null && PersistentState.DELETED == i.getPersistentState()).collect(Collectors.toList());
+		List<HouseDecoration> partsToAdd = decors.stream().filter(i -> i != null && PersistentState.NEW == i.getPersistentState()).collect(Collectors.toList());
+		List<HouseDecoration> partsToUpdate = decors.stream().filter(i -> i != null && PersistentState.UPDATE_REQUIRED == i.getPersistentState()).collect(Collectors.toList());
+		List<HouseDecoration> partsToDelete = decors.stream().filter(i -> i != null && PersistentState.DELETED == i.getPersistentState()).collect(Collectors.toList());
 
 		boolean objectDeleteResult = false;
 		boolean partsDeleteResult = false;
@@ -140,8 +130,7 @@ public class PlayerRegisteredItemsDAO extends IDFactoryAwareDAO
 		}
 
 		if (!objectsToDelete.isEmpty() && objectDeleteResult) {
-			Collection<Integer> idIterator = Collections2.transform(objectsToDelete, AionObject.OBJECT_TO_ID_TRANSFORMER);
-			IDFactory.getInstance().releaseIds(idIterator);
+			objectsToDelete.forEach(i -> IDFactory.getInstance().releaseId(i.getObjectId()));
 		}
 
 		if (!partsToDelete.isEmpty() && partsDeleteResult) {

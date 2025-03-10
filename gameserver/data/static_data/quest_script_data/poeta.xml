@@ -48,49 +48,49 @@
 		[END] SUMMARY
 	-->
 	<!-- REPORTING QUESTS -->
-	<report_to start_npc_ids="203049" end_npc_ids="203057" id="1101"/>
-	<report_to start_npc_ids="203057" end_npc_ids="203059" id="1104"/>
-	<report_to start_npc_ids="203050" end_npc_ids="203061" item_id="182200203" id="1106"/>
-	<report_to start_npc_ids="203065" end_npc_ids="203075" item_id="182200206" id="1110"/>
-	<report_to start_npc_ids="203059" end_npc_ids="203070" item_id="0" id="1118"/>
-	<report_to start_npc_ids="203075" end_npc_ids="203080" item_id="182200225" id="1119"/>
+	<report_to start_npc_ids="203049" end_npc_ids="203057" id="1101" />
+	<report_to start_npc_ids="203057" end_npc_ids="203059" id="1104" />
+	<report_to start_npc_ids="203050" end_npc_ids="203061" item_id="182200203" id="1106" />
+	<report_to start_npc_ids="203065" end_npc_ids="203075" item_id="182200206" id="1110" />
+	<report_to start_npc_ids="203059" end_npc_ids="203070" item_id="0" id="1118" />
+	<report_to start_npc_ids="203075" end_npc_ids="203080" item_id="182200225" id="1119" />
 	<xml_quest start_npc_id="203075" end_npc_id="203058" id="1115">
 		<on_talk_event ids="203072 203058">
-	    <var value="0">
-	      <npc id="203072">
-	        <dialog id="26">
-	          <operations>
-	            <npc_dialog id="1352"/>
-	          </operations>
-	        </dialog>
-	        <dialog id="10000">
-	          <operations>
-	            <set_quest_var var_id="0" value="1"/>
-	            <npc_dialog id="1352" quest_id="0"/>
-	          </operations>
-	        </dialog>
-	      </npc>
-	    </var>
-	    <var value="1">
-	      <npc id="203058">
-	        <dialog id="26">
-	          <operations>
-	            <npc_dialog id="2375"/>
-	          </operations>
-	        </dialog>
-	        <dialog id="1009">
-	          <operations override="false">
-	            <set_quest_status status="REWARD"/>
-	          </operations>
-	        </dialog>
-	      </npc>
-	    </var>
-	  </on_talk_event>
+			<var value="0">
+				<npc id="203072">
+					<dialog id="26">
+						<operations>
+							<npc_dialog id="1352" />
+						</operations>
+					</dialog>
+					<dialog id="10000">
+						<operations>
+							<set_quest_var var_id="0" value="1" />
+							<npc_dialog id="1352" quest_id="0" />
+						</operations>
+					</dialog>
+				</npc>
+			</var>
+			<var value="1">
+				<npc id="203058">
+					<dialog id="26">
+						<operations>
+							<npc_dialog id="2375" />
+						</operations>
+					</dialog>
+					<dialog id="1009">
+						<operations override="false">
+							<set_quest_status status="REWARD" />
+						</operations>
+					</dialog>
+				</npc>
+			</var>
+		</on_talk_event>
 	</xml_quest>
 	<xml_quest start_npc_id="798008" end_npc_id="798008" id="1127">
 		<on_talk_event ids="700001">
 			<conditions operate="AND">
-				<quest_status value="START" op="EQUAL"/>
+				<quest_status value="START" op="EQUAL" />
 			</conditions>
 			<var value="0">
 				<npc id="700001">
@@ -98,8 +98,8 @@
 						<operations>
 							<npc_use>
 								<finish>
-									<give_item item_id="182200215" count="1"/>
-									<set_quest_var var_id="0" value="1"/>
+									<give_item item_id="182200215" count="1" />
+									<set_quest_var var_id="0" value="1" />
 								</finish>
 							</npc_use>
 						</operations>
@@ -110,53 +110,53 @@
 				<npc id="798008">
 					<dialog id="26">
 						<operations>
-							<npc_dialog id="2375"/>
+							<npc_dialog id="2375" />
 						</operations>
 					</dialog>
 					<dialog id="34">
 						<operations>
 							<collect_items>
 								<true>
-									<set_quest_status status="REWARD"/>
-									<npc_dialog id="5"/>
+									<set_quest_status status="REWARD" />
+									<npc_dialog id="5" />
 								</true>
 								<false>
-									<npc_dialog id="2716"/>
+									<npc_dialog id="2716" />
 								</false>
-				            </collect_items>
+							</collect_items>
 						</operations>
 					</dialog>
 				</npc>
 			</var>
-	  </on_talk_event>
+		</on_talk_event>
 	</xml_quest>
 	<!-- COLLECTING QUESTS -->
-	<item_collecting start_npc_ids="203057" action_item_ids="700105" id="1103"/>
-	<item_collecting start_npc_ids="203050" id="1105"/>
-	<item_collecting start_npc_ids="203061" end_npc_ids="203072" id="1108"/>
-	<item_collecting start_npc_ids="798007" action_item_ids="700106" id="1109"/>
-	<item_collecting start_npc_ids="203060" id="1116"/>
-	<item_collecting start_npc_ids="203074" id="1117"/>
-	<item_collecting start_npc_ids="203081" id="1121"/>
-	<item_collecting start_npc_ids="790001" id="1124"/>
-	<item_collecting start_npc_ids="203085" action_item_ids="700107" end_npc_ids="203067" id="1125"/>
-	<item_collecting start_npc_ids="203079" id="1126"/>
-	<item_collecting start_npc_ids="203085" end_npc_ids="203067" id="1129"/>
-	<item_collecting start_npc_ids="203059" id="1206"/>
-	<item_collecting start_npc_ids="203082" end_npc_ids="203085" id="1207"/>
-	<item_collecting id="80158" start_npc_ids="830533"/>
+	<item_collecting start_npc_ids="203057" action_item_ids="700105" id="1103" />
+	<item_collecting start_npc_ids="203050" id="1105" />
+	<item_collecting start_npc_ids="203061" end_npc_ids="203072" id="1108" />
+	<item_collecting start_npc_ids="798007" action_item_ids="700106" id="1109" />
+	<item_collecting start_npc_ids="203060" id="1116" />
+	<item_collecting start_npc_ids="203074" id="1117" />
+	<item_collecting start_npc_ids="203081" id="1121" />
+	<item_collecting start_npc_ids="790001" id="1124" />
+	<item_collecting start_npc_ids="203085" action_item_ids="700107" end_npc_ids="203067" id="1125" />
+	<item_collecting start_npc_ids="203079" id="1126" />
+	<item_collecting start_npc_ids="203085" end_npc_ids="203067" id="1129" />
+	<item_collecting start_npc_ids="203059" id="1206" />
+	<item_collecting start_npc_ids="203082" end_npc_ids="203085" id="1207" />
+	<item_collecting id="80158" start_npc_ids="830533" />
 	<!-- HUNTING QUESTS -->
 	<monster_hunt start_npc_ids="203057" id="1102">
-		<monster npc_ids="210133 210134" var="0" end_var="3"/>
+		<monster npc_ids="210133 210134" var="0" end_var="3" />
 	</monster_hunt>
 	<monster_hunt start_npc_ids="203072" id="1112">
-		<monster npc_ids="210259 210260" var="0" end_var="5"/>
-		<monster npc_ids="210065 210066" var="1" end_var="5"/>
+		<monster npc_ids="210259 210260" var="0" end_var="5" />
+		<monster npc_ids="210065 210066" var="1" end_var="5" />
 	</monster_hunt>
 	<monster_hunt start_npc_ids="203076" id="1113">
-		<monster npc_ids="210262 210675" var="0" end_var="8"/>
+		<monster npc_ids="210262 210675" var="0" end_var="8" />
 	</monster_hunt>
 	<monster_hunt start_npc_ids="203082" id="1120">
-		<monster npc_ids="210142 210143" var="0" end_var="9"/>
+		<monster npc_ids="210142 210143" var="0" end_var="9" />
 	</monster_hunt>
 </quest_scripts>

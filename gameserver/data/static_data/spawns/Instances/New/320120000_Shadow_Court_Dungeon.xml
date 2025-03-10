@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <spawns>
-    <spawn_map map_id="320120000">
-        <spawn custom="true" respawn_time="0" npc_id="201006" difficult_id="0"/>
-        <spawn custom="true" respawn_time="0" npc_id="201010" difficult_id="0"/>
-        <spawn custom="true" respawn_time="0" npc_id="201014" difficult_id="0"/>
-        <spawn custom="true" respawn_time="0" npc_id="201018" difficult_id="0"/>
-        <spawn custom="true" respawn_time="0" npc_id="201019" difficult_id="0"/>
-        <spawn custom="true" respawn_time="0" npc_id="201038" difficult_id="0"/>
-        <spawn custom="true" respawn_time="0" npc_id="282892" difficult_id="0"/>
-    </spawn_map>
+	<spawn_map map_id="320120000">
+		<spawn custom="true" respawn_time="0" npc_id="201006" difficult_id="0" />
+		<spawn custom="true" respawn_time="0" npc_id="201010" difficult_id="0" />
+		<spawn custom="true" respawn_time="0" npc_id="201014" difficult_id="0" />
+		<spawn custom="true" respawn_time="0" npc_id="201018" difficult_id="0" />
+		<spawn custom="true" respawn_time="0" npc_id="201019" difficult_id="0" />
+		<spawn custom="true" respawn_time="0" npc_id="201038" difficult_id="0" />
+		<spawn custom="true" respawn_time="0" npc_id="282892" difficult_id="0" />
+	</spawn_map>
 </spawns>

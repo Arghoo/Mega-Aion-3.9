@@ -37,40 +37,40 @@
 		[END] SUMMARY
 	-->
 	<!-- REPORTING QUESTS -->
-	<report_to id="30216" start_npc_ids="798941" end_npc_ids="798909"/>
+	<report_to id="30216" start_npc_ids="798941" end_npc_ids="798909" />
 	<!-- COLLECTING QUESTS -->
-	<item_collecting id="11275" start_npc_ids="798909"/>
-	<item_collecting id="11550" start_npc_ids="205531"/>
-	<item_collecting id="21550" start_npc_ids="205613"/>
+	<item_collecting id="11275" start_npc_ids="798909" />
+	<item_collecting id="11550" start_npc_ids="205531" />
+	<item_collecting id="21550" start_npc_ids="205613" />
 	<!-- HUNTING QUESTS -->
 	<monster_hunt id="11553" start_npc_ids="205531">
-		<monster var="0" npc_ids="218599 218600 218601 218602" end_var="30"/>
+		<monster var="0" npc_ids="218599 218600 218601 218602" end_var="30" />
 	</monster_hunt>
 	<monster_hunt id="21553" start_npc_ids="205613">
-		<monster var="0" npc_ids="218599 218600 218601 218602" end_var="30"/>
+		<monster var="0" npc_ids="218599 218600 218601 218602" end_var="30" />
 	</monster_hunt>
 	<monster_hunt id="30218" start_npc_ids="799504">
-		<monster var="0" npc_ids="216195 216196 216197 216198 216276 216277 216278 216279" end_var="25"/>
+		<monster var="0" npc_ids="216195 216196 216197 216198 216276 216277 216278 216279" end_var="25" />
 	</monster_hunt>
 	<monster_hunt id="30219" start_npc_ids="799504">
-		<monster var="0" npc_ids="216160" end_var="1"/>
+		<monster var="0" npc_ids="216160" end_var="1" />
 	</monster_hunt>
 	<monster_hunt id="30220" start_npc_ids="799505">
-		<monster var="0" npc_ids="216199 216200 216201 216202 216203 216280 216281 216282" end_var="25"/>
+		<monster var="0" npc_ids="216199 216200 216201 216202 216203 216280 216281 216282" end_var="25" />
 	</monster_hunt>
 	<monster_hunt id="30221" start_npc_ids="799505">
-		<monster var="0" npc_ids="216242" end_var="1"/>
+		<monster var="0" npc_ids="216242" end_var="1" />
 	</monster_hunt>
-		<monster_hunt id="30318" start_npc_ids="799504">
-		<monster var="0" npc_ids="216195 216196 216197 216198 216276 216277 216278 216279" end_var="25"/>
+	<monster_hunt id="30318" start_npc_ids="799504">
+		<monster var="0" npc_ids="216195 216196 216197 216198 216276 216277 216278 216279" end_var="25" />
 	</monster_hunt>
 	<monster_hunt id="30319" start_npc_ids="799504">
-		<monster var="0" npc_ids="216160" end_var="1"/>
+		<monster var="0" npc_ids="216160" end_var="1" />
 	</monster_hunt>
 	<monster_hunt id="30320" start_npc_ids="799505">
-		<monster var="0" npc_ids="216199 216200 216201 216202 216203 216280 216281 216282" end_var="25"/>
+		<monster var="0" npc_ids="216199 216200 216201 216202 216203 216280 216281 216282" end_var="25" />
 	</monster_hunt>
 	<monster_hunt id="30321" start_npc_ids="799505">
-		<monster var="0" npc_ids="216242" end_var="1"/>
+		<monster var="0" npc_ids="216242" end_var="1" />
 	</monster_hunt>
 </quest_scripts>

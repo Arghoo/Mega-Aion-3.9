@@ -117,14 +117,7 @@ public class SiegeRaceCounter implements Comparable<SiegeRaceCounter>
 		}
 
 		LinkedList<Map.Entry<K, AtomicLong>> tempList = Lists.newLinkedList(unorderedMap.entrySet());
-		Collections.sort(tempList, new Comparator<Map.Entry<K, AtomicLong>>()
-		{
-			@Override
-			public int compare(Map.Entry<K, AtomicLong> o1, Map.Entry<K, AtomicLong> o2)
-			{
-				return new Long(o2.getValue().get()).compareTo(o1.getValue().get());
-			}
-		});
+		tempList.sort((o1, o2) -> Long.compare(o2.getValue().get(), o1.getValue().get()));
 
 		Map<K, Long> result = Maps.newLinkedHashMap();
 		for (Map.Entry<K, AtomicLong> entry : tempList) {

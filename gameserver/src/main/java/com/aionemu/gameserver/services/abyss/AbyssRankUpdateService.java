@@ -9,7 +9,6 @@ import com.aionemu.gameserver.model.gameobjects.player.AbyssRank;
 import com.aionemu.gameserver.model.gameobjects.player.Player;
 import com.aionemu.gameserver.utils.stats.AbyssRankEnum;
 import com.aionemu.gameserver.world.World;
-import com.aionemu.gameserver.world.knownlist.Visitor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -75,7 +74,7 @@ public class AbyssRankUpdateService
 	{
 		Map<Integer, Integer> playerApMap = AbyssRankDAO.loadPlayersAp(race, apLimit, activeAfterDays);
 		List<Entry<Integer, Integer>> playerApEntries = new ArrayList<Entry<Integer, Integer>>(playerApMap.entrySet());
-		Collections.sort(playerApEntries, new PlayerApComparator<Integer, Integer>());
+		playerApEntries.sort(new PlayerApComparator<>());
 
 		selectRank(AbyssRankEnum.SUPREME_COMMANDER, playerApEntries);
 		selectRank(AbyssRankEnum.COMMANDER, playerApEntries);

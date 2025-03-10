@@ -39,11 +39,12 @@ import java.util.logging.Logger;
 
 /**
  * <code>Vector2f</code> defines a Vector for a two float value vector.
- * 
+ *
  * @author Mark Powell
  * @author Joshua Slack
  */
-public final class Vector2f implements Cloneable {
+public final class Vector2f implements Cloneable
+{
 
 	private static final Logger logger = Logger.getLogger(Vector2f.class.getName());
 
@@ -61,13 +62,12 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * Creates a Vector2f with the given initial x and y values.
-	 * 
-	 * @param x
-	 *          The x value of this Vector2f.
-	 * @param y
-	 *          The y value of this Vector2f.
+	 *
+	 * @param x The x value of this Vector2f.
+	 * @param y The y value of this Vector2f.
 	 */
-	public Vector2f(float x, float y) {
+	public Vector2f(float x, float y)
+	{
 		this.x = x;
 		this.y = y;
 	}
@@ -75,31 +75,31 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * Creates a Vector2f with x and y set to 0. Equivalent to Vector2f(0,0).
 	 */
-	public Vector2f() {
+	public Vector2f()
+	{
 		x = y = 0;
 	}
 
 	/**
 	 * Creates a new Vector2f that contains the passed vector's information
-	 * 
-	 * @param vector2f
-	 *          The vector to copy
+	 *
+	 * @param vector2f The vector to copy
 	 */
-	public Vector2f(Vector2f vector2f) {
+	public Vector2f(Vector2f vector2f)
+	{
 		this.x = vector2f.x;
 		this.y = vector2f.y;
 	}
 
 	/**
 	 * set the x and y values of the vector
-	 * 
-	 * @param x
-	 *          the x value of the vector.
-	 * @param y
-	 *          the y value of the vector.
+	 *
+	 * @param x the x value of the vector.
+	 * @param y the y value of the vector.
 	 * @return this vector
 	 */
-	public Vector2f set(float x, float y) {
+	public Vector2f set(float x, float y)
+	{
 		this.x = x;
 		this.y = y;
 		return this;
@@ -107,12 +107,12 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * set the x and y values of the vector from another vector
-	 * 
-	 * @param vec
-	 *          the vector to copy from
+	 *
+	 * @param vec the vector to copy from
 	 * @return this vector
 	 */
-	public Vector2f set(Vector2f vec) {
+	public Vector2f set(Vector2f vec)
+	{
 		this.x = vec.x;
 		this.y = vec.y;
 		return this;
@@ -121,12 +121,12 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>add</code> adds a provided vector to this vector creating a resultant vector which is returned. If the
 	 * provided vector is null, null is returned.
-	 * 
-	 * @param vec
-	 *          the vector to add to this.
+	 *
+	 * @param vec the vector to add to this.
 	 * @return the resultant vector.
 	 */
-	public Vector2f add(Vector2f vec) {
+	public Vector2f add(Vector2f vec)
+	{
 		if (null == vec) {
 			logger.warning("Provided vector is null, null returned.");
 			return null;
@@ -137,12 +137,12 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>addLocal</code> adds a provided vector to this vector internally, and returns a handle to this vector for
 	 * easy chaining of calls. If the provided vector is null, null is returned.
-	 * 
-	 * @param vec
-	 *          the vector to add to this vector.
+	 *
+	 * @param vec the vector to add to this vector.
 	 * @return this
 	 */
-	public Vector2f addLocal(Vector2f vec) {
+	public Vector2f addLocal(Vector2f vec)
+	{
 		if (null == vec) {
 			logger.warning("Provided vector is null, null returned.");
 			return null;
@@ -155,14 +155,13 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>addLocal</code> adds the provided values to this vector internally, and returns a handle to this vector for
 	 * easy chaining of calls.
-	 * 
-	 * @param addX
-	 *          value to add to x
-	 * @param addY
-	 *          value to add to y
+	 *
+	 * @param addX value to add to x
+	 * @param addY value to add to y
 	 * @return this
 	 */
-	public Vector2f addLocal(float addX, float addY) {
+	public Vector2f addLocal(float addX, float addY)
+	{
 		x += addX;
 		y += addY;
 		return this;
@@ -170,14 +169,13 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * <code>add</code> adds this vector by <code>vec</code> and stores the result in <code>result</code>.
-	 * 
-	 * @param vec
-	 *          The vector to add.
-	 * @param result
-	 *          The vector to store the result in.
+	 *
+	 * @param vec    The vector to add.
+	 * @param result The vector to store the result in.
 	 * @return The result vector, after adding.
 	 */
-	public Vector2f add(Vector2f vec, Vector2f result) {
+	public Vector2f add(Vector2f vec, Vector2f result)
+	{
 		if (null == vec) {
 			logger.warning("Provided vector is null, null returned.");
 			return null;
@@ -192,12 +190,12 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>dot</code> calculates the dot product of this vector with a provided vector. If the provided vector is null,
 	 * 0 is returned.
-	 * 
-	 * @param vec
-	 *          the vector to dot with this vector.
+	 *
+	 * @param vec the vector to dot with this vector.
 	 * @return the resultant dot product of this vector and a given vector.
 	 */
-	public float dot(Vector2f vec) {
+	public float dot(Vector2f vec)
+	{
 		if (null == vec) {
 			logger.warning("Provided vector is null, 0 returned.");
 			return 0;
@@ -207,29 +205,29 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * <code>cross</code> calculates the cross product of this vector with a parameter vector v.
-	 * 
-	 * @param v
-	 *          the vector to take the cross product of with this.
+	 *
+	 * @param v the vector to take the cross product of with this.
 	 * @return the cross product vector.
 	 */
-	public Vector3f cross(Vector2f v) {
+	public Vector3f cross(Vector2f v)
+	{
 		return new Vector3f(0, 0, determinant(v));
 	}
 
-	public float determinant(Vector2f v) {
+	public float determinant(Vector2f v)
+	{
 		return (x * v.y) - (y * v.x);
 	}
 
 	/**
 	 * Sets this vector to the interpolation by changeAmnt from this to the finalVec this=(1-changeAmnt)*this + changeAmnt
 	 * * finalVec
-	 * 
-	 * @param finalVec
-	 *          The final vector to interpolate towards
-	 * @param changeAmnt
-	 *          An amount between 0.0 - 1.0 representing a percentage change from this towards finalVec
+	 *
+	 * @param finalVec   The final vector to interpolate towards
+	 * @param changeAmnt An amount between 0.0 - 1.0 representing a percentage change from this towards finalVec
 	 */
-	public Vector2f interpolate(Vector2f finalVec, float changeAmnt) {
+	public Vector2f interpolate(Vector2f finalVec, float changeAmnt)
+	{
 		this.x = (1 - changeAmnt) * this.x + changeAmnt * finalVec.x;
 		this.y = (1 - changeAmnt) * this.y + changeAmnt * finalVec.y;
 		return this;
@@ -238,15 +236,13 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * Sets this vector to the interpolation by changeAmnt from beginVec to finalVec this=(1-changeAmnt)*beginVec +
 	 * changeAmnt * finalVec
-	 * 
-	 * @param beginVec
-	 *          The begining vector (delta=0)
-	 * @param finalVec
-	 *          The final vector to interpolate towards (delta=1)
-	 * @param changeAmnt
-	 *          An amount between 0.0 - 1.0 representing a precentage change from beginVec towards finalVec
+	 *
+	 * @param beginVec   The begining vector (delta=0)
+	 * @param finalVec   The final vector to interpolate towards (delta=1)
+	 * @param changeAmnt An amount between 0.0 - 1.0 representing a precentage change from beginVec towards finalVec
 	 */
-	public Vector2f interpolate(Vector2f beginVec, Vector2f finalVec, float changeAmnt) {
+	public Vector2f interpolate(Vector2f beginVec, Vector2f finalVec, float changeAmnt)
+	{
 		this.x = (1 - changeAmnt) * beginVec.x + changeAmnt * finalVec.x;
 		this.y = (1 - changeAmnt) * beginVec.y + changeAmnt * finalVec.y;
 		return this;
@@ -254,12 +250,12 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * Check a vector... if it is null or its floats are NaN or infinite, return false. Else return true.
-	 * 
-	 * @param vector
-	 *          the vector to check
+	 *
+	 * @param vector the vector to check
 	 * @return true or false as stated above.
 	 */
-	public static boolean isValidVector(Vector2f vector) {
+	public static boolean isValidVector(Vector2f vector)
+	{
 		if (vector == null)
 			return false;
 		if (Float.isNaN(vector.x) || Float.isNaN(vector.y))
@@ -271,30 +267,32 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * <code>length</code> calculates the magnitude of this vector.
-	 * 
+	 *
 	 * @return the length or magnitude of the vector.
 	 */
-	public float length() {
+	public float length()
+	{
 		return FastMath.sqrt(lengthSquared());
 	}
 
 	/**
 	 * <code>lengthSquared</code> calculates the squared value of the magnitude of the vector.
-	 * 
+	 *
 	 * @return the magnitude squared of the vector.
 	 */
-	public float lengthSquared() {
+	public float lengthSquared()
+	{
 		return x * x + y * y;
 	}
 
 	/**
 	 * <code>distanceSquared</code> calculates the distance squared between this vector and vector v.
-	 * 
-	 * @param v
-	 *          the second vector to determine the distance squared.
+	 *
+	 * @param v the second vector to determine the distance squared.
 	 * @return the distance squared between the two vectors.
 	 */
-	public float distanceSquared(Vector2f v) {
+	public float distanceSquared(Vector2f v)
+	{
 		double dx = x - v.x;
 		double dy = y - v.y;
 		return (float) (dx * dx + dy * dy);
@@ -302,12 +300,12 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * <code>distanceSquared</code> calculates the distance squared between this vector and vector v.
-	 * 
-	 * @param v
-	 *          the second vector to determine the distance squared.
+	 *
+	 * @param v the second vector to determine the distance squared.
 	 * @return the distance squared between the two vectors.
 	 */
-	public float distanceSquared(float otherX, float otherY) {
+	public float distanceSquared(float otherX, float otherY)
+	{
 		double dx = x - otherX;
 		double dy = y - otherY;
 		return (float) (dx * dx + dy * dy);
@@ -315,35 +313,35 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * <code>distance</code> calculates the distance between this vector and vector v.
-	 * 
-	 * @param v
-	 *          the second vector to determine the distance.
+	 *
+	 * @param v the second vector to determine the distance.
 	 * @return the distance between the two vectors.
 	 */
-	public float distance(Vector2f v) {
+	public float distance(Vector2f v)
+	{
 		return FastMath.sqrt(distanceSquared(v));
 	}
 
 	/**
 	 * <code>mult</code> multiplies this vector by a scalar. The resultant vector is returned.
-	 * 
-	 * @param scalar
-	 *          the value to multiply this vector by.
+	 *
+	 * @param scalar the value to multiply this vector by.
 	 * @return the new vector.
 	 */
-	public Vector2f mult(float scalar) {
+	public Vector2f mult(float scalar)
+	{
 		return new Vector2f(x * scalar, y * scalar);
 	}
 
 	/**
 	 * <code>multLocal</code> multiplies this vector by a scalar internally, and returns a handle to this vector for easy
 	 * chaining of calls.
-	 * 
-	 * @param scalar
-	 *          the value to multiply this vector by.
+	 *
+	 * @param scalar the value to multiply this vector by.
 	 * @return this
 	 */
-	public Vector2f multLocal(float scalar) {
+	public Vector2f multLocal(float scalar)
+	{
 		x *= scalar;
 		y *= scalar;
 		return this;
@@ -352,12 +350,12 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>multLocal</code> multiplies a provided vector to this vector internally, and returns a handle to this vector
 	 * for easy chaining of calls. If the provided vector is null, null is returned.
-	 * 
-	 * @param vec
-	 *          the vector to mult to this vector.
+	 *
+	 * @param vec the vector to mult to this vector.
 	 * @return this
 	 */
-	public Vector2f multLocal(Vector2f vec) {
+	public Vector2f multLocal(Vector2f vec)
+	{
 		if (null == vec) {
 			logger.warning("Provided vector is null, null returned.");
 			return null;
@@ -370,14 +368,13 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * Multiplies this Vector2f's x and y by the scalar and stores the result in product. The result is returned for
 	 * chaining. Similar to product=this*scalar;
-	 * 
-	 * @param scalar
-	 *          The scalar to multiply by.
-	 * @param product
-	 *          The vector2f to store the result in.
+	 *
+	 * @param scalar  The scalar to multiply by.
+	 * @param product The vector2f to store the result in.
 	 * @return product, after multiplication.
 	 */
-	public Vector2f mult(float scalar, Vector2f product) {
+	public Vector2f mult(float scalar, Vector2f product)
+	{
 		if (null == product) {
 			product = new Vector2f();
 		}
@@ -390,24 +387,24 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>divide</code> divides the values of this vector by a scalar and returns the result. The values of this vector
 	 * remain untouched.
-	 * 
-	 * @param scalar
-	 *          the value to divide this vectors attributes by.
+	 *
+	 * @param scalar the value to divide this vectors attributes by.
 	 * @return the result <code>Vector</code>.
 	 */
-	public Vector2f divide(float scalar) {
+	public Vector2f divide(float scalar)
+	{
 		return new Vector2f(x / scalar, y / scalar);
 	}
 
 	/**
 	 * <code>divideLocal</code> divides this vector by a scalar internally, and returns a handle to this vector for easy
 	 * chaining of calls. Dividing by zero will result in an exception.
-	 * 
-	 * @param scalar
-	 *          the value to divides this vector by.
+	 *
+	 * @param scalar the value to divides this vector by.
 	 * @return this
 	 */
-	public Vector2f divideLocal(float scalar) {
+	public Vector2f divideLocal(float scalar)
+	{
 		x /= scalar;
 		y /= scalar;
 		return this;
@@ -415,19 +412,21 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * <code>negate</code> returns the negative of this vector. All values are negated and set to a new vector.
-	 * 
+	 *
 	 * @return the negated vector.
 	 */
-	public Vector2f negate() {
+	public Vector2f negate()
+	{
 		return new Vector2f(-x, -y);
 	}
 
 	/**
 	 * <code>negateLocal</code> negates the internal values of this vector.
-	 * 
+	 *
 	 * @return this.
 	 */
-	public Vector2f negateLocal() {
+	public Vector2f negateLocal()
+	{
 		x = -x;
 		y = -y;
 		return this;
@@ -436,27 +435,26 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>subtract</code> subtracts the values of a given vector from those of this vector creating a new vector
 	 * object. If the provided vector is null, an exception is thrown.
-	 * 
-	 * @param vec
-	 *          the vector to subtract from this vector.
+	 *
+	 * @param vec the vector to subtract from this vector.
 	 * @return the result vector.
 	 */
-	public Vector2f subtract(Vector2f vec) {
+	public Vector2f subtract(Vector2f vec)
+	{
 		return subtract(vec, null);
 	}
 
 	/**
 	 * <code>subtract</code> subtracts the values of a given vector from those of this vector storing the result in the
 	 * given vector object. If the provided vector is null, an exception is thrown.
-	 * 
-	 * @param vec
-	 *          the vector to subtract from this vector.
-	 * @param store
-	 *          the vector to store the result in. It is safe for this to be the same as vec. If null, a new vector is
-	 *          created.
+	 *
+	 * @param vec   the vector to subtract from this vector.
+	 * @param store the vector to store the result in. It is safe for this to be the same as vec. If null, a new vector is
+	 *              created.
 	 * @return the result vector.
 	 */
-	public Vector2f subtract(Vector2f vec, Vector2f store) {
+	public Vector2f subtract(Vector2f vec, Vector2f store)
+	{
 		if (store == null)
 			store = new Vector2f();
 		store.x = x - vec.x;
@@ -466,26 +464,25 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * <code>subtract</code> subtracts the given x,y values from those of this vector creating a new vector object.
-	 * 
-	 * @param valX
-	 *          value to subtract from x
-	 * @param valY
-	 *          value to subtract from y
+	 *
+	 * @param valX value to subtract from x
+	 * @param valY value to subtract from y
 	 * @return this
 	 */
-	public Vector2f subtract(float valX, float valY) {
+	public Vector2f subtract(float valX, float valY)
+	{
 		return new Vector2f(x - valX, y - valY);
 	}
 
 	/**
 	 * <code>subtractLocal</code> subtracts a provided vector to this vector internally, and returns a handle to this
 	 * vector for easy chaining of calls. If the provided vector is null, null is returned.
-	 * 
-	 * @param vec
-	 *          the vector to subtract
+	 *
+	 * @param vec the vector to subtract
 	 * @return this
 	 */
-	public Vector2f subtractLocal(Vector2f vec) {
+	public Vector2f subtractLocal(Vector2f vec)
+	{
 		if (null == vec) {
 			logger.warning("Provided vector is null, null returned.");
 			return null;
@@ -498,14 +495,13 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>subtractLocal</code> subtracts the provided values from this vector internally, and returns a handle to this
 	 * vector for easy chaining of calls.
-	 * 
-	 * @param valX
-	 *          value to subtract from x
-	 * @param valY
-	 *          value to subtract from y
+	 *
+	 * @param valX value to subtract from x
+	 * @param valY value to subtract from y
 	 * @return this
 	 */
-	public Vector2f subtractLocal(float valX, float valY) {
+	public Vector2f subtractLocal(float valX, float valY)
+	{
 		x -= valX;
 		y -= valY;
 		return this;
@@ -513,10 +509,11 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * <code>normalize</code> returns the unit vector of this vector.
-	 * 
+	 *
 	 * @return unit vector of this vector.
 	 */
-	public Vector2f normalize() {
+	public Vector2f normalize()
+	{
 		float length = length();
 		if (length != 0) {
 			return divide(length);
@@ -527,10 +524,11 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * <code>normalizeLocal</code> makes this vector into a unit vector of itself.
-	 * 
+	 *
 	 * @return this.
 	 */
-	public Vector2f normalizeLocal() {
+	public Vector2f normalizeLocal()
+	{
 		float length = length();
 		if (length != 0) {
 			return divideLocal(length);
@@ -542,12 +540,12 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>smallestAngleBetween</code> returns (in radians) the minimum angle between two vectors. It is assumed that
 	 * both this vector and the given vector are unit vectors (iow, normalized).
-	 * 
-	 * @param otherVector
-	 *          a unit vector to find the angle against
+	 *
+	 * @param otherVector a unit vector to find the angle against
 	 * @return the angle in radians.
 	 */
-	public float smallestAngleBetween(Vector2f otherVector) {
+	public float smallestAngleBetween(Vector2f otherVector)
+	{
 		float dotProduct = dot(otherVector);
 		float angle = FastMath.acos(dotProduct);
 		return angle;
@@ -557,30 +555,34 @@ public final class Vector2f implements Cloneable {
 	 * <code>angleBetween</code> returns (in radians) the angle required to rotate a ray represented by this vector to lie
 	 * colinear to a ray described by the given vector. It is assumed that both this vector and the given vector are unit
 	 * vectors (iow, normalized).
-	 * 
-	 * @param otherVector
-	 *          the "destination" unit vector
+	 *
+	 * @param otherVector the "destination" unit vector
 	 * @return the angle in radians.
 	 */
-	public float angleBetween(Vector2f otherVector) {
+	public float angleBetween(Vector2f otherVector)
+	{
 		float angle = FastMath.atan2(otherVector.y, otherVector.x) - FastMath.atan2(y, x);
 		return angle;
 	}
 
-	public float getX() {
+	public float getX()
+	{
 		return x;
 	}
 
-	public Vector2f setX(float x) {
+	public Vector2f setX(float x)
+	{
 		this.x = x;
 		return this;
 	}
 
-	public float getY() {
+	public float getY()
+	{
 		return y;
 	}
 
-	public Vector2f setY(float y) {
+	public Vector2f setY(float y)
+	{
 		this.y = y;
 		return this;
 	}
@@ -588,17 +590,19 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>getAngle</code> returns (in radians) the angle represented by this Vector2f as expressed by a conversion from
 	 * rectangular coordinates (<code>x</code>,&nbsp;<code>y</code>) to polar coordinates (r,&nbsp;<i>theta</i>).
-	 * 
+	 *
 	 * @return the angle in radians. [-pi, pi)
 	 */
-	public float getAngle() {
+	public float getAngle()
+	{
 		return -FastMath.atan2(y, x);
 	}
 
 	/**
 	 * <code>zero</code> resets this vector's data to zero internally.
 	 */
-	public Vector2f zero() {
+	public Vector2f zero()
+	{
 		x = y = 0;
 		return this;
 	}
@@ -606,10 +610,11 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>hashCode</code> returns a unique code for this vector object based on it's values. If two vectors are
 	 * logically equivalent, they will return the same hash code value.
-	 * 
+	 *
 	 * @return the hash code value of this vector.
 	 */
-	public int hashCode() {
+	public int hashCode()
+	{
 		int hash = 37;
 		hash += 37 * hash + Float.floatToIntBits(x);
 		hash += 37 * hash + Float.floatToIntBits(y);
@@ -617,23 +622,23 @@ public final class Vector2f implements Cloneable {
 	}
 
 	@Override
-	public Vector2f clone() {
+	public Vector2f clone()
+	{
 		try {
 			return (Vector2f) super.clone();
-		}
-		catch (CloneNotSupportedException e) {
+		} catch (CloneNotSupportedException e) {
 			throw new AssertionError(); // can not happen
 		}
 	}
 
 	/**
 	 * Saves this Vector2f into the given float[] object.
-	 * 
-	 * @param floats
-	 *          The float[] to take this Vector2f. If null, a new float[2] is created.
+	 *
+	 * @param floats The float[] to take this Vector2f. If null, a new float[2] is created.
 	 * @return The array, with X, Y float values in that order
 	 */
-	public float[] toArray(float[] floats) {
+	public float[] toArray(float[] floats)
+	{
 		if (floats == null) {
 			floats = new float[2];
 		}
@@ -644,12 +649,12 @@ public final class Vector2f implements Cloneable {
 
 	/**
 	 * are these two vectors the same? they are is they both have the same x and y values.
-	 * 
-	 * @param o
-	 *          the object to compare for equality
+	 *
+	 * @param o the object to compare for equality
 	 * @return true if they are equal
 	 */
-	public boolean equals(Object o) {
+	public boolean equals(Object o)
+	{
 		if (!(o instanceof Vector2f)) {
 			return false;
 		}
@@ -669,45 +674,48 @@ public final class Vector2f implements Cloneable {
 	/**
 	 * <code>toString</code> returns the string representation of this vector object. The format of the string is such:
 	 * com.jme.math.Vector2f [X=XX.XXXX, Y=YY.YYYY]
-	 * 
+	 *
 	 * @return the string representation of this vector.
 	 */
-	public String toString() {
+	public String toString()
+	{
 		return "(" + x + ", " + y + ")";
 	}
 
 	/**
 	 * Used with serialization. Not to be called manually.
-	 * 
-	 * @param in
-	 *          ObjectInput
+	 *
+	 * @param in ObjectInput
 	 * @throws IOException
 	 * @throws ClassNotFoundException
 	 * @see java.io.Externalizable
 	 */
-	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException
+	{
 		x = in.readFloat();
 		y = in.readFloat();
 	}
 
 	/**
 	 * Used with serialization. Not to be called manually.
-	 * 
-	 * @param out
-	 *          ObjectOutput
+	 *
+	 * @param out ObjectOutput
 	 * @throws IOException
 	 * @see java.io.Externalizable
 	 */
-	public void writeExternal(ObjectOutput out) throws IOException {
+	public void writeExternal(ObjectOutput out) throws IOException
+	{
 		out.writeFloat(x);
 		out.writeFloat(y);
 	}
 
-	public Class<? extends Vector2f> getClassTag() {
+	public Class<? extends Vector2f> getClassTag()
+	{
 		return this.getClass();
 	}
 
-	public void rotateAroundOrigin(float angle, boolean cw) {
+	public void rotateAroundOrigin(float angle, boolean cw)
+	{
 		if (cw)
 			angle = -angle;
 		float newX = FastMath.cos(angle) * x - FastMath.sin(angle) * y;

@@ -10,21 +10,25 @@ import com.aionemu.gameserver.geoEngine.scene.Geometry;
 /**
  * @author MrPoke, Rolandas
  */
-public class DoorGeometry extends Geometry {
+public class DoorGeometry extends Geometry
+{
 
 	BitSet instances = new BitSet();
 	private boolean foundTemplate = false;
 
-	public DoorGeometry(String name) {
+	public DoorGeometry(String name)
+	{
 		super(name);
 	}
 
-	public void setDoorState(int instanceId, boolean isOpened) {
+	public void setDoorState(int instanceId, boolean isOpened)
+	{
 		instances.set(instanceId, isOpened);
 	}
 
 	@Override
-	public int collideWith(Collidable other, CollisionResults results) {
+	public int collideWith(Collidable other, CollisionResults results)
+	{
 		if (foundTemplate && instances.get(results.getInstanceId()))
 			return 0;
 		if (other instanceof Ray) {
@@ -34,16 +38,19 @@ public class DoorGeometry extends Geometry {
 		return super.collideWith(other, results);
 	}
 
-	public boolean isFoundTemplate() {
+	public boolean isFoundTemplate()
+	{
 		return foundTemplate;
 	}
 
-	public void setFoundTemplate(boolean foundTemplate) {
+	public void setFoundTemplate(boolean foundTemplate)
+	{
 		this.foundTemplate = foundTemplate;
 	}
-	
+
 	@Override
-	public void updateModelBound() {
+	public void updateModelBound()
+	{
 		// duplicate call distorts world bounds, thus do only once
 		if (worldBound == null) {
 			mesh.updateBound();

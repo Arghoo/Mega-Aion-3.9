@@ -91,45 +91,45 @@
 		[END] SUMMARY
 	-->
 	<!-- REPORTING QUESTS -->
-	<report_to id="18800" start_npc_ids="798458" end_npc_ids="830365"/>
-	<report_to id="18801" start_npc_ids="830001" end_npc_ids="830005"/>
-	<report_to id="18804" start_npc_ids="830194" end_npc_ids="830070"/>
-	<report_to id="18810" start_npc_ids="830034" end_npc_ids="830070"/>
-	<report_to id="18827" start_npc_ids="830069" end_npc_ids="810017 810018 810019 810020 810021"/>
-	<report_to id="18829" start_npc_ids="810017 810018 810019 810020 810021" end_npc_ids="830584"/>
-	<report_to id="18831" start_npc_ids="830645" end_npc_ids="810017 810018 810019 810020 810021"/>
-	<report_to id="18839" start_npc_ids="830195" end_npc_ids="830194"/>
-	<report_to id="18843" start_npc_ids="830365" end_npc_ids="830194"/>
-	<report_to id="18845" start_npc_ids="798458" end_npc_ids="830365"/>
-	<report_to id="18846" start_npc_ids="830205" end_npc_ids="798455"/>
+	<report_to id="18800" start_npc_ids="798458" end_npc_ids="830365" />
+	<report_to id="18801" start_npc_ids="830001" end_npc_ids="830005" />
+	<report_to id="18804" start_npc_ids="830194" end_npc_ids="830070" />
+	<report_to id="18810" start_npc_ids="830034" end_npc_ids="830070" />
+	<report_to id="18827" start_npc_ids="830069" end_npc_ids="810017 810018 810019 810020 810021" />
+	<report_to id="18829" start_npc_ids="810017 810018 810019 810020 810021" end_npc_ids="830584" />
+	<report_to id="18831" start_npc_ids="830645" end_npc_ids="810017 810018 810019 810020 810021" />
+	<report_to id="18839" start_npc_ids="830195" end_npc_ids="830194" />
+	<report_to id="18843" start_npc_ids="830365" end_npc_ids="830194" />
+	<report_to id="18845" start_npc_ids="798458" end_npc_ids="830365" />
+	<report_to id="18846" start_npc_ids="830205" end_npc_ids="798455" />
 	<!-- COLLECTING QUESTS -->
-	<item_collecting id="18812" start_npc_ids="830522"/>
-	<item_collecting id="18813" start_npc_ids="830522"/>
-	<item_collecting id="18814" start_npc_ids="830522"/>
-	<item_collecting id="18815" start_npc_ids="830522"/>
-	<item_collecting id="18816" start_npc_ids="830196"/>
-	<item_collecting id="18817" start_npc_ids="830196"/>
-	<item_collecting id="18818" start_npc_ids="830208"/>
-	<item_collecting id="18819" start_npc_ids="830210"/>
-	<item_collecting id="18820" start_npc_ids="830203"/>
-	<item_collecting id="18822" start_npc_ids="830523"/>
-	<item_collecting id="18823" start_npc_ids="830523"/>
-	<item_collecting id="18824" start_npc_ids="830523"/>
-	<item_collecting id="18825" start_npc_ids="830523"/>
-	<item_collecting id="18834" start_npc_ids="830655"/>
-	<item_collecting id="18836" start_npc_ids="830655"/>
-	<item_collecting id="18838" start_npc_ids="830655"/>
-	<item_collecting id="18840" start_npc_ids="830196"/>
-	<item_collecting id="18841" start_npc_ids="830196"/>
-	<item_collecting id="18842" start_npc_ids="830196"/>
-	<item_collecting id="18844" start_npc_ids="830192"/>
-	<item_collecting id="18848" start_npc_ids="830365"/>
-	<item_collecting id="50007" start_npc_ids="831032 831038"/>
-	<relic_rewards id="18849" start_npc_ids="831252" relic_var1="186000058" relic_var2="186000057" relic_var3="186000056" relic_var4="186000055" relic_count="10"/>
-	<relic_rewards id="18850" start_npc_ids="831210" relic_var1="186000054" relic_var2="186000053" relic_var3="186000052" relic_var4="186000051" relic_count="10"/>
+	<item_collecting id="18812" start_npc_ids="830522" />
+	<item_collecting id="18813" start_npc_ids="830522" />
+	<item_collecting id="18814" start_npc_ids="830522" />
+	<item_collecting id="18815" start_npc_ids="830522" />
+	<item_collecting id="18816" start_npc_ids="830196" />
+	<item_collecting id="18817" start_npc_ids="830196" />
+	<item_collecting id="18818" start_npc_ids="830208" />
+	<item_collecting id="18819" start_npc_ids="830210" />
+	<item_collecting id="18820" start_npc_ids="830203" />
+	<item_collecting id="18822" start_npc_ids="830523" />
+	<item_collecting id="18823" start_npc_ids="830523" />
+	<item_collecting id="18824" start_npc_ids="830523" />
+	<item_collecting id="18825" start_npc_ids="830523" />
+	<item_collecting id="18834" start_npc_ids="830655" />
+	<item_collecting id="18836" start_npc_ids="830655" />
+	<item_collecting id="18838" start_npc_ids="830655" />
+	<item_collecting id="18840" start_npc_ids="830196" />
+	<item_collecting id="18841" start_npc_ids="830196" />
+	<item_collecting id="18842" start_npc_ids="830196" />
+	<item_collecting id="18844" start_npc_ids="830192" />
+	<item_collecting id="18848" start_npc_ids="830365" />
+	<item_collecting id="50007" start_npc_ids="831032 831038" />
+	<relic_rewards id="18849" start_npc_ids="831252" relic_var1="186000058" relic_var2="186000057" relic_var3="186000056" relic_var4="186000055" relic_count="10" />
+	<relic_rewards id="18850" start_npc_ids="831210" relic_var1="186000054" relic_var2="186000053" relic_var3="186000052" relic_var4="186000051" relic_count="10" />
 	<!-- ITEM ORDERS QUESTS -->
-	<item_order start_item_id="182213202" end_npc_id="830655" id="18833"/>
-	<item_order start_item_id="182213203" end_npc_id="830655" id="18835"/>
-	<item_order start_item_id="182213204" end_npc_id="830655" id="18837"/>
+	<item_order start_item_id="182213202" end_npc_id="830655" id="18833" />
+	<item_order start_item_id="182213203" end_npc_id="830655" id="18835" />
+	<item_order start_item_id="182213204" end_npc_id="830655" id="18837" />
 	<!-- HUNTING QUESTS -->
 </quest_scripts>

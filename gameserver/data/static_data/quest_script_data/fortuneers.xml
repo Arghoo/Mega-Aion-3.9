@@ -36,68 +36,68 @@
 		[END] SUMMARY
 	-->
 	<!-- REPORTING QUESTS -->
-	<report_to start_npc_ids="203726" end_npc_ids="799840" id="38005"/>
+	<report_to start_npc_ids="203726" end_npc_ids="799840" id="38005" />
 	<!-- COLLECTING QUESTS -->
-	<item_collecting id="36015" start_npc_ids="0" end_npc_ids="799837 799838" action_item_ids="700768"/>
-	<item_collecting id="36016" start_npc_ids="0" end_npc_ids="799837 799838" action_item_ids="700769"/>
-	<item_collecting id="36017" start_npc_ids="799837 799838" end_npc_ids="799837 799838" action_item_ids="700795"/>
-	<item_collecting id="36503" start_npc_ids="0" end_npc_ids="799837 799838"/>
-	<item_collecting id="36509" start_npc_ids="0" end_npc_ids="799837 799838"/>
-	<item_collecting id="36515" start_npc_ids="0" end_npc_ids="799837 799838"/>
-	<item_collecting id="36520" start_npc_ids="0" end_npc_ids="799837 799838"/>
-	<item_collecting id="36522" start_npc_ids="0" end_npc_ids="799837 799838"/>
-	<item_collecting id="36524" start_npc_ids="0" end_npc_ids="799837 799838"/>
-	<item_collecting id="36525" start_npc_ids="0" end_npc_ids="799837 799838"/>
-	<item_collecting id="36527" start_npc_ids="0" end_npc_ids="799837 799838"/>
-	<item_collecting id="36528" start_npc_ids="0" end_npc_ids="799837 799838"/>
-	<item_collecting id="36519" start_npc_ids="799837 799838" end_npc_ids="799837 799838"/>
+	<item_collecting id="36015" start_npc_ids="0" end_npc_ids="799837 799838" action_item_ids="700768" />
+	<item_collecting id="36016" start_npc_ids="0" end_npc_ids="799837 799838" action_item_ids="700769" />
+	<item_collecting id="36017" start_npc_ids="799837 799838" end_npc_ids="799837 799838" action_item_ids="700795" />
+	<item_collecting id="36503" start_npc_ids="0" end_npc_ids="799837 799838" />
+	<item_collecting id="36509" start_npc_ids="0" end_npc_ids="799837 799838" />
+	<item_collecting id="36515" start_npc_ids="0" end_npc_ids="799837 799838" />
+	<item_collecting id="36520" start_npc_ids="0" end_npc_ids="799837 799838" />
+	<item_collecting id="36522" start_npc_ids="0" end_npc_ids="799837 799838" />
+	<item_collecting id="36524" start_npc_ids="0" end_npc_ids="799837 799838" />
+	<item_collecting id="36525" start_npc_ids="0" end_npc_ids="799837 799838" />
+	<item_collecting id="36527" start_npc_ids="0" end_npc_ids="799837 799838" />
+	<item_collecting id="36528" start_npc_ids="0" end_npc_ids="799837 799838" />
+	<item_collecting id="36519" start_npc_ids="799837 799838" end_npc_ids="799837 799838" />
 	<!-- HUNTING QUESTS -->
 	<monster_hunt id="36500" start_npc_ids="0" end_npc_ids="799837 799838">
-		<monster end_var="1" var="0" npc_ids="216604"/>
+		<monster end_var="1" var="0" npc_ids="216604" />
 	</monster_hunt>
 	<monster_hunt id="36502" start_npc_ids="0" end_npc_ids="799837 799838">
-		<monster end_var="1" var="0" npc_ids="216606"/>
+		<monster end_var="1" var="0" npc_ids="216606" />
 	</monster_hunt>
 	<monster_hunt id="36508" start_npc_ids="0" end_npc_ids="799837 799838">
-		<monster end_var="1" var="0" npc_ids="216612"/>
+		<monster end_var="1" var="0" npc_ids="216612" />
 	</monster_hunt>
 	<monster_hunt id="36514" start_npc_ids="0" end_npc_ids="799837 799838">
-		<monster end_var="1" var="0" npc_ids="216618"/>
+		<monster end_var="1" var="0" npc_ids="216618" />
 	</monster_hunt>
 	<monster_hunt id="36521" start_npc_ids="0" end_npc_ids="799837 799838">
-		<monster end_var="1" var="0" npc_ids="217008"/>
+		<monster end_var="1" var="0" npc_ids="217008" />
 	</monster_hunt>
 	<monster_hunt id="36523" start_npc_ids="0" end_npc_ids="799837 799838">
-		<monster end_var="1" var="0" npc_ids="217010"/>
+		<monster end_var="1" var="0" npc_ids="217010" />
 	</monster_hunt>
 	<monster_hunt id="36526" start_npc_ids="0" end_npc_ids="799837 799838">
-		<monster end_var="1" var="0" npc_ids="217013"/>
+		<monster end_var="1" var="0" npc_ids="217013" />
 	</monster_hunt>
 	<monster_hunt id="36518" start_npc_ids="799837 799838" end_npc_ids="799837 799838">
-		<monster end_var="1" var="0" npc_ids="216622"/>
+		<monster end_var="1" var="0" npc_ids="216622" />
 	</monster_hunt>
 	<kill_spawned id="36504" start_npc_ids="0" end_npc_ids="799837 799838">
-		<spawned_monster end_var="1" var="0" spawner_object="700759" npc_ids="216608"/>
+		<spawned_monster end_var="1" var="0" spawner_object="700759" npc_ids="216608" />
 	</kill_spawned>
 	<kill_spawned id="36505" start_npc_ids="0" end_npc_ids="799837 799838">
-		<spawned_monster end_var="1" var="0" spawner_object="700760" npc_ids="216609"/>
+		<spawned_monster end_var="1" var="0" spawner_object="700760" npc_ids="216609" />
 	</kill_spawned>
 	<kill_spawned id="36506" start_npc_ids="0" end_npc_ids="799837 799838">
-		<spawned_monster end_var="1" var="0" spawner_object="206134" npc_ids="216610"/>
+		<spawned_monster end_var="1" var="0" spawner_object="206134" npc_ids="216610" />
 	</kill_spawned>
 	<kill_spawned id="36510" start_npc_ids="0" end_npc_ids="799837 799838">
-		<spawned_monster end_var="1" var="0" spawner_object="700761" npc_ids="216614"/>
+		<spawned_monster end_var="1" var="0" spawner_object="700761" npc_ids="216614" />
 	</kill_spawned>
 	<kill_spawned id="36511" start_npc_ids="0" end_npc_ids="799837 799838">
-		<spawned_monster end_var="1" var="0" spawner_object="700762" npc_ids="216615"/>
+		<spawned_monster end_var="1" var="0" spawner_object="700762" npc_ids="216615" />
 	</kill_spawned>
 	<kill_spawned id="36512" start_npc_ids="0" end_npc_ids="799837 799838">
-		<spawned_monster end_var="1" var="0" spawner_object="206136" npc_ids="216616"/>
+		<spawned_monster end_var="1" var="0" spawner_object="206136" npc_ids="216616" />
 	</kill_spawned>
 	<kill_spawned id="36516" start_npc_ids="0" end_npc_ids="799837 799838">
-		<spawned_monster end_var="1" var="0" spawner_object="700763" npc_ids="216620"/>
+		<spawned_monster end_var="1" var="0" spawner_object="700763" npc_ids="216620" />
 	</kill_spawned>
 	<kill_spawned id="36517" start_npc_ids="0" end_npc_ids="799837 799838">
-		<spawned_monster end_var="1" var="0" spawner_object="700764" npc_ids="216621"/>
+		<spawned_monster end_var="1" var="0" spawner_object="700764" npc_ids="216621" />
 	</kill_spawned>
 </quest_scripts>

@@ -3,114 +3,114 @@
 <npc_drops>
 	<npc_drop npc_id="210302"> <!-- Tirratirra -->
 		<drop_group name="KINAH" use_category="false">
-             <drop chance="47.0" item_id="182400001" max_amount="1031" min_amount="79"/>
-        </drop_group>     
+			<drop chance="47.0" item_id="182400001" max_amount="1031" min_amount="79" />
+		</drop_group>
 		<drop_group name="NAMED_SUPERIOR_ARMOR">
-			<drop item_id="114500478" chance="33.0" max_amount="1" min_amount="1"/>
-			<drop item_id="114300462" chance="33.0" max_amount="1" min_amount="1"/>
-			<drop item_id="114100449" chance="33.0" max_amount="1" min_amount="1"/>
+			<drop item_id="114500478" chance="33.0" max_amount="1" min_amount="1" />
+			<drop item_id="114300462" chance="33.0" max_amount="1" min_amount="1" />
+			<drop item_id="114100449" chance="33.0" max_amount="1" min_amount="1" />
 		</drop_group>
 		<drop_group name="NAMED_COMMON_ARMOR">
-			<drop item_id="111300353" chance="90.0" max_amount="1" min_amount="1"/>
-			<drop item_id="111500396" chance="90.0" max_amount="1" min_amount="1"/>
-			<drop item_id="111100354" chance="90.0" max_amount="1" min_amount="1"/>
+			<drop item_id="111300353" chance="90.0" max_amount="1" min_amount="1" />
+			<drop item_id="111500396" chance="90.0" max_amount="1" min_amount="1" />
+			<drop item_id="111100354" chance="90.0" max_amount="1" min_amount="1" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="210305"> <!-- Fauron -->
 		<drop_group name="KINAH" use_category="false">
-             <drop chance="47.0" item_id="182400001" max_amount="1031" min_amount="79"/>
-        </drop_group>     
+			<drop chance="47.0" item_id="182400001" max_amount="1031" min_amount="79" />
+		</drop_group>
 		<drop_group name="ARMOR_RARE">
-			<drop item_id="113500580" chance="1.41" max_amount="1" min_amount="1"/>
-		</drop_group>
-        <drop_group name="POWER_SHARDS">
-            <drop chance="42.3" max_amount="1" min_amount="1" item_id="169000003"/>
-        </drop_group>		
-		<drop_group name="MANASTONE_COMMON">
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000229"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000228"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000231"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000230"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000227"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000226"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000233"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000232"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000235"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000525"/>
-            <drop chance="21.15" max_amount="1" min_amount="1" item_id="167000526"/>
-            <drop chance="9.87" max_amount="1" min_amount="1" item_id="167000230"/>
-        </drop_group>		
-		<drop_group name="NAMED_SUPERIOR_ARMOR">
-			<drop item_id="113300448" chance="33.0" max_amount="1" min_amount="1"/>
-			<drop item_id="113500471" chance="33.0" max_amount="1" min_amount="1"/>
-			<drop item_id="113100432" chance="33.0" max_amount="1" min_amount="1"/>
-		</drop_group>
-		<drop_group name="NAMED_COMMON_ACCESSORY">
-			<drop item_id="123000506" chance="90.0" max_amount="1" min_amount="1"/>
-		</drop_group>
-	</npc_drop>	
-	<npc_drop npc_id="210306"> <!-- Scar -->
-		<drop_group name="KINAH" use_category="false">
-             <drop chance="47.0" item_id="182400001" max_amount="1031" min_amount="79"/>
-        </drop_group>     
-		<drop_group name="NAMED_SUPERIOR_ACCESSORY">
-			<drop item_id="123000878" chance="33.0" max_amount="1" min_amount="1"/>
-		</drop_group>
-		<drop_group name="MANASTONE_COMMON">
-			<drop chance="27.6" item_id="167000229" max_amount="1" min_amount="1"/>
-			<drop chance="27.6" item_id="167000228" max_amount="1" min_amount="1"/>
-			<drop chance="27.6" item_id="167000231" max_amount="1" min_amount="1"/>
-			<drop chance="27.6" item_id="167000230" max_amount="1" min_amount="1"/>
-			<drop chance="27.6" item_id="167000227" max_amount="1" min_amount="1"/>
-			<drop chance="27.6" item_id="167000226" max_amount="1" min_amount="1"/>
-			<drop chance="27.6" item_id="167000233" max_amount="1" min_amount="1"/>
-            <drop chance="27.6" item_id="167000232" max_amount="1" min_amount="1"/>
-			<drop chance="27.6" item_id="167000235" max_amount="1" min_amount="1"/>
-			<drop chance="27.6" item_id="167000525" max_amount="1" min_amount="1"/>
-			<drop chance="27.6" item_id="167000526" max_amount="1" min_amount="1"/>
-			<drop chance="12.88" item_id="167000230" max_amount="1" min_amount="1"/>
+			<drop item_id="113500580" chance="1.41" max_amount="1" min_amount="1" />
 		</drop_group>
 		<drop_group name="POWER_SHARDS">
-            <drop chance="55.2" item_id="169000003" max_amount="5" min_amount="1"/>
-       </drop_group>		
+			<drop chance="42.3" max_amount="1" min_amount="1" item_id="169000003" />
+		</drop_group>
+		<drop_group name="MANASTONE_COMMON">
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000229" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000228" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000231" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000230" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000227" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000226" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000233" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000232" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000235" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000525" />
+			<drop chance="21.15" max_amount="1" min_amount="1" item_id="167000526" />
+			<drop chance="9.87" max_amount="1" min_amount="1" item_id="167000230" />
+		</drop_group>
+		<drop_group name="NAMED_SUPERIOR_ARMOR">
+			<drop item_id="113300448" chance="33.0" max_amount="1" min_amount="1" />
+			<drop item_id="113500471" chance="33.0" max_amount="1" min_amount="1" />
+			<drop item_id="113100432" chance="33.0" max_amount="1" min_amount="1" />
+		</drop_group>
+		<drop_group name="NAMED_COMMON_ACCESSORY">
+			<drop item_id="123000506" chance="90.0" max_amount="1" min_amount="1" />
+		</drop_group>
+	</npc_drop>
+	<npc_drop npc_id="210306"> <!-- Scar -->
+		<drop_group name="KINAH" use_category="false">
+			<drop chance="47.0" item_id="182400001" max_amount="1031" min_amount="79" />
+		</drop_group>
+		<drop_group name="NAMED_SUPERIOR_ACCESSORY">
+			<drop item_id="123000878" chance="33.0" max_amount="1" min_amount="1" />
+		</drop_group>
+		<drop_group name="MANASTONE_COMMON">
+			<drop chance="27.6" item_id="167000229" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000228" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000231" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000230" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000227" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000226" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000233" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000232" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000235" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000525" max_amount="1" min_amount="1" />
+			<drop chance="27.6" item_id="167000526" max_amount="1" min_amount="1" />
+			<drop chance="12.88" item_id="167000230" max_amount="1" min_amount="1" />
+		</drop_group>
+		<drop_group name="POWER_SHARDS">
+			<drop chance="55.2" item_id="169000003" max_amount="5" min_amount="1" />
+		</drop_group>
 		<drop_group name="NO_CATEGORY">
-			<drop item_id="182200218" chance="100.0" max_amount="1" min_amount="1"/>
+			<drop item_id="182200218" chance="100.0" max_amount="1" min_amount="1" />
 		</drop_group>
 	</npc_drop>
 	<npc_drop npc_id="210162"> <!-- Supervisor Duaguru -->
 		<drop_group name="KINAH" use_category="false">
-             <drop chance="47.0" item_id="182400001" max_amount="1031" min_amount="79"/>
-        </drop_group>  
+			<drop chance="47.0" item_id="182400001" max_amount="1031" min_amount="79" />
+		</drop_group>
 		<drop_group name="NAMED_SUPERIOR_ACCESSORY">
-			<drop item_id="123001266" chance="33.0" max_amount="1" min_amount="1"/>
-		</drop_group>	
-		<drop_group name="NAMED_COMMON_ACCESSORY">	
-			<drop item_id="120001303" chance="75.0" max_amount="1" min_amount="1"/>
-			<drop item_id="121001206" chance="75.0" max_amount="1" min_amount="1"/>
-			<drop item_id="120001302" chance="75.0" max_amount="1" min_amount="1"/>
-			<drop item_id="122001455" chance="75.0" max_amount="1" min_amount="1"/>
+			<drop item_id="123001266" chance="33.0" max_amount="1" min_amount="1" />
+		</drop_group>
+		<drop_group name="NAMED_COMMON_ACCESSORY">
+			<drop item_id="120001303" chance="75.0" max_amount="1" min_amount="1" />
+			<drop item_id="121001206" chance="75.0" max_amount="1" min_amount="1" />
+			<drop item_id="120001302" chance="75.0" max_amount="1" min_amount="1" />
+			<drop item_id="122001455" chance="75.0" max_amount="1" min_amount="1" />
 		</drop_group>
 		<drop_group name="MANASTONE_COMMON">
-             <drop chance="20.25" item_id="167000229" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000228" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000231" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000230" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000227" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000226" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000233" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000232" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000235" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000525" max_amount="1" min_amount="1"/>
-             <drop chance="20.25" item_id="167000526" max_amount="1" min_amount="1"/>
-             <drop chance="9.45" item_id="167000230" max_amount="1" min_amount="1"/>
-        </drop_group>
+			<drop chance="20.25" item_id="167000229" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000228" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000231" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000230" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000227" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000226" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000233" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000232" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000235" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000525" max_amount="1" min_amount="1" />
+			<drop chance="20.25" item_id="167000526" max_amount="1" min_amount="1" />
+			<drop chance="9.45" item_id="167000230" max_amount="1" min_amount="1" />
+		</drop_group>
 		<drop_group name="RECIPE_RARE_ELYOS" race="ELYOS">
-			<drop chance="4.05" item_id="152201247" max_amount="1" min_amount="1"/>
-			<drop chance="4.05" item_id="152201251" max_amount="1" min_amount="1"/>
+			<drop chance="4.05" item_id="152201247" max_amount="1" min_amount="1" />
+			<drop chance="4.05" item_id="152201251" max_amount="1" min_amount="1" />
 		</drop_group>
 		<drop_group name="RECIPE_LEGEND_ELYOS" race="ELYOS">
-			<drop chance="0.675" item_id="152200076" max_amount="1" min_amount="1"/>
-			<drop chance="0.675" item_id="152200588" max_amount="1" min_amount="1"/>
-		</drop_group>    
-	</npc_drop>	
+			<drop chance="0.675" item_id="152200076" max_amount="1" min_amount="1" />
+			<drop chance="0.675" item_id="152200588" max_amount="1" min_amount="1" />
+		</drop_group>
+	</npc_drop>
 </npc_drops>

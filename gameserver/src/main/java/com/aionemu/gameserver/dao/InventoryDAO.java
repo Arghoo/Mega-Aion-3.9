@@ -22,6 +22,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
 import java.util.*;
+import java.util.stream.Collectors;
 
 import com.aionemu.gameserver.utils.idfactory.IDFactory;
 
@@ -41,8 +42,6 @@ import com.aionemu.gameserver.model.items.storage.PlayerStorage;
 import com.aionemu.gameserver.model.items.storage.Storage;
 import com.aionemu.gameserver.model.items.storage.StorageType;
 import com.aionemu.gameserver.services.item.ItemService;
-import com.google.common.base.Predicate;
-import com.google.common.collect.Collections2;
 
 /**
  * @author ATracer
@@ -60,10 +59,6 @@ public class InventoryDAO extends IDFactoryAwareDAO
 	public static final String SELECT_LEGION_QUERY = "SELECT `legion_id` FROM `legion_members` WHERE `player_id`=?";
 	public static final String DELETE_ACCOUNT_WH = "DELETE FROM inventory WHERE item_owner=? AND item_location=2";
 	public static final String SELECT_QUERY2 = "SELECT * FROM `inventory` WHERE `item_owner`=? AND `item_location`=?";
-
-	private static final Predicate<Item> itemsToInsertPredicate = input -> input != null && PersistentState.NEW == input.getPersistentState();
-	private static final Predicate<Item> itemsToUpdatePredicate = input -> input != null && PersistentState.UPDATE_REQUIRED == input.getPersistentState();
-	private static final Predicate<Item> itemsToDeletePredicate = input -> input != null && PersistentState.DELETED == input.getPersistentState();
 
 	/**
 	 * @param playerId
@@ -240,9 +235,9 @@ public class InventoryDAO extends IDFactoryAwareDAO
 
 	public static boolean store(List<Item> items, Integer playerId, Integer accountId, Integer legionId)
 	{
-		Collection<Item> itemsToUpdate = Collections2.filter(items, itemsToUpdatePredicate);
-		Collection<Item> itemsToInsert = Collections2.filter(items, itemsToInsertPredicate);
-		Collection<Item> itemsToDelete = Collections2.filter(items, itemsToDeletePredicate);
+		Collection<Item> itemsToUpdate = items.stream().filter(item -> item != null && PersistentState.NEW == item.getPersistentState()).collect(Collectors.toList());
+		Collection<Item> itemsToInsert = items.stream().filter(item -> item != null && PersistentState.UPDATE_REQUIRED == item.getPersistentState()).collect(Collectors.toList());
+		Collection<Item> itemsToDelete = items.stream().filter(item -> item != null && PersistentState.DELETED == item.getPersistentState()).collect(Collectors.toList());
 
 		boolean deleteResult = false;
 		boolean insertResult = false;

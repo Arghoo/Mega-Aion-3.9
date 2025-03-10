@@ -52,42 +52,42 @@
 		[END] SUMMARY
 	-->
 	<!-- REPORTING QUESTS -->
-	<report_to id="2101" start_npc_ids="203500" end_npc_ids="203504"/>
-	<report_to id="2103" start_npc_ids="203504" end_npc_ids="203501"/>
-	<report_to id="2110" start_npc_ids="203522" end_npc_ids="203533" item_id="182203110"/>
-	<report_to id="2115" start_npc_ids="203534" end_npc_ids="203515" item_id="182203114"/>
-	<report_to id="2121" start_npc_ids="203540" end_npc_ids="203547" item_id="182203119"/>
-	<report_to id="2131" start_npc_ids="203515" end_npc_ids="203542" item_id="182203129"/>
-	<report_to id="2137" start_npc_ids="203539" end_npc_ids="203541"/>
+	<report_to id="2101" start_npc_ids="203500" end_npc_ids="203504" />
+	<report_to id="2103" start_npc_ids="203504" end_npc_ids="203501" />
+	<report_to id="2110" start_npc_ids="203522" end_npc_ids="203533" item_id="182203110" />
+	<report_to id="2115" start_npc_ids="203534" end_npc_ids="203515" item_id="182203114" />
+	<report_to id="2121" start_npc_ids="203540" end_npc_ids="203547" item_id="182203119" />
+	<report_to id="2131" start_npc_ids="203515" end_npc_ids="203542" item_id="182203129" />
+	<report_to id="2137" start_npc_ids="203539" end_npc_ids="203541" />
 	<!-- COLLECTING QUESTS -->
-	<item_collecting id="2104" start_npc_ids="203502" action_item_ids="700124"/>
-	<item_collecting id="2105" start_npc_ids="203502"/>
-	<item_collecting id="2108" start_npc_ids="798037"/>
-	<item_collecting id="2109" start_npc_ids="203532" action_item_ids="700125"/>
-	<item_collecting id="2112" start_npc_ids="790003"/>
-	<item_collecting id="2113" start_npc_ids="203534"/>
-	<item_collecting id="2116" start_npc_ids="203541" action_item_ids="700139"/>
-	<item_collecting id="2118" start_npc_ids="203539"/>
-	<item_collecting id="2119" start_npc_ids="203541" action_item_ids="700127"/>
-	<item_collecting id="2120" start_npc_ids="203542"/>
-	<item_collecting id="2124" start_npc_ids="203548"/>
-	<item_collecting id="2126" start_npc_ids="203544" action_item_ids="700129"/>
-	<item_collecting id="2127" start_npc_ids="203544"/>
-	<item_collecting id="2128" start_npc_ids="203543"/>
-	<item_collecting id="2133" start_npc_ids="203519"/>
-	<item_collecting id="2134" start_npc_ids="203543"/>
-	<item_collecting id="80160" start_npc_ids="830534"/>
+	<item_collecting id="2104" start_npc_ids="203502" action_item_ids="700124" />
+	<item_collecting id="2105" start_npc_ids="203502" />
+	<item_collecting id="2108" start_npc_ids="798037" />
+	<item_collecting id="2109" start_npc_ids="203532" action_item_ids="700125" />
+	<item_collecting id="2112" start_npc_ids="790003" />
+	<item_collecting id="2113" start_npc_ids="203534" />
+	<item_collecting id="2116" start_npc_ids="203541" action_item_ids="700139" />
+	<item_collecting id="2118" start_npc_ids="203539" />
+	<item_collecting id="2119" start_npc_ids="203541" action_item_ids="700127" />
+	<item_collecting id="2120" start_npc_ids="203542" />
+	<item_collecting id="2124" start_npc_ids="203548" />
+	<item_collecting id="2126" start_npc_ids="203544" action_item_ids="700129" />
+	<item_collecting id="2127" start_npc_ids="203544" />
+	<item_collecting id="2128" start_npc_ids="203543" />
+	<item_collecting id="2133" start_npc_ids="203519" />
+	<item_collecting id="2134" start_npc_ids="203543" />
+	<item_collecting id="80160" start_npc_ids="830534" />
 	<!-- ITEM ORDERS QUESTS -->
-	<item_order start_item_id="182203107" talk_npc_id1="203516" end_npc_id="203512" id="2107"/>
+	<item_order start_item_id="182203107" talk_npc_id1="203516" end_npc_id="203512" id="2107" />
 	<!-- HUNTING QUESTS -->
 	<monster_hunt id="2102" start_npc_ids="203504">
-		<monster npc_ids="210363 210364" var="0" end_var="4"/>
+		<monster npc_ids="210363 210364" var="0" end_var="4" />
 	</monster_hunt>
 	<monster_hunt id="2117" start_npc_ids="203540">
-		<monster npc_ids="210389" var="0" end_var="9"/>
+		<monster npc_ids="210389" var="0" end_var="9" />
 	</monster_hunt>
 	<monster_hunt id="2129" start_npc_ids="203552" end_npc_ids="203516">
-		<monster var="0" npc_ids="210408" end_var="1"/>
-		<monster var="1" npc_ids="210409" end_var="1"/>
+		<monster var="0" npc_ids="210408" end_var="1" />
+		<monster var="1" npc_ids="210409" end_var="1" />
 	</monster_hunt>
 </quest_scripts>

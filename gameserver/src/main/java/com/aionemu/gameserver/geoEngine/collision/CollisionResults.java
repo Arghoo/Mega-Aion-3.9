@@ -33,10 +33,10 @@
 package com.aionemu.gameserver.geoEngine.collision;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Iterator;
 
-public class CollisionResults implements Iterable<CollisionResult> {
+public class CollisionResults implements Iterable<CollisionResult>
+{
 
 	private final ArrayList<CollisionResult> results = new ArrayList<CollisionResult>();
 	private boolean sorted = true;
@@ -44,26 +44,30 @@ public class CollisionResults implements Iterable<CollisionResult> {
 	private final byte intentions;
 	private final int instanceId;
 
-	public CollisionResults(byte intentions, boolean searchFirst, int instanceId) {
+	public CollisionResults(byte intentions, boolean searchFirst, int instanceId)
+	{
 		this.intentions = intentions;
 		this.onlyFirst = searchFirst;
 		this.instanceId = instanceId;
 	}
 
-	public void clear() {
+	public void clear()
+	{
 		results.clear();
 	}
 
-	public Iterator<CollisionResult> iterator() {
+	public Iterator<CollisionResult> iterator()
+	{
 		if (!sorted) {
-			Collections.sort(results);
-			sorted = true;
+			results.sort(null);
+						sorted = true;
 		}
 
 		return results.iterator();
 	}
 
-	public void addCollision(CollisionResult result) {
+	public void addCollision(CollisionResult result)
+	{
 		if (Float.isNaN(result.getDistance())) {
 			return;
 		}
@@ -72,37 +76,41 @@ public class CollisionResults implements Iterable<CollisionResult> {
 			sorted = false;
 	}
 
-	public int size() {
+	public int size()
+	{
 		return results.size();
 	}
 
-	public CollisionResult getClosestCollision() {
+	public CollisionResult getClosestCollision()
+	{
 		if (size() == 0)
 			return null;
 
 		if (!sorted) {
-			Collections.sort(results);
+			results.sort(null);
 			sorted = true;
 		}
 
 		return results.get(0);
 	}
 
-	public CollisionResult getFarthestCollision() {
+	public CollisionResult getFarthestCollision()
+	{
 		if (size() == 0)
 			return null;
 
 		if (!sorted) {
-			Collections.sort(results);
+			results.sort(null);
 			sorted = true;
 		}
 
 		return results.get(size() - 1);
 	}
 
-	public CollisionResult getCollision(int index) {
+	public CollisionResult getCollision(int index)
+	{
 		if (!sorted) {
-			Collections.sort(results);
+			results.sort(null);
 			sorted = true;
 		}
 
@@ -111,16 +119,17 @@ public class CollisionResults implements Iterable<CollisionResult> {
 
 	/**
 	 * Internal use only.
-	 * 
+	 *
 	 * @param index
-	 * @return
 	 */
-	public CollisionResult getCollisionDirect(int index) {
+	public CollisionResult getCollisionDirect(int index)
+	{
 		return results.get(index);
 	}
 
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		StringBuilder sb = new StringBuilder();
 		sb.append("CollisionResults[");
 		for (CollisionResult result : results) {
@@ -136,18 +145,21 @@ public class CollisionResults implements Iterable<CollisionResult> {
 	/**
 	 * @return Returns the onlyFirst.
 	 */
-	public boolean isOnlyFirst() {
+	public boolean isOnlyFirst()
+	{
 		return onlyFirst;
 	}
 
 	/**
 	 * @return the intention
 	 */
-	public byte getIntentions() {
+	public byte getIntentions()
+	{
 		return intentions;
 	}
 
-	public int getInstanceId() {
+	public int getInstanceId()
+	{
 		return instanceId;
 	}
 
